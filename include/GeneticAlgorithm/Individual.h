@@ -13,7 +13,7 @@
 class Individual {
 public:
     explicit Individual(std::vector<int>& solution);
-    virtual std::vector<Individual*> crossover(std::mt19937 randomGenerator, Individual& other);
+    virtual std::vector<Individual*> crossover(std::mt19937 &randomGenerator, Individual& other);
     virtual void mutate(std::mt19937 randomGenerator);
 
     double getFitness() const;

@@ -72,6 +72,8 @@ void GeneticAlgorithm<T>::select() {
             parentPopulation.push_back(new Individual(*randomIndividuals[1]));
         }
     }
+    clearPopulation();
+    population = parentPopulation;
 }
 
 template<typename T>

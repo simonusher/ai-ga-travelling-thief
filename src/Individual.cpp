@@ -6,7 +6,7 @@
 
 Individual::Individual(std::vector<int> &solution) : solution(solution), fitness(0), evaluated(false){}
 
-std::vector<Individual *> Individual::crossover(std::mt19937 randomGenerator, Individual &other) {
+std::vector<Individual *> Individual::crossover(std::mt19937 &randomGenerator, Individual &other) {
     std::uniform_int_distribution<int> geneDistribution(0, solution.size() - 1);
     int firstGeneIndex = geneDistribution(randomGenerator);
     int secondGeneIndex = geneDistribution(randomGenerator);
