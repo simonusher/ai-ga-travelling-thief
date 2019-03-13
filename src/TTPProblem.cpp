@@ -11,7 +11,24 @@ void TTPProblem::initialize(std::string &filename, ItemSelectionPolicy policy) {
 }
 
 double TTPProblem::evaluate(Individual* individual) {
-    return 0;
+    if(!individual->isEvaluated()){
+        int itemsWeight = 0;
+        double totalTime = 0;
+        double currentVelocity = 0;
+        const std::vector<int> &solution = individual->solution;
+        for(int i = 0; i < solution.size() - 1; i++){
+            itemsWeight += weightsInCities[solution[i]];
+            currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
+            double distance = getDistance(solution[i], solution[i+1]);
+            double time = distance / currentVelocity;
+            totalTime += time;
+        }
+        currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
+        double time = cityDistances[solution[solution.size() - 1]][solution[0]] / currentVelocity;
+        totalTime += time;
+        individual->setFitness(totalTime);
+    }
+    return individual->getFitness();
 }
 
 void TTPProblem::load(std::string &filename) {
@@ -39,11 +56,11 @@ void TTPProblem::load(std::string &filename) {
 
         std::getline(file, line);
         lineTokens = splitInputLine(line);
-        minSpeed = std::stod(lineTokens[lineTokens.size() - 1]);
+        vMin = std::stod(lineTokens[lineTokens.size() - 1]);
 
         std::getline(file, line);
         lineTokens = splitInputLine(line);
-        maxSpeed = std::stod(lineTokens[lineTokens.size() - 1]);
+        vMax = std::stod(lineTokens[lineTokens.size() - 1]);
 
         std::getline(file, line);
         std::getline(file, line);
@@ -114,7 +131,7 @@ void TTPProblem::calculateDistances() {
     for(int i = 0; i < cities.size(); i++){
         cityDistances.emplace(cities[i]->getIndex(), std::unordered_map<int, double>());
         for(int j = 0; j < cities.size(); j++){
-            cityDistances[i][j] = calculateDistance(cities[i], cities[j]);
+            cityDistances[cities[i]->getIndex()][cities[j]->getIndex()] = calculateDistance(cities[i], cities[j]);
         }
     }
 }
@@ -154,10 +171,6 @@ bool TTPProblem::selectProfitableItem(KnapsackItem *firstItem, KnapsackItem *sec
     return firstItem->getProfit() >= secondItem->getProfit();
 }
 
-double TTPProblem::getDistance(City *firstCity, City *secondCity) {
-    return getDistance(firstCity->getIndex(), secondCity->getIndex());
-}
-
 double TTPProblem::getDistance(int firstCityIndex, int secondCityIndex) {
     return cityDistances[firstCityIndex][secondCityIndex];
 }
@@ -169,10 +182,14 @@ void TTPProblem::selectAllFittingItems() {
     for(int i = 0; i < allItems.size() && selectedItemsWeight < capacityOfKnapsack; i++) {
         KnapsackItem *currentItem = allItems[i];
         selectedItems.emplace(currentItem->getAssignedNodeIndex(), std::vector<KnapsackItem*>());
+        weightsInCities[currentItem->getAssignedNodeIndex()] = 0;
+        profitInCities[currentItem->getAssignedNodeIndex()] = 0;
         if(selectedItemsWeight + currentItem->getWeight() < capacityOfKnapsack){
             selectedItems[currentItem->getAssignedNodeIndex()].push_back(currentItem);
             selectedItemsWeight += currentItem->getWeight();
             selectedItemsProfit += currentItem->getProfit();
+            weightsInCities[currentItem->getAssignedNodeIndex()] += currentItem->getWeight();
+            profitInCities[currentItem->getAssignedNodeIndex()] += currentItem->getProfit();
         }
     }
 }

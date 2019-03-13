@@ -49,17 +49,18 @@ private:
     int capacityOfKnapsack;
     int selectedItemsWeight;
     int selectedItemsProfit;
-    double minSpeed;
-    double maxSpeed;
+    double vMin;
+    double vMax;
 
     std::unordered_map<int, std::unordered_map<int, double>> cityDistances;
 
     std::vector<KnapsackItem*> allItems;
     std::unordered_map<int, std::vector<KnapsackItem*>> selectedItems;
+    std::unordered_map<int, int> weightsInCities;
+    std::unordered_map<int, int> profitInCities;
 
     std::vector<City*> cities;
 
-    double getDistance(City *firstCity, City *secondCity);
     double getDistance(int firstCityIndex, int secondCityIndex);
     double calculateDistance(City *firstCity, City *secondCity);
 

@@ -66,6 +66,7 @@ void Individual::mutate(std::mt19937 randomGenerator) {
         secondGeneIndex = geneDistribution(randomGenerator);
     }
     std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    setEvaluated(false);
 }
 
 double Individual::getFitness() const {
