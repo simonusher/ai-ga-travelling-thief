@@ -26,7 +26,7 @@ double TTPProblem::evaluate(Individual* individual) {
         currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
         double time = cityDistances[solution[solution.size() - 1]][solution[0]] / currentVelocity;
         totalTime += time;
-        individual->setFitness(totalTime);
+        individual->setFitness(selectedItemsWeight - totalTime);
     }
     return individual->getFitness();
 }

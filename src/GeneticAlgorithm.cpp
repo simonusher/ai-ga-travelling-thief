@@ -3,66 +3,58 @@
 //
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
-template<typename T>
-GeneticAlgorithm<T>::GeneticAlgorithm(int popSize, double crossProb, double mutProb, std::string problemFilename) :
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem) :
     popSize(popSize), crossProb(crossProb), mutProb(mutProb)
 {
-    problem = new T();
-    problem->load(problemFilename);
-    bestIndividual = nullptr;
+    this->problem = problem;
+    bestOverall = nullptr;
     iterationsPassed = 0;
     populationDistribution = std::uniform_int_distribution<int>(0, popSize - 1);
+    randomGenerator = std::mt19937(randomDevice());
     initPopulation();
 }
 
-template<typename T>
-GeneticAlgorithm<T>::~GeneticAlgorithm() {
+GeneticAlgorithm::~GeneticAlgorithm() {
     clearPopulation();
-    delete problem;
-    if(bestIndividual != nullptr){
-        delete bestIndividual;
+    if(bestOverall != nullptr){
+        delete bestOverall;
     }
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::run(int iters) {
+void GeneticAlgorithm::run(int iters) {
     evaluate();
     for (int i = 0; i < iters; i++){
         runIteration();
     }
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::runIteration() {
+void GeneticAlgorithm::runIteration() {
     select();
     crossover();
     mutate();
     evaluate();
     iterationsPassed++;
+    std::cout << iterationsPassed << " " << bestOverall->getFitness() << std::endl;
 }
 
-template<typename T>
-double GeneticAlgorithm<T>::getBestFitness() {
-    if(bestIndividual != nullptr){
+double GeneticAlgorithm::getBestFitness() {
+    if(bestOverall != nullptr){
         return problem->getWorstPossibleFitness();
     }
 }
 
-template<typename T>
-Individual *GeneticAlgorithm<T>::getBestIndividual() {
-    return bestIndividual;
+Individual *GeneticAlgorithm::getBestIndividual() {
+    return bestOverall;
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::initPopulation() {
+void GeneticAlgorithm::initPopulation() {
     clearPopulation();
     for(int i = 0; i < popSize; i++){
         population.push_back(problem->randomizedSolution());
     }
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::select() {
+void GeneticAlgorithm::select() {
     std::vector<Individual*> parentPopulation;
     while(parentPopulation.size() != population.size()){
         std::vector<Individual*> randomIndividuals = pickTwoAtRandom();
@@ -72,12 +64,12 @@ void GeneticAlgorithm<T>::select() {
             parentPopulation.push_back(new Individual(*randomIndividuals[1]));
         }
     }
+    selectBest();
     clearPopulation();
     population = parentPopulation;
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::crossover() {
+void GeneticAlgorithm::crossover() {
     std::vector<Individual*> newPopulation;
     Individual *firstOffspring;
     Individual *secondOffspring;
@@ -98,8 +90,7 @@ void GeneticAlgorithm<T>::crossover() {
     population = newPopulation;
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::mutate() {
+void GeneticAlgorithm::mutate() {
     for(int i = 0; i < population.size(); i++){
         if(shouldMutate()){
             population[i]->mutate(randomGenerator);
@@ -107,8 +98,7 @@ void GeneticAlgorithm<T>::mutate() {
     }
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::evaluate() {
+void GeneticAlgorithm::evaluate() {
     for(Individual* individual : population){
         if(individual->isEvaluated()){
             problem->evaluate(individual);
@@ -116,40 +106,47 @@ void GeneticAlgorithm<T>::evaluate() {
     }
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::clearPopulation() {
+void GeneticAlgorithm::clearPopulation() {
     for(int i = 0; i < population.size(); i++){
         delete population[i];
     }
     population.clear();
 }
 
-template<typename T>
-Individual *GeneticAlgorithm<T>::randomFromPopulation() {
+Individual *GeneticAlgorithm::randomFromPopulation() {
     return population[populationDistribution(randomGenerator)];
 }
 
-template<typename T>
-bool GeneticAlgorithm<T>::shouldCross() {
+bool GeneticAlgorithm::shouldCross() {
     return crossoverDistribution(randomGenerator);
 }
 
-template<typename T>
-bool GeneticAlgorithm<T>::shouldMutate() {
+bool GeneticAlgorithm::shouldMutate() {
     return mutationDistribution(randomGenerator);
 }
 
-template<typename T>
-void GeneticAlgorithm<T>::sortPopulationDesc() {
-    std::sort(population.begin(), population.end(), T::compareSolutions);
-}
-
-template<typename T>
-std::vector<Individual *> GeneticAlgorithm<T>::pickTwoAtRandom() {
+std::vector<Individual *> GeneticAlgorithm::pickTwoAtRandom() {
     Individual *p1 = randomFromPopulation();
     Individual *p2 = randomFromPopulation();
     while(p2 == p1){
         p2 = randomFromPopulation();
     }
     return std::vector<Individual *>{p1, p2};
+}
+
+void GeneticAlgorithm::selectBest() {
+    Individual *best = population[0];
+    for(int i = 1; i < population.size(); i++){
+        if(problem->compareSolutions(population[i], best)){
+            best = population[i];
+        }
+    }
+    if(bestOverall == nullptr){
+        bestOverall = new Individual(*best);
+    }
+    else if(problem->compareSolutions(best, bestOverall)){
+        delete bestOverall;
+        bestOverall = new Individual(*best);
+    }
+
 }

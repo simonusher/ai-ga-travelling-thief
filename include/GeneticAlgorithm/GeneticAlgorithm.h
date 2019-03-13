@@ -11,10 +11,9 @@
 #include "Individual.h"
 #include "Problem.h"
 
-template <typename T>
 class GeneticAlgorithm {
 public:
-    GeneticAlgorithm<T>(int popSize, double crossProb, double mutProb, std::string problemFilename);
+    GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem);
     ~GeneticAlgorithm();
     void run(int iters);
     double getBestFitness();
@@ -25,7 +24,6 @@ private:
     void crossover();
     void mutate();
     void evaluate();
-    void sortPopulationDesc();
 
     bool shouldCross();
     bool shouldMutate();
@@ -36,14 +34,17 @@ private:
     std::vector<Individual*> population;
     int iterationsPassed;
     int popSize;
-    Individual* bestIndividual;
+    Individual* bestOverall;
     double crossProb;
     double mutProb;
     Problem* problem;
+    std::random_device randomDevice;
     std::mt19937 randomGenerator;
     std::uniform_int_distribution<int> populationDistribution;
     std::bernoulli_distribution crossoverDistribution;
     std::bernoulli_distribution mutationDistribution;
+
+    void selectBest();
 };
 
 
