@@ -12,20 +12,24 @@ void TTPProblem::initialize(std::string &filename, ItemSelectionPolicy policy) {
 
 double TTPProblem::evaluate(Individual* individual) {
     if(!individual->isEvaluated()){
-        int itemsWeight = 0;
+        double itemsWeight = 0;
         double totalTime = 0;
         double currentVelocity = 0;
         const std::vector<int> &solution = individual->solution;
+
         for(int i = 0; i < solution.size() - 1; i++){
             itemsWeight += weightsInCities[solution[i]];
             currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
-            double distance = getDistance(solution[i], solution[i+1]);
+            double distance = getDistance(solution[i], solution[i + 1]);
             double time = distance / currentVelocity;
             totalTime += time;
+//            std::cout <<  distance << "," << time << "\n";
         }
+        itemsWeight += weightsInCities[solution[solution.size() - 1]];
         currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
-        double time = cityDistances[solution[solution.size() - 1]][solution[0]] / currentVelocity;
+        double time = getDistance(solution[solution.size() - 1], solution[0]) / currentVelocity;
         totalTime += time;
+//        std::cout <<  getDistance(solution[solution.size() - 1], solution[0]) << "," << time << "\n";
         individual->setFitness(selectedItemsProfit - totalTime);
     }
     return individual->getFitness();
@@ -179,11 +183,15 @@ void TTPProblem::selectAllFittingItems() {
     selectedItems.clear();
     selectedItemsWeight = 0;
     selectedItemsProfit = 0;
+    for(int i = 0; i < cities.size(); i++){
+        weightsInCities[cities[i]->getIndex()] = 0;
+        profitInCities[cities[i]->getIndex()] = 0;
+    }
+
     for(int i = 0; i < allItems.size() && selectedItemsWeight < capacityOfKnapsack; i++) {
         KnapsackItem *currentItem = allItems[i];
         selectedItems.emplace(currentItem->getAssignedNodeIndex(), std::vector<KnapsackItem*>());
-        weightsInCities[currentItem->getAssignedNodeIndex()] = 0;
-        profitInCities[currentItem->getAssignedNodeIndex()] = 0;
+
         if(selectedItemsWeight + currentItem->getWeight() < capacityOfKnapsack){
             selectedItems[currentItem->getAssignedNodeIndex()].push_back(currentItem);
             selectedItemsWeight += currentItem->getWeight();

@@ -14,7 +14,7 @@
 
 class GeneticAlgorithm {
 public:
-    GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem *problem, Logger *logger);
+    GeneticAlgorithm(int popSize, double crossProb, double mutProb, int tournamentSize, Problem *problem, Logger *logger);
     ~GeneticAlgorithm();
     void run(int iters);
     double getBestFitness();
@@ -29,7 +29,11 @@ private:
 
     bool shouldCross();
     bool shouldMutate();
-    Individual *randomFromPopulation();
+    Individual* randomFromPopulation();
+
+    Individual* performTournament();
+    Individual* performTournament(std::vector<Individual*>& tournees);
+    std::vector<Individual*> pickNAtRandom(int n);
     std::vector<Individual*> pickTwoAtRandom();
     void clearPopulation();
     void runIteration();
@@ -37,6 +41,7 @@ private:
 
     Logger* logger;
 
+    std::vector<int> tournamentIndices;
     std::vector<Individual*> population;
     int iterationsPassed;
     int popSize;
@@ -44,6 +49,7 @@ private:
     double currentBestFitness;
     double currentWorstFitness;
     double currentAverageFitness;
+    int tournamentSize;
     double crossProb;
     double mutProb;
     Problem* problem;

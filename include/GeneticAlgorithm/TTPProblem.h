@@ -33,6 +33,9 @@ public:
     double getWorstPossibleFitness() override;
     static bool compareForSort(Individual *i1, Individual *i2);
     bool compareSolutions(Individual *i1, Individual *i2) override;
+
+    double selectedItemsWeight;
+    double selectedItemsProfit;
 private:
     void load(std::string &filename) override;
     void selectItems(ItemSelectionPolicy policy);
@@ -46,8 +49,6 @@ private:
     int numberOfCities;
     int numberOfItems;
     int capacityOfKnapsack;
-    int selectedItemsWeight;
-    int selectedItemsProfit;
     double vMin;
     double vMax;
 
@@ -55,8 +56,8 @@ private:
 
     std::vector<KnapsackItem*> allItems;
     std::unordered_map<int, std::vector<KnapsackItem*>> selectedItems;
-    std::unordered_map<int, int> weightsInCities;
-    std::unordered_map<int, int> profitInCities;
+    std::unordered_map<int, double> weightsInCities;
+    std::unordered_map<int, double> profitInCities;
 
     std::vector<City*> cities;
 

@@ -3,14 +3,17 @@
 //
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
-GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem, Logger *logger) :
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, int tournamentSize, Problem* problem, Logger *logger) :
     popSize(popSize), crossProb(crossProb), mutProb(mutProb), problem(problem), bestOverall(nullptr),
     iterationsPassed(0), populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
     crossoverDistribution(std::bernoulli_distribution(crossProb)),
     mutationDistribution(std::bernoulli_distribution(mutProb)),
-    logger(logger)
+    logger(logger),
+    tournamentIndices(std::vector<int>(popSize)),
+    tournamentSize(tournamentSize)
 {
     initPopulation();
+    std::iota(tournamentIndices.begin(), tournamentIndices.end(), 0);
     randomGenerator = std::mt19937(randomDevice());
 }
 
@@ -60,12 +63,8 @@ void GeneticAlgorithm::initPopulation() {
 void GeneticAlgorithm::select() {
     std::vector<Individual*> parentPopulation;
     while(parentPopulation.size() != population.size()){
-        std::vector<Individual*> randomIndividuals = pickTwoAtRandom();
-        if(problem->compareSolutions(randomIndividuals[0], randomIndividuals[1])){
-            parentPopulation.push_back(new Individual(*randomIndividuals[0]));
-        } else {
-            parentPopulation.push_back(new Individual(*randomIndividuals[1]));
-        }
+        Individual *bestOfN = performTournament();
+        parentPopulation.push_back(new Individual(*bestOfN));
     }
     clearPopulation();
     population = parentPopulation;
@@ -175,4 +174,29 @@ void GeneticAlgorithm::printResults() {
     }
     *logger << "]\n";
     *logger << "KSP: ";
+}
+
+std::vector<Individual*> GeneticAlgorithm::pickNAtRandom(int n) {
+    std::shuffle(tournamentIndices.begin(), tournamentIndices.end(), randomGenerator);
+    std::vector<Individual*> randomSolutions(n);
+    for(int i = 0; i < n; i++){
+        randomSolutions[i] = population[tournamentIndices[i]];
+    }
+    return randomSolutions;
+}
+
+Individual* GeneticAlgorithm::performTournament(std::vector<Individual*>& tournees) {
+    Individual *best = tournees[0];
+    for(int i = 1; i < tournees.size(); i++){
+        if(problem->compareSolutions(tournees[i], best)){
+            best = tournees[i];
+        }
+    }
+    return best;
+}
+
+Individual *GeneticAlgorithm::performTournament() {
+    std::vector<Individual*> tournees = pickNAtRandom(tournamentSize);
+    Individual *best = performTournament(tournees);
+    return best;
 }

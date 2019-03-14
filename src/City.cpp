@@ -21,5 +21,5 @@ double City::getY() const {
 double City::distance(City *other) {
     double xDiff = this->x - other->x;
     double yDiff = this->y - other->y;
-    return floor((sqrt(xDiff * xDiff + yDiff * yDiff)));
+    return sqrt(xDiff * xDiff + yDiff * yDiff);
 }
