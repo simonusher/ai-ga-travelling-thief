@@ -3,15 +3,13 @@
 //
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
-GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem) :
-    popSize(popSize), crossProb(crossProb), mutProb(mutProb)
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem, Logger &logger) :
+    popSize(popSize), crossProb(crossProb), mutProb(mutProb), problem(problem), bestOverall(nullptr),
+    iterationsPassed(0), populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
+    logger(logger)
 {
-    this->problem = problem;
-    bestOverall = nullptr;
-    iterationsPassed = 0;
-    populationDistribution = std::uniform_int_distribution<int>(0, popSize - 1);
-    randomGenerator = std::mt19937(randomDevice());
     initPopulation();
+    randomGenerator = std::mt19937(randomDevice());
 }
 
 GeneticAlgorithm::~GeneticAlgorithm() {
@@ -34,7 +32,7 @@ void GeneticAlgorithm::runIteration() {
     mutate();
     evaluate();
     iterationsPassed++;
-    std::cout << iterationsPassed << " " << bestOverall->getFitness() << std::endl;
+    logger << iterationsPassed << ";" << bestOverall->getFitness() << ";" << currentWorstFitness << ";" << currentAverageFitness << ";" << currentBestFitness << "\n";
 }
 
 double GeneticAlgorithm::getBestFitness() {
@@ -64,7 +62,7 @@ void GeneticAlgorithm::select() {
             parentPopulation.push_back(new Individual(*randomIndividuals[1]));
         }
     }
-    selectBest();
+    selectBestAndCalculateMetrics();
     clearPopulation();
     population = parentPopulation;
 }
@@ -134,13 +132,21 @@ std::vector<Individual *> GeneticAlgorithm::pickTwoAtRandom() {
     return std::vector<Individual *>{p1, p2};
 }
 
-void GeneticAlgorithm::selectBest() {
+void GeneticAlgorithm::selectBestAndCalculateMetrics() {
     Individual *best = population[0];
+    double fitnessSum = best->getFitness();
+    double worstFitness = best->getFitness();
     for(int i = 1; i < population.size(); i++){
+        fitnessSum += population[i]->getFitness();
         if(problem->compareSolutions(population[i], best)){
             best = population[i];
+        } else {
+            worstFitness = population[i]->getFitness();
         }
     }
+    currentAverageFitness =  fitnessSum / population.size();
+    currentBestFitness = best->getFitness();
+    currentWorstFitness = worstFitness;
     if(bestOverall == nullptr){
         bestOverall = new Individual(*best);
     }

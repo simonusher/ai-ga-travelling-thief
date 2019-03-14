@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o"
   "GeneticAlgorithm.pdb"
   "GeneticAlgorithm"
 )

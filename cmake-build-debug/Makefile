@@ -231,6 +231,33 @@ src/KnapsackItem.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.s
 .PHONY : src/KnapsackItem.cpp.s
 
+src/Logger.o: src/Logger.cpp.o
+
+.PHONY : src/Logger.o
+
+# target to build an object file
+src/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o
+.PHONY : src/Logger.cpp.o
+
+src/Logger.i: src/Logger.cpp.i
+
+.PHONY : src/Logger.i
+
+# target to preprocess a source file
+src/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.i
+.PHONY : src/Logger.cpp.i
+
+src/Logger.s: src/Logger.cpp.s
+
+.PHONY : src/Logger.s
+
+# target to generate assembly for a file
+src/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.s
+.PHONY : src/Logger.cpp.s
+
 src/TTPProblem.o: src/TTPProblem.cpp.o
 
 .PHONY : src/TTPProblem.o
@@ -306,6 +333,9 @@ help:
 	@echo "... src/KnapsackItem.o"
 	@echo "... src/KnapsackItem.i"
 	@echo "... src/KnapsackItem.s"
+	@echo "... src/Logger.o"
+	@echo "... src/Logger.i"
+	@echo "... src/Logger.s"
 	@echo "... src/TTPProblem.o"
 	@echo "... src/TTPProblem.i"
 	@echo "... src/TTPProblem.s"

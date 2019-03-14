@@ -21,6 +21,8 @@ Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
 Problem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+../../src/Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
 vector
@@ -79,6 +81,20 @@ limits
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/KnapsackItem.cpp
 ../include/GeneticAlgorithm/KnapsackItem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/KnapsackItem.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.cpp
+Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
+vector
+-
+ostream
+-
+fstream
+-
+iostream
+-
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp
 ../include/GeneticAlgorithm/TTPProblem.h

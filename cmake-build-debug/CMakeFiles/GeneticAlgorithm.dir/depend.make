@@ -8,12 +8,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAl
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Individual.h
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Problem.h
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../src/GeneticAlgorithm.cpp
+CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../src/Logger.h
 
 CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o: ../include/GeneticAlgorithm/Individual.h
 CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o: ../src/Individual.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o: ../include/GeneticAlgorithm/KnapsackItem.h
 CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o: ../src/KnapsackItem.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o: ../src/Logger.cpp
+CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o: ../src/Logger.h
 
 CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o: ../include/GeneticAlgorithm/City.h
 CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o: ../include/GeneticAlgorithm/Individual.h
@@ -28,5 +32,6 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Indi
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/KnapsackItem.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Problem.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/TTPProblem.h
+CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../src/Logger.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../src/main.cpp
 

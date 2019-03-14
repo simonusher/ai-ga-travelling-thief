@@ -114,6 +114,12 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/KnapsackItem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>

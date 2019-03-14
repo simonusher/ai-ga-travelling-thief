@@ -10,9 +10,9 @@ int main() {
 //    Individual *i = problem.randomizedSolution();
 //    problem.evaluate(i);
 //    std::cout << i->getFitness();
-    GeneticAlgorithm ga(100, 0.9, 0.1, &problem);
+    Logger logger(true, "ble.txt");
+    Logger &logger1 = logger;
+    GeneticAlgorithm ga(100, 0.7, 0.1, &problem, logger1);
     ga.run(100);
-    for(int i = 0; i < ga.getBestIndividual()->solution.size(); i++){
-        std::cout << ga.getBestIndividual()->solution[i] << " ";
-    }
+    logger.close();
 }
