@@ -26,7 +26,7 @@ double TTPProblem::evaluate(Individual* individual) {
         currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
         double time = cityDistances[solution[solution.size() - 1]][solution[0]] / currentVelocity;
         totalTime += time;
-        individual->setFitness(selectedItemsWeight - totalTime);
+        individual->setFitness(selectedItemsProfit - totalTime);
     }
     return individual->getFitness();
 }
@@ -192,4 +192,8 @@ void TTPProblem::selectAllFittingItems() {
             profitInCities[currentItem->getAssignedNodeIndex()] += currentItem->getProfit();
         }
     }
+}
+
+bool TTPProblem::compareForSort(Individual *i1, Individual *i2) {
+    return i1->getFitness() >= i2->getFitness();
 }

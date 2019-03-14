@@ -3,9 +3,11 @@
 //
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
-GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem, Logger &logger) :
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem, Logger *logger) :
     popSize(popSize), crossProb(crossProb), mutProb(mutProb), problem(problem), bestOverall(nullptr),
     iterationsPassed(0), populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
+    crossoverDistribution(std::bernoulli_distribution(crossProb)),
+    mutationDistribution(std::bernoulli_distribution(mutProb)),
     logger(logger)
 {
     initPopulation();
@@ -21,18 +23,21 @@ GeneticAlgorithm::~GeneticAlgorithm() {
 
 void GeneticAlgorithm::run(int iters) {
     evaluate();
+    printInfo();
     for (int i = 0; i < iters; i++){
         runIteration();
     }
+    printResults();
 }
 
 void GeneticAlgorithm::runIteration() {
+    selectBestAndCalculateMetrics();
+    *logger << iterationsPassed << ";" << bestOverall->getFitness() << ";" << currentWorstFitness << ";" << currentAverageFitness << ";" << currentBestFitness << "\n";
     select();
     crossover();
     mutate();
     evaluate();
     iterationsPassed++;
-    logger << iterationsPassed << ";" << bestOverall->getFitness() << ";" << currentWorstFitness << ";" << currentAverageFitness << ";" << currentBestFitness << "\n";
 }
 
 double GeneticAlgorithm::getBestFitness() {
@@ -62,7 +67,6 @@ void GeneticAlgorithm::select() {
             parentPopulation.push_back(new Individual(*randomIndividuals[1]));
         }
     }
-    selectBestAndCalculateMetrics();
     clearPopulation();
     population = parentPopulation;
 }
@@ -98,9 +102,7 @@ void GeneticAlgorithm::mutate() {
 
 void GeneticAlgorithm::evaluate() {
     for(Individual* individual : population){
-        if(individual->isEvaluated()){
-            problem->evaluate(individual);
-        }
+        problem->evaluate(individual);
     }
 }
 
@@ -134,19 +136,21 @@ std::vector<Individual *> GeneticAlgorithm::pickTwoAtRandom() {
 
 void GeneticAlgorithm::selectBestAndCalculateMetrics() {
     Individual *best = population[0];
+    Individual *worst = population[0];
     double fitnessSum = best->getFitness();
-    double worstFitness = best->getFitness();
     for(int i = 1; i < population.size(); i++){
-        fitnessSum += population[i]->getFitness();
-        if(problem->compareSolutions(population[i], best)){
-            best = population[i];
-        } else {
-            worstFitness = population[i]->getFitness();
+        Individual *current = population[i];
+        fitnessSum += current->getFitness();
+        if(problem->compareSolutions(current, best)){
+            best = current;
+        }
+        if(problem->compareSolutions(worst, current)){
+            worst = current;
         }
     }
     currentAverageFitness =  fitnessSum / population.size();
     currentBestFitness = best->getFitness();
-    currentWorstFitness = worstFitness;
+    currentWorstFitness = worst->getFitness();
     if(bestOverall == nullptr){
         bestOverall = new Individual(*best);
     }
@@ -154,5 +158,21 @@ void GeneticAlgorithm::selectBestAndCalculateMetrics() {
         delete bestOverall;
         bestOverall = new Individual(*best);
     }
+}
 
+void GeneticAlgorithm::printInfo() {
+    *logger << "Iterations;Overall best;Worst;Average;Best\n";
+}
+
+void GeneticAlgorithm::printResults() {
+    *logger << "Best solution:\n";
+    *logger << "\tTSP: [";
+    for(int i = 0; i < bestOverall->solution.size(); i++){
+        *logger << bestOverall->solution[i];
+        if(i != bestOverall->solution.size() -1){
+            *logger << ", ";
+        }
+    }
+    *logger << "]\n";
+    *logger << "KSP: ";
 }

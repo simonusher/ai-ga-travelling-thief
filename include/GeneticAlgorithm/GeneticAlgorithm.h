@@ -14,12 +14,11 @@
 
 class GeneticAlgorithm {
 public:
-    GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem* problem, Logger& logger);
+    GeneticAlgorithm(int popSize, double crossProb, double mutProb, Problem *problem, Logger *logger);
     ~GeneticAlgorithm();
     void run(int iters);
     double getBestFitness();
     Individual* getBestIndividual();
-    void setLogger(Logger &logger);
 
 private:
     void initPopulation();
@@ -36,7 +35,7 @@ private:
     void runIteration();
     void selectBestAndCalculateMetrics();
 
-    Logger& logger;
+    Logger* logger;
 
     std::vector<Individual*> population;
     int iterationsPassed;
@@ -53,6 +52,10 @@ private:
     std::uniform_int_distribution<int> populationDistribution;
     std::bernoulli_distribution crossoverDistribution;
     std::bernoulli_distribution mutationDistribution;
+
+    void printInfo();
+
+    void printResults();
 };
 
 

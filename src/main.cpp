@@ -2,17 +2,20 @@
 #include "../include/GeneticAlgorithm/Individual.h"
 #include "../include/GeneticAlgorithm/TTPProblem.h"
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
+#include <chrono>
+#include <ctime>
 
 int main() {
     TTPProblem problem;
-    std::string filename("hard_1.ttp");
+    std::string problemName("easy_0");
+    std::string filename(problemName + ".ttp");
+    int iterations = 100;
+    int popSize = 100;
+    double mutProb = 0.1;
+    double crossProb = 0.7;
     problem.initialize(filename, MostProfitable);
-//    Individual *i = problem.randomizedSolution();
-//    problem.evaluate(i);
-//    std::cout << i->getFitness();
-    Logger logger(true, "ble.txt");
-    Logger &logger1 = logger;
-    GeneticAlgorithm ga(100, 0.7, 0.1, &problem, logger1);
-    ga.run(100);
+    Logger logger(true, problemName + ".txt");
+    GeneticAlgorithm ga(popSize, crossProb, mutProb, &problem, &logger);
+    ga.run(iterations);
     logger.close();
 }

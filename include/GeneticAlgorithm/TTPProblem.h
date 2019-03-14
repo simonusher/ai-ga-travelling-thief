@@ -31,9 +31,8 @@ public:
     Individual *randomizedSolution() override;
 
     double getWorstPossibleFitness() override;
-
+    static bool compareForSort(Individual *i1, Individual *i2);
     bool compareSolutions(Individual *i1, Individual *i2) override;
-
 private:
     void load(std::string &filename) override;
     void selectItems(ItemSelectionPolicy policy);

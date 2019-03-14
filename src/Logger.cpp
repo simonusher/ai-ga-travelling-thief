@@ -19,12 +19,6 @@ Logger &Logger::operator<<(std::string &text) {
     return *this;
 }
 
-Logger &Logger::operator<<(int number) {
-    logFile << number;
-    consoleLog(number);
-    return *this;
-}
-
 Logger &Logger::operator<<(double number) {
     logFile << number;
     consoleLog(number);

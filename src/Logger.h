@@ -16,7 +16,6 @@ public:
     Logger(bool logToConsole, const std::string &logFileName);
     void close();
     Logger& operator<< (std::string& text);
-    Logger& operator<< (int number);
     Logger& operator<< (double number);
     Logger& operator<< (const char* text);
 private:
