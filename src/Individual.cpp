@@ -85,3 +85,13 @@ bool Individual::isEvaluated() const {
 void Individual::setEvaluated(bool evaluated) {
     this->evaluated = evaluated;
 }
+
+void Individual::swap(int firstGeneIndex, std::mt19937 randomGenerator) {
+    std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
+    int secondGeneIndex = geneDistribution(randomGenerator);
+    while(secondGeneIndex == firstGeneIndex){
+        secondGeneIndex = geneDistribution(randomGenerator);
+    }
+    std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    setEvaluated(false);
+}

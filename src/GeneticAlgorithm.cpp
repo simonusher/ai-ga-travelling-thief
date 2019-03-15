@@ -35,7 +35,7 @@ void GeneticAlgorithm::run(int iters) {
 
 void GeneticAlgorithm::runIteration() {
     selectBestAndCalculateMetrics();
-    *logger << iterationsPassed << ";" << bestOverall->getFitness() << ";" << currentWorstFitness << ";" << currentAverageFitness << ";" << currentBestFitness << "\n";
+    *logger << iterationsPassed << ";" << (int)bestOverall->getFitness() << ";" << (int)currentWorstFitness << ";" << (int)currentAverageFitness << ";" << (int)currentBestFitness << "\n";
     select();
     crossover();
     mutate();
@@ -93,8 +93,13 @@ void GeneticAlgorithm::crossover() {
 
 void GeneticAlgorithm::mutate() {
     for(int i = 0; i < population.size(); i++){
-        if(shouldMutate()){
-            population[i]->mutate(randomGenerator);
+//        if(shouldMutate()){
+//            population[i]->mutate(randomGenerator);
+//        }
+        for(int j = 0; j < population[i]->solution.size(); j++){
+            if(shouldMutate()){
+                population[i]->swap(j, randomGenerator);
+            }
         }
     }
 }
