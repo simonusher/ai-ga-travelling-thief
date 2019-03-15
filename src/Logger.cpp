@@ -2,7 +2,7 @@
 // Created by Szymon on 14.03.2019.
 //
 
-#include "Logger.h"
+#include "../include/GeneticAlgorithm/Logger.h"
 
 Logger::Logger(bool logToConsole, const std::string &logFileName) : logToConsole(logToConsole),
                                                                     logFileName(logFileName) {

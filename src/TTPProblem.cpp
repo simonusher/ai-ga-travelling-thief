@@ -8,14 +8,16 @@ void TTPProblem::initialize(std::string &filename, ItemSelectionPolicy policy) {
     load(filename);
     calculateDistances();
     selectItems(policy);
+    fitnessFunctionEvaluationsNumber = 0;
 }
 
 double TTPProblem::evaluate(Individual* individual) {
     if(!individual->isEvaluated()){
+        fitnessFunctionEvaluationsNumber++;
         double itemsWeight = 0;
         double totalTime = 0;
         double currentVelocity = 0;
-        const std::vector<int> &solution = individual->solution;
+        const std::vector<int> &solution = individual->getSolution();
 
         for(int i = 0; i < solution.size() - 1; i++){
             itemsWeight += weightsInCities[solution[i]];
@@ -23,13 +25,11 @@ double TTPProblem::evaluate(Individual* individual) {
             double distance = getDistance(solution[i], solution[i + 1]);
             double time = distance / currentVelocity;
             totalTime += time;
-//            std::cout <<  distance << "," << time << "\n";
         }
         itemsWeight += weightsInCities[solution[solution.size() - 1]];
         currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
         double time = getDistance(solution[solution.size() - 1], solution[0]) / currentVelocity;
         totalTime += time;
-//        std::cout <<  getDistance(solution[solution.size() - 1], solution[0]) << "," << time << "\n";
         individual->setFitness(selectedItemsProfit - totalTime);
     }
     return individual->getFitness();
@@ -108,7 +108,7 @@ double TTPProblem::getWorstPossibleFitness() {
 bool TTPProblem::compareSolutions(Individual *i1, Individual *i2) {
     evaluate(i1);
     evaluate(i2);
-    return i1->getFitness() >= i2->getFitness();
+    return compareFitnesses(i1->getFitness(), i2->getFitness());
 }
 
 std::vector<std::string> TTPProblem::splitInputLine(std::string &line) {
@@ -202,6 +202,14 @@ void TTPProblem::selectAllFittingItems() {
     }
 }
 
-bool TTPProblem::compareForSort(Individual *i1, Individual *i2) {
-    return i1->getFitness() >= i2->getFitness();
+int TTPProblem::getFitnessFunctionEvaluations() {
+    return fitnessFunctionEvaluationsNumber;
+}
+
+bool TTPProblem::compareFitnesses(double firstFitness, double secondFitness) {
+    return firstFitness >= secondFitness;
+}
+
+bool TTPProblem::fitnessStrictlyBetter(double firstFitness, double secondFitness) {
+    return firstFitness > secondFitness;
 }

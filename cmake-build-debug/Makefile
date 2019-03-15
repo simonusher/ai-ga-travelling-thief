@@ -177,6 +177,33 @@ src/GeneticAlgorithm.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.s
 .PHONY : src/GeneticAlgorithm.cpp.s
 
+src/HillClimber.o: src/HillClimber.cpp.o
+
+.PHONY : src/HillClimber.o
+
+# target to build an object file
+src/HillClimber.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
+.PHONY : src/HillClimber.cpp.o
+
+src/HillClimber.i: src/HillClimber.cpp.i
+
+.PHONY : src/HillClimber.i
+
+# target to preprocess a source file
+src/HillClimber.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.i
+.PHONY : src/HillClimber.cpp.i
+
+src/HillClimber.s: src/HillClimber.cpp.s
+
+.PHONY : src/HillClimber.s
+
+# target to generate assembly for a file
+src/HillClimber.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.s
+.PHONY : src/HillClimber.cpp.s
+
 src/Individual.o: src/Individual.cpp.o
 
 .PHONY : src/Individual.o
@@ -258,6 +285,33 @@ src/Logger.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.s
 .PHONY : src/Logger.cpp.s
 
+src/RandomSearch.o: src/RandomSearch.cpp.o
+
+.PHONY : src/RandomSearch.o
+
+# target to build an object file
+src/RandomSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o
+.PHONY : src/RandomSearch.cpp.o
+
+src/RandomSearch.i: src/RandomSearch.cpp.i
+
+.PHONY : src/RandomSearch.i
+
+# target to preprocess a source file
+src/RandomSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.i
+.PHONY : src/RandomSearch.cpp.i
+
+src/RandomSearch.s: src/RandomSearch.cpp.s
+
+.PHONY : src/RandomSearch.s
+
+# target to generate assembly for a file
+src/RandomSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.s
+.PHONY : src/RandomSearch.cpp.s
+
 src/TTPProblem.o: src/TTPProblem.cpp.o
 
 .PHONY : src/TTPProblem.o
@@ -284,6 +338,33 @@ src/TTPProblem.s: src/TTPProblem.cpp.s
 src/TTPProblem.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.s
 .PHONY : src/TTPProblem.cpp.s
+
+src/VectorHasher.o: src/VectorHasher.cpp.o
+
+.PHONY : src/VectorHasher.o
+
+# target to build an object file
+src/VectorHasher.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
+.PHONY : src/VectorHasher.cpp.o
+
+src/VectorHasher.i: src/VectorHasher.cpp.i
+
+.PHONY : src/VectorHasher.i
+
+# target to preprocess a source file
+src/VectorHasher.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.i
+.PHONY : src/VectorHasher.cpp.i
+
+src/VectorHasher.s: src/VectorHasher.cpp.s
+
+.PHONY : src/VectorHasher.s
+
+# target to generate assembly for a file
+src/VectorHasher.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.s
+.PHONY : src/VectorHasher.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -327,6 +408,9 @@ help:
 	@echo "... src/GeneticAlgorithm.o"
 	@echo "... src/GeneticAlgorithm.i"
 	@echo "... src/GeneticAlgorithm.s"
+	@echo "... src/HillClimber.o"
+	@echo "... src/HillClimber.i"
+	@echo "... src/HillClimber.s"
 	@echo "... src/Individual.o"
 	@echo "... src/Individual.i"
 	@echo "... src/Individual.s"
@@ -336,9 +420,15 @@ help:
 	@echo "... src/Logger.o"
 	@echo "... src/Logger.i"
 	@echo "... src/Logger.s"
+	@echo "... src/RandomSearch.o"
+	@echo "... src/RandomSearch.i"
+	@echo "... src/RandomSearch.s"
 	@echo "... src/TTPProblem.o"
 	@echo "... src/TTPProblem.i"
 	@echo "... src/TTPProblem.s"
+	@echo "... src/VectorHasher.o"
+	@echo "... src/VectorHasher.i"
+	@echo "... src/VectorHasher.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

@@ -10,7 +10,7 @@
 #include <algorithm>
 #include "Individual.h"
 #include "Problem.h"
-#include "../../src/Logger.h"
+#include "Logger.h"
 
 class GeneticAlgorithm {
 public:

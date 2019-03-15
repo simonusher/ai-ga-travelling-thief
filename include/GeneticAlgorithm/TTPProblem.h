@@ -31,17 +31,22 @@ public:
     Individual *randomizedSolution() override;
 
     double getWorstPossibleFitness() override;
-    static bool compareForSort(Individual *i1, Individual *i2);
     bool compareSolutions(Individual *i1, Individual *i2) override;
+
+    bool compareFitnesses(double firstFitness, double secondFitness) override;
+    bool fitnessStrictlyBetter(double firstFitness, double secondFitness) override;
 
     double selectedItemsWeight;
     double selectedItemsProfit;
+    int getFitnessFunctionEvaluations();
 private:
     void load(std::string &filename) override;
     void selectItems(ItemSelectionPolicy policy);
     void calculateDistances();
     void addNewItem(int index, int profit, int weight, int assignedNodeIndex);
     std::vector<std::string> splitInputLine(std::string &line);
+
+    int fitnessFunctionEvaluationsNumber;
 
     static bool selectBetterWeightProfitItem(KnapsackItem *firstItem, KnapsackItem *secondItem);
     static bool selectLighterItem(KnapsackItem *firstItem, KnapsackItem *secondItem);

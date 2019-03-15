@@ -21,8 +21,20 @@ Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
 Problem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
-../../src/Logger.h
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
+Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
+Problem.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
+VectorHasher.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
+unordered_set
+-
+vector
+-
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
 vector
@@ -36,10 +48,32 @@ iostream
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/KnapsackItem.h
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
+vector
+-
+ostream
+-
+fstream
+-
+iostream
+-
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
 Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
 string
+-
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSearch.h
+Problem.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
+VectorHasher.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
+unordered_set
+-
+vector
 -
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
@@ -66,6 +100,12 @@ algorithm
 limits
 -
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
+vector
+-
+cstddef
+-
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/City.cpp
 ../include/GeneticAlgorithm/City.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/City.h
@@ -73,6 +113,10 @@ limits
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/GeneticAlgorithm.cpp
 ../include/GeneticAlgorithm/GeneticAlgorithm.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/GeneticAlgorithm.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/HillClimber.cpp
+../include/GeneticAlgorithm/HillClimber.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Individual.cpp
 ../include/GeneticAlgorithm/Individual.h
@@ -83,22 +127,20 @@ limits
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/KnapsackItem.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.cpp
-Logger.h
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
+../include/GeneticAlgorithm/Logger.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
 
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h
-vector
--
-ostream
--
-fstream
--
-iostream
--
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp
+../include/GeneticAlgorithm/RandomSearch.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSearch.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp
 ../include/GeneticAlgorithm/TTPProblem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp
+../include/GeneticAlgorithm/VectorHasher.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp
 iostream
@@ -109,6 +151,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
 ../include/GeneticAlgorithm/GeneticAlgorithm.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/GeneticAlgorithm.h
+../include/GeneticAlgorithm/HillClimber.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
 chrono
 -
 ctime

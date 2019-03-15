@@ -90,22 +90,37 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/GeneticAlgorithm.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/KnapsackItem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSearch.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/City.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/GeneticAlgorithm.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/HillClimber.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Individual.cpp">
@@ -117,10 +132,13 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Logger.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp">

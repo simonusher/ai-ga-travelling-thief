@@ -96,9 +96,9 @@ void GeneticAlgorithm::mutate() {
 //        if(shouldMutate()){
 //            population[i]->mutate(randomGenerator);
 //        }
-        for(int j = 0; j < population[i]->solution.size(); j++){
+        for(int j = 0; j < population[i]->getSolution().size(); j++){
             if(shouldMutate()){
-                population[i]->swap(j, randomGenerator);
+                population[i]->swapWithRandom(j, randomGenerator);
             }
         }
     }
@@ -171,9 +171,9 @@ void GeneticAlgorithm::printInfo() {
 void GeneticAlgorithm::printResults() {
     *logger << "Best solution:\n";
     *logger << "\tTSP: [";
-    for(int i = 0; i < bestOverall->solution.size(); i++){
-        *logger << bestOverall->solution[i];
-        if(i != bestOverall->solution.size() -1){
+    for(int i = 0; i < bestOverall->getSolution().size(); i++){
+        *logger << bestOverall->getSolution()[i];
+        if(i != bestOverall->getSolution().size() - 1){
             *logger << ", ";
         }
     }

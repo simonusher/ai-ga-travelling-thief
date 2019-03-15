@@ -86,12 +86,21 @@ void Individual::setEvaluated(bool evaluated) {
     this->evaluated = evaluated;
 }
 
-void Individual::swap(int firstGeneIndex, std::mt19937 randomGenerator) {
+void Individual::swapWithRandom(int firstGeneIndex, std::mt19937 randomGenerator) {
     std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
     int secondGeneIndex = geneDistribution(randomGenerator);
     while(secondGeneIndex == firstGeneIndex){
         secondGeneIndex = geneDistribution(randomGenerator);
     }
+    std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    setEvaluated(false);
+}
+
+const std::vector<int> &Individual::getSolution() const {
+    return solution;
+}
+
+void Individual::swapGenes(int firstGeneIndex, int secondGeneIndex) {
     std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
     setEvaluated(false);
 }

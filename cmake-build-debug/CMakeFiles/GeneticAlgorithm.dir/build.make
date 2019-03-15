@@ -225,6 +225,78 @@ CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o.provides: CMakeFiles/GeneticAlg
 CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o
 
 
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o: ../src/HillClimber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/HillClimber.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/HillClimber.cpp > CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/HillClimber.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
+
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o: ../src/RandomSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp > CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o
+
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o: ../src/VectorHasher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp > CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
+
+
 # Object files for target GeneticAlgorithm
 GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" \
@@ -233,7 +305,10 @@ GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o" \
-"CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o"
+"CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o"
 
 # External object files for target GeneticAlgorithm
 GeneticAlgorithm_EXTERNAL_OBJECTS =
@@ -245,9 +320,12 @@ GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/build.make
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable GeneticAlgorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable GeneticAlgorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeneticAlgorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -262,6 +340,9 @@ CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/In
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.requires
 
 .PHONY : CMakeFiles/GeneticAlgorithm.dir/requires
 

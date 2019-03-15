@@ -16,6 +16,8 @@ public:
     virtual Individual* randomizedSolution() = 0;
     virtual double getWorstPossibleFitness() = 0;
     virtual bool compareSolutions(Individual *i1, Individual *i2) = 0;
+    virtual bool compareFitnesses(double firstFitness, double secondFitness) = 0;
+    virtual bool fitnessStrictlyBetter(double firstFitness, double secondFitness) = 0;
 };
 
 

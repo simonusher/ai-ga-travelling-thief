@@ -6,6 +6,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o"
   "GeneticAlgorithm.pdb"
   "GeneticAlgorithm"
 )
