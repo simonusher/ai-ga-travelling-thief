@@ -9,6 +9,7 @@ CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/GeneticAlgorithm.cpp
 CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
@@ -40,6 +41,12 @@ CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TournamentSelector.cpp
 CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp
@@ -51,6 +58,8 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/KnapsackItem.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
+ /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
  /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp

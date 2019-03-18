@@ -108,7 +108,13 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSearch.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h">
@@ -136,6 +142,9 @@
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TournamentSelector.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp">

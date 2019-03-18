@@ -23,6 +23,8 @@ Problem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
 Logger.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
+Selector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
 Problem.h
@@ -76,6 +78,12 @@ unordered_set
 vector
 -
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
+Individual.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
+Problem.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
 Problem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
@@ -98,6 +106,14 @@ iterator
 algorithm
 -
 limits
+-
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
+Selector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
+vector
+-
+algorithm
 -
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
@@ -138,6 +154,10 @@ cstddef
 ../include/GeneticAlgorithm/TTPProblem.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TTPProblem.h
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TournamentSelector.cpp
+../include/GeneticAlgorithm/TournamentSelector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/VectorHasher.cpp
 ../include/GeneticAlgorithm/VectorHasher.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/VectorHasher.h
@@ -153,6 +173,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/GeneticAlgorithm.h
 ../include/GeneticAlgorithm/HillClimber.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
+../include/GeneticAlgorithm/TournamentSelector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
 chrono
 -
 ctime

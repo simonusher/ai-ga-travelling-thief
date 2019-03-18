@@ -3,18 +3,22 @@
 //
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
-GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb, int tournamentSize, Problem* problem, Logger *logger) :
-    popSize(popSize), crossProb(crossProb), mutProb(mutProb), problem(problem), bestOverall(nullptr),
-    iterationsPassed(0), populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
+
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb,
+        Problem* problem, Logger *logger, std::mt19937 *randomGenerator, Selector* selector) :
+    popSize(popSize),
+    crossProb(crossProb),
+    mutProb(mutProb), problem(problem),
+    bestOverall(nullptr),
+    iterationsPassed(0),
+    populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
     crossoverDistribution(std::bernoulli_distribution(crossProb)),
     mutationDistribution(std::bernoulli_distribution(mutProb)),
     logger(logger),
-    tournamentIndices(std::vector<int>(popSize)),
-    tournamentSize(tournamentSize)
+    randomGenerator(randomGenerator),
+    selector(selector)
 {
     initPopulation();
-    std::iota(tournamentIndices.begin(), tournamentIndices.end(), 0);
-    randomGenerator = std::mt19937(randomDevice());
 }
 
 GeneticAlgorithm::~GeneticAlgorithm() {
@@ -46,6 +50,8 @@ void GeneticAlgorithm::runIteration() {
 double GeneticAlgorithm::getBestFitness() {
     if(bestOverall != nullptr){
         return problem->getWorstPossibleFitness();
+    } else {
+        return bestOverall->getFitness();
     }
 }
 
@@ -61,11 +67,7 @@ void GeneticAlgorithm::initPopulation() {
 }
 
 void GeneticAlgorithm::select() {
-    std::vector<Individual*> parentPopulation;
-    while(parentPopulation.size() != population.size()){
-        Individual *bestOfN = performTournament();
-        parentPopulation.push_back(new Individual(*bestOfN));
-    }
+    std::vector<Individual*> parentPopulation = selector->selectAllParents(population);
     clearPopulation();
     population = parentPopulation;
 }
@@ -77,7 +79,7 @@ void GeneticAlgorithm::crossover() {
     while(newPopulation.size() != population.size()){
         std::vector<Individual*> parents = pickTwoAtRandom();
         if(shouldCross()){
-            std::vector<Individual*> offspring = parents[0]->crossover(randomGenerator, *parents[1]);
+            std::vector<Individual*> offspring = parents[0]->crossover(*randomGenerator, *parents[1]);
             firstOffspring = offspring[0];
             secondOffspring = offspring[1];
         } else {
@@ -98,7 +100,7 @@ void GeneticAlgorithm::mutate() {
 //        }
         for(int j = 0; j < population[i]->getSolution().size(); j++){
             if(shouldMutate()){
-                population[i]->swapWithRandom(j, randomGenerator);
+                population[i]->swapWithRandom(j, *randomGenerator);
             }
         }
     }
@@ -118,15 +120,15 @@ void GeneticAlgorithm::clearPopulation() {
 }
 
 Individual *GeneticAlgorithm::randomFromPopulation() {
-    return population[populationDistribution(randomGenerator)];
+    return population[populationDistribution(*randomGenerator)];
 }
 
 bool GeneticAlgorithm::shouldCross() {
-    return crossoverDistribution(randomGenerator);
+    return crossoverDistribution(*randomGenerator);
 }
 
 bool GeneticAlgorithm::shouldMutate() {
-    return mutationDistribution(randomGenerator);
+    return mutationDistribution(*randomGenerator);
 }
 
 std::vector<Individual *> GeneticAlgorithm::pickTwoAtRandom() {
@@ -179,29 +181,4 @@ void GeneticAlgorithm::printResults() {
     }
     *logger << "]\n";
     *logger << "KSP: ";
-}
-
-std::vector<Individual*> GeneticAlgorithm::pickNAtRandom(int n) {
-    std::shuffle(tournamentIndices.begin(), tournamentIndices.end(), randomGenerator);
-    std::vector<Individual*> randomSolutions(n);
-    for(int i = 0; i < n; i++){
-        randomSolutions[i] = population[tournamentIndices[i]];
-    }
-    return randomSolutions;
-}
-
-Individual* GeneticAlgorithm::performTournament(std::vector<Individual*>& tournees) {
-    Individual *best = tournees[0];
-    for(int i = 1; i < tournees.size(); i++){
-        if(problem->compareSolutions(tournees[i], best)){
-            best = tournees[i];
-        }
-    }
-    return best;
-}
-
-Individual *GeneticAlgorithm::performTournament() {
-    std::vector<Individual*> tournees = pickNAtRandom(tournamentSize);
-    Individual *best = performTournament(tournees);
-    return best;
 }

@@ -339,6 +339,33 @@ src/TTPProblem.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.s
 .PHONY : src/TTPProblem.cpp.s
 
+src/TournamentSelector.o: src/TournamentSelector.cpp.o
+
+.PHONY : src/TournamentSelector.o
+
+# target to build an object file
+src/TournamentSelector.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o
+.PHONY : src/TournamentSelector.cpp.o
+
+src/TournamentSelector.i: src/TournamentSelector.cpp.i
+
+.PHONY : src/TournamentSelector.i
+
+# target to preprocess a source file
+src/TournamentSelector.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.i
+.PHONY : src/TournamentSelector.cpp.i
+
+src/TournamentSelector.s: src/TournamentSelector.cpp.s
+
+.PHONY : src/TournamentSelector.s
+
+# target to generate assembly for a file
+src/TournamentSelector.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.s
+.PHONY : src/TournamentSelector.cpp.s
+
 src/VectorHasher.o: src/VectorHasher.cpp.o
 
 .PHONY : src/VectorHasher.o
@@ -426,6 +453,9 @@ help:
 	@echo "... src/TTPProblem.o"
 	@echo "... src/TTPProblem.i"
 	@echo "... src/TTPProblem.s"
+	@echo "... src/TournamentSelector.o"
+	@echo "... src/TournamentSelector.i"
+	@echo "... src/TournamentSelector.s"
 	@echo "... src/VectorHasher.o"
 	@echo "... src/VectorHasher.i"
 	@echo "... src/VectorHasher.s"

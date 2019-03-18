@@ -11,10 +11,13 @@
 #include "Individual.h"
 #include "Problem.h"
 #include "Logger.h"
+#include "Selector.h"
+
 
 class GeneticAlgorithm {
 public:
-    GeneticAlgorithm(int popSize, double crossProb, double mutProb, int tournamentSize, Problem *problem, Logger *logger);
+    GeneticAlgorithm(int popSize, double crossProb, double mutProb,
+            Problem *problem, Logger *logger, std::mt19937 *randomGenerator, Selector* selector);
     ~GeneticAlgorithm();
     void run(int iters);
     double getBestFitness();
@@ -31,17 +34,12 @@ private:
     bool shouldMutate();
     Individual* randomFromPopulation();
 
-    Individual* performTournament();
-    Individual* performTournament(std::vector<Individual*>& tournees);
-    std::vector<Individual*> pickNAtRandom(int n);
     std::vector<Individual*> pickTwoAtRandom();
     void clearPopulation();
     void runIteration();
     void selectBestAndCalculateMetrics();
 
-    Logger* logger;
 
-    std::vector<int> tournamentIndices;
     std::vector<Individual*> population;
     int iterationsPassed;
     int popSize;
@@ -49,12 +47,13 @@ private:
     double currentBestFitness;
     double currentWorstFitness;
     double currentAverageFitness;
-    int tournamentSize;
     double crossProb;
     double mutProb;
+
+    Selector* selector;
+    Logger* logger;
     Problem* problem;
-    std::random_device randomDevice;
-    std::mt19937 randomGenerator;
+    std::mt19937* randomGenerator;
     std::uniform_int_distribution<int> populationDistribution;
     std::bernoulli_distribution crossoverDistribution;
     std::bernoulli_distribution mutationDistribution;

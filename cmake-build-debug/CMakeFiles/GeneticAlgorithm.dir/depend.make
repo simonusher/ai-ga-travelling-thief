@@ -8,6 +8,7 @@ CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAl
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Individual.h
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Logger.h
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Problem.h
+CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/Selector.h
 CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o: ../src/GeneticAlgorithm.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o: ../include/GeneticAlgorithm/HillClimber.h
@@ -40,6 +41,12 @@ CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o: ../include/GeneticAlgorith
 CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o: ../include/GeneticAlgorithm/TTPProblem.h
 CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o: ../src/TTPProblem.cpp
 
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/Individual.h
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/Problem.h
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/Selector.h
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/TournamentSelector.h
+CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o: ../src/TournamentSelector.cpp
+
 CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o: ../include/GeneticAlgorithm/VectorHasher.h
 CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o: ../src/VectorHasher.cpp
 
@@ -50,7 +57,9 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Indi
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/KnapsackItem.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Logger.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Problem.h
+CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/Selector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/TTPProblem.h
+CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/TournamentSelector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/VectorHasher.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../src/main.cpp
 

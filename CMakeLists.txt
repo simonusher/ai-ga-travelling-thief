@@ -23,4 +23,4 @@ add_executable(
         src/RandomSearch.cpp
         include/GeneticAlgorithm/RandomSearch.h
         include/GeneticAlgorithm/VectorHasher.h
-        src/VectorHasher.cpp)
+        src/VectorHasher.cpp include/GeneticAlgorithm/Selector.h src/TournamentSelector.cpp include/GeneticAlgorithm/TournamentSelector.h)
