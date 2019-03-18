@@ -11,6 +11,7 @@
 #include "VectorHasher.h"
 #include <unordered_set>
 #include <vector>
+
 using std::vector;
 using std::unordered_set;
 

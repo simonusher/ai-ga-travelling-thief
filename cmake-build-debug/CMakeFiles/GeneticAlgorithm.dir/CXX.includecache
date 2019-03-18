@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/AllGeneRandomSwapMutator.h
+Mutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Mutator.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/City.h
 cmath
 -
@@ -25,6 +29,8 @@ Logger.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
 Selector.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
+Mutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Mutator.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
 Problem.h
@@ -60,6 +66,10 @@ fstream
 iostream
 -
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Mutator.h
+Individual.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Problem.h
 Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Individual.h
@@ -77,6 +87,10 @@ unordered_set
 -
 vector
 -
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSwapMutator.h
+Mutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Mutator.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Selector.h
 Individual.h
@@ -122,6 +136,10 @@ vector
 cstddef
 -
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/AllGeneRandomSwapMutator.cpp
+../include/GeneticAlgorithm/AllGeneRandomSwapMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/AllGeneRandomSwapMutator.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/City.cpp
 ../include/GeneticAlgorithm/City.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/City.h
@@ -146,9 +164,17 @@ cstddef
 ../include/GeneticAlgorithm/Logger.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Logger.h
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Mutator.cpp
+../include/GeneticAlgorithm/Mutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/Mutator.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSearch.cpp
 ../include/GeneticAlgorithm/RandomSearch.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSearch.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSwapMutator.cpp
+../include/GeneticAlgorithm/RandomSwapMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSwapMutator.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/TTPProblem.cpp
 ../include/GeneticAlgorithm/TTPProblem.h
@@ -175,8 +201,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/HillClimber.h
 ../include/GeneticAlgorithm/TournamentSelector.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/TournamentSelector.h
-chrono
--
-ctime
--
+../include/GeneticAlgorithm/AllGeneRandomSwapMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/AllGeneRandomSwapMutator.h
+../include/GeneticAlgorithm/RandomSwapMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/RandomSwapMutator.h
 

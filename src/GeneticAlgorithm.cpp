@@ -4,19 +4,19 @@
 
 #include "../include/GeneticAlgorithm/GeneticAlgorithm.h"
 
-GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, double mutProb,
-        Problem* problem, Logger *logger, std::mt19937 *randomGenerator, Selector* selector) :
+GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, Problem* problem, Logger *logger,
+        std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator) :
     popSize(popSize),
     crossProb(crossProb),
-    mutProb(mutProb), problem(problem),
+    problem(problem),
     bestOverall(nullptr),
     iterationsPassed(0),
     populationDistribution(std::uniform_int_distribution<int>(0, popSize - 1)),
     crossoverDistribution(std::bernoulli_distribution(crossProb)),
-    mutationDistribution(std::bernoulli_distribution(mutProb)),
     logger(logger),
     randomGenerator(randomGenerator),
-    selector(selector)
+    selector(selector),
+    mutator(mutator)
 {
     initPopulation();
 }
@@ -94,16 +94,7 @@ void GeneticAlgorithm::crossover() {
 }
 
 void GeneticAlgorithm::mutate() {
-    for(int i = 0; i < population.size(); i++){
-//        if(shouldMutate()){
-//            population[i]->mutate(randomGenerator);
-//        }
-        for(int j = 0; j < population[i]->getSolution().size(); j++){
-            if(shouldMutate()){
-                population[i]->swapWithRandom(j, *randomGenerator);
-            }
-        }
-    }
+    mutator->mutate(population);
 }
 
 void GeneticAlgorithm::evaluate() {
@@ -127,9 +118,6 @@ bool GeneticAlgorithm::shouldCross() {
     return crossoverDistribution(*randomGenerator);
 }
 
-bool GeneticAlgorithm::shouldMutate() {
-    return mutationDistribution(*randomGenerator);
-}
 
 std::vector<Individual *> GeneticAlgorithm::pickTwoAtRandom() {
     Individual *p1 = randomFromPopulation();

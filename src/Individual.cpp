@@ -58,7 +58,7 @@ std::vector<Individual *> Individual::crossover(std::mt19937 &randomGenerator, I
     return std::vector<Individual *>{ new Individual(firstSolution), new Individual(secondSolution) };
 }
 
-void Individual::mutate(std::mt19937 randomGenerator) {
+void Individual::mutate(std::mt19937 &randomGenerator) {
     std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
     int firstGeneIndex = geneDistribution(randomGenerator);
     int secondGeneIndex = geneDistribution(randomGenerator);
@@ -86,7 +86,7 @@ void Individual::setEvaluated(bool evaluated) {
     this->evaluated = evaluated;
 }
 
-void Individual::swapWithRandom(int firstGeneIndex, std::mt19937 randomGenerator) {
+void Individual::swapWithRandom(int firstGeneIndex, std::mt19937 &randomGenerator) {
     std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
     int secondGeneIndex = geneDistribution(randomGenerator);
     while(secondGeneIndex == firstGeneIndex){

@@ -5,8 +5,8 @@
 //#include "../include/GeneticAlgorithm/RandomSearch.h"
 #include "../include/GeneticAlgorithm/HillClimber.h"
 #include "../include/GeneticAlgorithm/TournamentSelector.h"
-#include <chrono>
-#include <ctime>
+#include "../include/GeneticAlgorithm/AllGeneRandomSwapMutator.h"
+#include "../include/GeneticAlgorithm/RandomSwapMutator.h"
 
 int main() {
     TTPProblem problem;
@@ -17,14 +17,19 @@ int main() {
     int iterations = 250;
     int popSize = 100;
     int tournamentSize = 15;
-    double mutProb = 0.03;
     double crossProb = 0.8;
 
 
     problem.initialize(filename, ProfitWeightRatio);
     Logger logger(true, problemName + ".txt");
     TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
-    GeneticAlgorithm ga(popSize, crossProb, mutProb, &problem, &logger, &randomGenerator, &selector);
+
+    double mutProb = 0.03;
+    AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);
+//    RandomSwapMutator mutator(mutProb, &randomGenerator);
+
+
+    GeneticAlgorithm ga(popSize, crossProb, &problem, &logger, &randomGenerator, &selector, &mutator);
     ga.run(iterations);
 //    RandomSearch randomSearch(&problem, &logger);
 //    randomSearch.search(1000000);

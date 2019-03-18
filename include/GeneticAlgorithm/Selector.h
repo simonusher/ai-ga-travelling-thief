@@ -12,7 +12,7 @@
 class Selector {
 public:
     Selector(Problem *problem, std::mt19937* randomGenerator) : problem(problem), randomGenerator(randomGenerator) {}
-    ~Selector() = default;
+    virtual ~Selector() = default;
     virtual Individual* selectParent(const std::vector<Individual*>& population) = 0;
     virtual std::vector<Individual*> selectAllParents(const std::vector<Individual*>& population) = 0;
 

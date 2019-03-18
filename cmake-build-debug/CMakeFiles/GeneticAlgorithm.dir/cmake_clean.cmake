@@ -10,6 +10,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o"
   "GeneticAlgorithm.pdb"
   "GeneticAlgorithm"
 )

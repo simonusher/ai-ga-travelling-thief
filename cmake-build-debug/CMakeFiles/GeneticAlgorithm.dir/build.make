@@ -321,6 +321,78 @@ CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o.provides: CMakeFile
 CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o
 
 
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o: ../src/RandomSwapMutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSwapMutator.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/RandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o
+
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o: ../src/Mutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Mutator.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Mutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/Mutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o
+
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o: ../src/AllGeneRandomSwapMutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/AllGeneRandomSwapMutator.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/AllGeneRandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.i
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/AllGeneRandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.s
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.requires:
+
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.requires
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.provides
+
+CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o
+
+
 # Object files for target GeneticAlgorithm
 GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" \
@@ -333,7 +405,10 @@ GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o" \
-"CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o"
+"CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o" \
+"CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o"
 
 # External object files for target GeneticAlgorithm
 GeneticAlgorithm_EXTERNAL_OBJECTS =
@@ -349,9 +424,12 @@ GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/build.make
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable GeneticAlgorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable GeneticAlgorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeneticAlgorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +448,9 @@ CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/Hi
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o.requires
 
 .PHONY : CMakeFiles/GeneticAlgorithm.dir/requires
 

@@ -12,12 +12,13 @@
 #include "Problem.h"
 #include "Logger.h"
 #include "Selector.h"
+#include "Mutator.h"
 
 
 class GeneticAlgorithm {
 public:
-    GeneticAlgorithm(int popSize, double crossProb, double mutProb,
-            Problem *problem, Logger *logger, std::mt19937 *randomGenerator, Selector* selector);
+    GeneticAlgorithm(int popSize, double crossProb, Problem *problem, Logger *logger,
+            std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator);
     ~GeneticAlgorithm();
     void run(int iters);
     double getBestFitness();
@@ -31,7 +32,6 @@ private:
     void evaluate();
 
     bool shouldCross();
-    bool shouldMutate();
     Individual* randomFromPopulation();
 
     std::vector<Individual*> pickTwoAtRandom();
@@ -48,9 +48,9 @@ private:
     double currentWorstFitness;
     double currentAverageFitness;
     double crossProb;
-    double mutProb;
 
     Selector* selector;
+    Mutator* mutator;
     Logger* logger;
     Problem* problem;
     std::mt19937* randomGenerator;

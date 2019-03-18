@@ -14,8 +14,8 @@ class Individual {
 public:
     explicit Individual(std::vector<int>& solution);
     virtual std::vector<Individual*> crossover(std::mt19937 &randomGenerator, Individual& other);
-    virtual void mutate(std::mt19937 randomGenerator);
-    virtual void swapWithRandom(int firstGeneIndex, std::mt19937 randomGenerator);
+    virtual void mutate(std::mt19937& randomGenerator);
+    virtual void swapWithRandom(int firstGeneIndex, std::mt19937& randomGenerator);
     virtual void swapGenes(int firstGeneIndex, int secondGeneIndex);
 
     double getFitness() const;
