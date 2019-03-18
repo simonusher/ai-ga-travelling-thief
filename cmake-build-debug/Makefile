@@ -123,357 +123,6 @@ GeneticAlgorithm/fast:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/build
 .PHONY : GeneticAlgorithm/fast
 
-src/AllGeneRandomSwapMutator.o: src/AllGeneRandomSwapMutator.cpp.o
-
-.PHONY : src/AllGeneRandomSwapMutator.o
-
-# target to build an object file
-src/AllGeneRandomSwapMutator.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o
-.PHONY : src/AllGeneRandomSwapMutator.cpp.o
-
-src/AllGeneRandomSwapMutator.i: src/AllGeneRandomSwapMutator.cpp.i
-
-.PHONY : src/AllGeneRandomSwapMutator.i
-
-# target to preprocess a source file
-src/AllGeneRandomSwapMutator.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.i
-.PHONY : src/AllGeneRandomSwapMutator.cpp.i
-
-src/AllGeneRandomSwapMutator.s: src/AllGeneRandomSwapMutator.cpp.s
-
-.PHONY : src/AllGeneRandomSwapMutator.s
-
-# target to generate assembly for a file
-src/AllGeneRandomSwapMutator.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.s
-.PHONY : src/AllGeneRandomSwapMutator.cpp.s
-
-src/City.o: src/City.cpp.o
-
-.PHONY : src/City.o
-
-# target to build an object file
-src/City.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o
-.PHONY : src/City.cpp.o
-
-src/City.i: src/City.cpp.i
-
-.PHONY : src/City.i
-
-# target to preprocess a source file
-src/City.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.i
-.PHONY : src/City.cpp.i
-
-src/City.s: src/City.cpp.s
-
-.PHONY : src/City.s
-
-# target to generate assembly for a file
-src/City.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.s
-.PHONY : src/City.cpp.s
-
-src/GeneticAlgorithm.o: src/GeneticAlgorithm.cpp.o
-
-.PHONY : src/GeneticAlgorithm.o
-
-# target to build an object file
-src/GeneticAlgorithm.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o
-.PHONY : src/GeneticAlgorithm.cpp.o
-
-src/GeneticAlgorithm.i: src/GeneticAlgorithm.cpp.i
-
-.PHONY : src/GeneticAlgorithm.i
-
-# target to preprocess a source file
-src/GeneticAlgorithm.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.i
-.PHONY : src/GeneticAlgorithm.cpp.i
-
-src/GeneticAlgorithm.s: src/GeneticAlgorithm.cpp.s
-
-.PHONY : src/GeneticAlgorithm.s
-
-# target to generate assembly for a file
-src/GeneticAlgorithm.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.s
-.PHONY : src/GeneticAlgorithm.cpp.s
-
-src/HillClimber.o: src/HillClimber.cpp.o
-
-.PHONY : src/HillClimber.o
-
-# target to build an object file
-src/HillClimber.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o
-.PHONY : src/HillClimber.cpp.o
-
-src/HillClimber.i: src/HillClimber.cpp.i
-
-.PHONY : src/HillClimber.i
-
-# target to preprocess a source file
-src/HillClimber.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.i
-.PHONY : src/HillClimber.cpp.i
-
-src/HillClimber.s: src/HillClimber.cpp.s
-
-.PHONY : src/HillClimber.s
-
-# target to generate assembly for a file
-src/HillClimber.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.s
-.PHONY : src/HillClimber.cpp.s
-
-src/Individual.o: src/Individual.cpp.o
-
-.PHONY : src/Individual.o
-
-# target to build an object file
-src/Individual.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o
-.PHONY : src/Individual.cpp.o
-
-src/Individual.i: src/Individual.cpp.i
-
-.PHONY : src/Individual.i
-
-# target to preprocess a source file
-src/Individual.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.i
-.PHONY : src/Individual.cpp.i
-
-src/Individual.s: src/Individual.cpp.s
-
-.PHONY : src/Individual.s
-
-# target to generate assembly for a file
-src/Individual.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.s
-.PHONY : src/Individual.cpp.s
-
-src/KnapsackItem.o: src/KnapsackItem.cpp.o
-
-.PHONY : src/KnapsackItem.o
-
-# target to build an object file
-src/KnapsackItem.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o
-.PHONY : src/KnapsackItem.cpp.o
-
-src/KnapsackItem.i: src/KnapsackItem.cpp.i
-
-.PHONY : src/KnapsackItem.i
-
-# target to preprocess a source file
-src/KnapsackItem.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.i
-.PHONY : src/KnapsackItem.cpp.i
-
-src/KnapsackItem.s: src/KnapsackItem.cpp.s
-
-.PHONY : src/KnapsackItem.s
-
-# target to generate assembly for a file
-src/KnapsackItem.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.s
-.PHONY : src/KnapsackItem.cpp.s
-
-src/Logger.o: src/Logger.cpp.o
-
-.PHONY : src/Logger.o
-
-# target to build an object file
-src/Logger.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o
-.PHONY : src/Logger.cpp.o
-
-src/Logger.i: src/Logger.cpp.i
-
-.PHONY : src/Logger.i
-
-# target to preprocess a source file
-src/Logger.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.i
-.PHONY : src/Logger.cpp.i
-
-src/Logger.s: src/Logger.cpp.s
-
-.PHONY : src/Logger.s
-
-# target to generate assembly for a file
-src/Logger.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.s
-.PHONY : src/Logger.cpp.s
-
-src/Mutator.o: src/Mutator.cpp.o
-
-.PHONY : src/Mutator.o
-
-# target to build an object file
-src/Mutator.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o
-.PHONY : src/Mutator.cpp.o
-
-src/Mutator.i: src/Mutator.cpp.i
-
-.PHONY : src/Mutator.i
-
-# target to preprocess a source file
-src/Mutator.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.i
-.PHONY : src/Mutator.cpp.i
-
-src/Mutator.s: src/Mutator.cpp.s
-
-.PHONY : src/Mutator.s
-
-# target to generate assembly for a file
-src/Mutator.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.s
-.PHONY : src/Mutator.cpp.s
-
-src/RandomSearch.o: src/RandomSearch.cpp.o
-
-.PHONY : src/RandomSearch.o
-
-# target to build an object file
-src/RandomSearch.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o
-.PHONY : src/RandomSearch.cpp.o
-
-src/RandomSearch.i: src/RandomSearch.cpp.i
-
-.PHONY : src/RandomSearch.i
-
-# target to preprocess a source file
-src/RandomSearch.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.i
-.PHONY : src/RandomSearch.cpp.i
-
-src/RandomSearch.s: src/RandomSearch.cpp.s
-
-.PHONY : src/RandomSearch.s
-
-# target to generate assembly for a file
-src/RandomSearch.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.s
-.PHONY : src/RandomSearch.cpp.s
-
-src/RandomSwapMutator.o: src/RandomSwapMutator.cpp.o
-
-.PHONY : src/RandomSwapMutator.o
-
-# target to build an object file
-src/RandomSwapMutator.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o
-.PHONY : src/RandomSwapMutator.cpp.o
-
-src/RandomSwapMutator.i: src/RandomSwapMutator.cpp.i
-
-.PHONY : src/RandomSwapMutator.i
-
-# target to preprocess a source file
-src/RandomSwapMutator.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.i
-.PHONY : src/RandomSwapMutator.cpp.i
-
-src/RandomSwapMutator.s: src/RandomSwapMutator.cpp.s
-
-.PHONY : src/RandomSwapMutator.s
-
-# target to generate assembly for a file
-src/RandomSwapMutator.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.s
-.PHONY : src/RandomSwapMutator.cpp.s
-
-src/TTPProblem.o: src/TTPProblem.cpp.o
-
-.PHONY : src/TTPProblem.o
-
-# target to build an object file
-src/TTPProblem.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o
-.PHONY : src/TTPProblem.cpp.o
-
-src/TTPProblem.i: src/TTPProblem.cpp.i
-
-.PHONY : src/TTPProblem.i
-
-# target to preprocess a source file
-src/TTPProblem.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.i
-.PHONY : src/TTPProblem.cpp.i
-
-src/TTPProblem.s: src/TTPProblem.cpp.s
-
-.PHONY : src/TTPProblem.s
-
-# target to generate assembly for a file
-src/TTPProblem.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.s
-.PHONY : src/TTPProblem.cpp.s
-
-src/TournamentSelector.o: src/TournamentSelector.cpp.o
-
-.PHONY : src/TournamentSelector.o
-
-# target to build an object file
-src/TournamentSelector.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o
-.PHONY : src/TournamentSelector.cpp.o
-
-src/TournamentSelector.i: src/TournamentSelector.cpp.i
-
-.PHONY : src/TournamentSelector.i
-
-# target to preprocess a source file
-src/TournamentSelector.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.i
-.PHONY : src/TournamentSelector.cpp.i
-
-src/TournamentSelector.s: src/TournamentSelector.cpp.s
-
-.PHONY : src/TournamentSelector.s
-
-# target to generate assembly for a file
-src/TournamentSelector.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.s
-.PHONY : src/TournamentSelector.cpp.s
-
-src/VectorHasher.o: src/VectorHasher.cpp.o
-
-.PHONY : src/VectorHasher.o
-
-# target to build an object file
-src/VectorHasher.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o
-.PHONY : src/VectorHasher.cpp.o
-
-src/VectorHasher.i: src/VectorHasher.cpp.i
-
-.PHONY : src/VectorHasher.i
-
-# target to preprocess a source file
-src/VectorHasher.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.i
-.PHONY : src/VectorHasher.cpp.i
-
-src/VectorHasher.s: src/VectorHasher.cpp.s
-
-.PHONY : src/VectorHasher.s
-
-# target to generate assembly for a file
-src/VectorHasher.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.s
-.PHONY : src/VectorHasher.cpp.s
-
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -501,6 +150,357 @@ src/main.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/operators/AllGeneRandomSwapMutator.o: src/operators/AllGeneRandomSwapMutator.cpp.o
+
+.PHONY : src/operators/AllGeneRandomSwapMutator.o
+
+# target to build an object file
+src/operators/AllGeneRandomSwapMutator.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o
+.PHONY : src/operators/AllGeneRandomSwapMutator.cpp.o
+
+src/operators/AllGeneRandomSwapMutator.i: src/operators/AllGeneRandomSwapMutator.cpp.i
+
+.PHONY : src/operators/AllGeneRandomSwapMutator.i
+
+# target to preprocess a source file
+src/operators/AllGeneRandomSwapMutator.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.i
+.PHONY : src/operators/AllGeneRandomSwapMutator.cpp.i
+
+src/operators/AllGeneRandomSwapMutator.s: src/operators/AllGeneRandomSwapMutator.cpp.s
+
+.PHONY : src/operators/AllGeneRandomSwapMutator.s
+
+# target to generate assembly for a file
+src/operators/AllGeneRandomSwapMutator.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s
+.PHONY : src/operators/AllGeneRandomSwapMutator.cpp.s
+
+src/operators/Mutator.o: src/operators/Mutator.cpp.o
+
+.PHONY : src/operators/Mutator.o
+
+# target to build an object file
+src/operators/Mutator.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o
+.PHONY : src/operators/Mutator.cpp.o
+
+src/operators/Mutator.i: src/operators/Mutator.cpp.i
+
+.PHONY : src/operators/Mutator.i
+
+# target to preprocess a source file
+src/operators/Mutator.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.i
+.PHONY : src/operators/Mutator.cpp.i
+
+src/operators/Mutator.s: src/operators/Mutator.cpp.s
+
+.PHONY : src/operators/Mutator.s
+
+# target to generate assembly for a file
+src/operators/Mutator.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.s
+.PHONY : src/operators/Mutator.cpp.s
+
+src/operators/RandomSwapMutator.o: src/operators/RandomSwapMutator.cpp.o
+
+.PHONY : src/operators/RandomSwapMutator.o
+
+# target to build an object file
+src/operators/RandomSwapMutator.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o
+.PHONY : src/operators/RandomSwapMutator.cpp.o
+
+src/operators/RandomSwapMutator.i: src/operators/RandomSwapMutator.cpp.i
+
+.PHONY : src/operators/RandomSwapMutator.i
+
+# target to preprocess a source file
+src/operators/RandomSwapMutator.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.i
+.PHONY : src/operators/RandomSwapMutator.cpp.i
+
+src/operators/RandomSwapMutator.s: src/operators/RandomSwapMutator.cpp.s
+
+.PHONY : src/operators/RandomSwapMutator.s
+
+# target to generate assembly for a file
+src/operators/RandomSwapMutator.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s
+.PHONY : src/operators/RandomSwapMutator.cpp.s
+
+src/operators/TournamentSelector.o: src/operators/TournamentSelector.cpp.o
+
+.PHONY : src/operators/TournamentSelector.o
+
+# target to build an object file
+src/operators/TournamentSelector.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o
+.PHONY : src/operators/TournamentSelector.cpp.o
+
+src/operators/TournamentSelector.i: src/operators/TournamentSelector.cpp.i
+
+.PHONY : src/operators/TournamentSelector.i
+
+# target to preprocess a source file
+src/operators/TournamentSelector.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.i
+.PHONY : src/operators/TournamentSelector.cpp.i
+
+src/operators/TournamentSelector.s: src/operators/TournamentSelector.cpp.s
+
+.PHONY : src/operators/TournamentSelector.s
+
+# target to generate assembly for a file
+src/operators/TournamentSelector.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.s
+.PHONY : src/operators/TournamentSelector.cpp.s
+
+src/optimizers/GeneticAlgorithm.o: src/optimizers/GeneticAlgorithm.cpp.o
+
+.PHONY : src/optimizers/GeneticAlgorithm.o
+
+# target to build an object file
+src/optimizers/GeneticAlgorithm.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o
+.PHONY : src/optimizers/GeneticAlgorithm.cpp.o
+
+src/optimizers/GeneticAlgorithm.i: src/optimizers/GeneticAlgorithm.cpp.i
+
+.PHONY : src/optimizers/GeneticAlgorithm.i
+
+# target to preprocess a source file
+src/optimizers/GeneticAlgorithm.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.i
+.PHONY : src/optimizers/GeneticAlgorithm.cpp.i
+
+src/optimizers/GeneticAlgorithm.s: src/optimizers/GeneticAlgorithm.cpp.s
+
+.PHONY : src/optimizers/GeneticAlgorithm.s
+
+# target to generate assembly for a file
+src/optimizers/GeneticAlgorithm.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
+.PHONY : src/optimizers/GeneticAlgorithm.cpp.s
+
+src/optimizers/HillClimber.o: src/optimizers/HillClimber.cpp.o
+
+.PHONY : src/optimizers/HillClimber.o
+
+# target to build an object file
+src/optimizers/HillClimber.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o
+.PHONY : src/optimizers/HillClimber.cpp.o
+
+src/optimizers/HillClimber.i: src/optimizers/HillClimber.cpp.i
+
+.PHONY : src/optimizers/HillClimber.i
+
+# target to preprocess a source file
+src/optimizers/HillClimber.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.i
+.PHONY : src/optimizers/HillClimber.cpp.i
+
+src/optimizers/HillClimber.s: src/optimizers/HillClimber.cpp.s
+
+.PHONY : src/optimizers/HillClimber.s
+
+# target to generate assembly for a file
+src/optimizers/HillClimber.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.s
+.PHONY : src/optimizers/HillClimber.cpp.s
+
+src/optimizers/RandomSearch.o: src/optimizers/RandomSearch.cpp.o
+
+.PHONY : src/optimizers/RandomSearch.o
+
+# target to build an object file
+src/optimizers/RandomSearch.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o
+.PHONY : src/optimizers/RandomSearch.cpp.o
+
+src/optimizers/RandomSearch.i: src/optimizers/RandomSearch.cpp.i
+
+.PHONY : src/optimizers/RandomSearch.i
+
+# target to preprocess a source file
+src/optimizers/RandomSearch.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.i
+.PHONY : src/optimizers/RandomSearch.cpp.i
+
+src/optimizers/RandomSearch.s: src/optimizers/RandomSearch.cpp.s
+
+.PHONY : src/optimizers/RandomSearch.s
+
+# target to generate assembly for a file
+src/optimizers/RandomSearch.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.s
+.PHONY : src/optimizers/RandomSearch.cpp.s
+
+src/problem/City.o: src/problem/City.cpp.o
+
+.PHONY : src/problem/City.o
+
+# target to build an object file
+src/problem/City.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o
+.PHONY : src/problem/City.cpp.o
+
+src/problem/City.i: src/problem/City.cpp.i
+
+.PHONY : src/problem/City.i
+
+# target to preprocess a source file
+src/problem/City.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.i
+.PHONY : src/problem/City.cpp.i
+
+src/problem/City.s: src/problem/City.cpp.s
+
+.PHONY : src/problem/City.s
+
+# target to generate assembly for a file
+src/problem/City.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.s
+.PHONY : src/problem/City.cpp.s
+
+src/problem/Individual.o: src/problem/Individual.cpp.o
+
+.PHONY : src/problem/Individual.o
+
+# target to build an object file
+src/problem/Individual.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o
+.PHONY : src/problem/Individual.cpp.o
+
+src/problem/Individual.i: src/problem/Individual.cpp.i
+
+.PHONY : src/problem/Individual.i
+
+# target to preprocess a source file
+src/problem/Individual.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.i
+.PHONY : src/problem/Individual.cpp.i
+
+src/problem/Individual.s: src/problem/Individual.cpp.s
+
+.PHONY : src/problem/Individual.s
+
+# target to generate assembly for a file
+src/problem/Individual.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.s
+.PHONY : src/problem/Individual.cpp.s
+
+src/problem/KnapsackItem.o: src/problem/KnapsackItem.cpp.o
+
+.PHONY : src/problem/KnapsackItem.o
+
+# target to build an object file
+src/problem/KnapsackItem.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o
+.PHONY : src/problem/KnapsackItem.cpp.o
+
+src/problem/KnapsackItem.i: src/problem/KnapsackItem.cpp.i
+
+.PHONY : src/problem/KnapsackItem.i
+
+# target to preprocess a source file
+src/problem/KnapsackItem.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.i
+.PHONY : src/problem/KnapsackItem.cpp.i
+
+src/problem/KnapsackItem.s: src/problem/KnapsackItem.cpp.s
+
+.PHONY : src/problem/KnapsackItem.s
+
+# target to generate assembly for a file
+src/problem/KnapsackItem.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.s
+.PHONY : src/problem/KnapsackItem.cpp.s
+
+src/problem/TTPProblem.o: src/problem/TTPProblem.cpp.o
+
+.PHONY : src/problem/TTPProblem.o
+
+# target to build an object file
+src/problem/TTPProblem.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o
+.PHONY : src/problem/TTPProblem.cpp.o
+
+src/problem/TTPProblem.i: src/problem/TTPProblem.cpp.i
+
+.PHONY : src/problem/TTPProblem.i
+
+# target to preprocess a source file
+src/problem/TTPProblem.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.i
+.PHONY : src/problem/TTPProblem.cpp.i
+
+src/problem/TTPProblem.s: src/problem/TTPProblem.cpp.s
+
+.PHONY : src/problem/TTPProblem.s
+
+# target to generate assembly for a file
+src/problem/TTPProblem.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.s
+.PHONY : src/problem/TTPProblem.cpp.s
+
+src/util/Logger.o: src/util/Logger.cpp.o
+
+.PHONY : src/util/Logger.o
+
+# target to build an object file
+src/util/Logger.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o
+.PHONY : src/util/Logger.cpp.o
+
+src/util/Logger.i: src/util/Logger.cpp.i
+
+.PHONY : src/util/Logger.i
+
+# target to preprocess a source file
+src/util/Logger.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.i
+.PHONY : src/util/Logger.cpp.i
+
+src/util/Logger.s: src/util/Logger.cpp.s
+
+.PHONY : src/util/Logger.s
+
+# target to generate assembly for a file
+src/util/Logger.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.s
+.PHONY : src/util/Logger.cpp.s
+
+src/util/VectorHasher.o: src/util/VectorHasher.cpp.o
+
+.PHONY : src/util/VectorHasher.o
+
+# target to build an object file
+src/util/VectorHasher.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o
+.PHONY : src/util/VectorHasher.cpp.o
+
+src/util/VectorHasher.i: src/util/VectorHasher.cpp.i
+
+.PHONY : src/util/VectorHasher.i
+
+# target to preprocess a source file
+src/util/VectorHasher.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.i
+.PHONY : src/util/VectorHasher.cpp.i
+
+src/util/VectorHasher.s: src/util/VectorHasher.cpp.s
+
+.PHONY : src/util/VectorHasher.s
+
+# target to generate assembly for a file
+src/util/VectorHasher.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.s
+.PHONY : src/util/VectorHasher.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -510,48 +510,48 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... GeneticAlgorithm"
 	@echo "... edit_cache"
-	@echo "... src/AllGeneRandomSwapMutator.o"
-	@echo "... src/AllGeneRandomSwapMutator.i"
-	@echo "... src/AllGeneRandomSwapMutator.s"
-	@echo "... src/City.o"
-	@echo "... src/City.i"
-	@echo "... src/City.s"
-	@echo "... src/GeneticAlgorithm.o"
-	@echo "... src/GeneticAlgorithm.i"
-	@echo "... src/GeneticAlgorithm.s"
-	@echo "... src/HillClimber.o"
-	@echo "... src/HillClimber.i"
-	@echo "... src/HillClimber.s"
-	@echo "... src/Individual.o"
-	@echo "... src/Individual.i"
-	@echo "... src/Individual.s"
-	@echo "... src/KnapsackItem.o"
-	@echo "... src/KnapsackItem.i"
-	@echo "... src/KnapsackItem.s"
-	@echo "... src/Logger.o"
-	@echo "... src/Logger.i"
-	@echo "... src/Logger.s"
-	@echo "... src/Mutator.o"
-	@echo "... src/Mutator.i"
-	@echo "... src/Mutator.s"
-	@echo "... src/RandomSearch.o"
-	@echo "... src/RandomSearch.i"
-	@echo "... src/RandomSearch.s"
-	@echo "... src/RandomSwapMutator.o"
-	@echo "... src/RandomSwapMutator.i"
-	@echo "... src/RandomSwapMutator.s"
-	@echo "... src/TTPProblem.o"
-	@echo "... src/TTPProblem.i"
-	@echo "... src/TTPProblem.s"
-	@echo "... src/TournamentSelector.o"
-	@echo "... src/TournamentSelector.i"
-	@echo "... src/TournamentSelector.s"
-	@echo "... src/VectorHasher.o"
-	@echo "... src/VectorHasher.i"
-	@echo "... src/VectorHasher.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/operators/AllGeneRandomSwapMutator.o"
+	@echo "... src/operators/AllGeneRandomSwapMutator.i"
+	@echo "... src/operators/AllGeneRandomSwapMutator.s"
+	@echo "... src/operators/Mutator.o"
+	@echo "... src/operators/Mutator.i"
+	@echo "... src/operators/Mutator.s"
+	@echo "... src/operators/RandomSwapMutator.o"
+	@echo "... src/operators/RandomSwapMutator.i"
+	@echo "... src/operators/RandomSwapMutator.s"
+	@echo "... src/operators/TournamentSelector.o"
+	@echo "... src/operators/TournamentSelector.i"
+	@echo "... src/operators/TournamentSelector.s"
+	@echo "... src/optimizers/GeneticAlgorithm.o"
+	@echo "... src/optimizers/GeneticAlgorithm.i"
+	@echo "... src/optimizers/GeneticAlgorithm.s"
+	@echo "... src/optimizers/HillClimber.o"
+	@echo "... src/optimizers/HillClimber.i"
+	@echo "... src/optimizers/HillClimber.s"
+	@echo "... src/optimizers/RandomSearch.o"
+	@echo "... src/optimizers/RandomSearch.i"
+	@echo "... src/optimizers/RandomSearch.s"
+	@echo "... src/problem/City.o"
+	@echo "... src/problem/City.i"
+	@echo "... src/problem/City.s"
+	@echo "... src/problem/Individual.o"
+	@echo "... src/problem/Individual.i"
+	@echo "... src/problem/Individual.s"
+	@echo "... src/problem/KnapsackItem.o"
+	@echo "... src/problem/KnapsackItem.i"
+	@echo "... src/problem/KnapsackItem.s"
+	@echo "... src/problem/TTPProblem.o"
+	@echo "... src/problem/TTPProblem.i"
+	@echo "... src/problem/TTPProblem.s"
+	@echo "... src/util/Logger.o"
+	@echo "... src/util/Logger.i"
+	@echo "... src/util/Logger.s"
+	@echo "... src/util/VectorHasher.o"
+	@echo "... src/util/VectorHasher.i"
+	@echo "... src/util/VectorHasher.s"
 .PHONY : help
 
 
