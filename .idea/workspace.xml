@@ -12,63 +12,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6015f62-469d-4ce3-8707-0b6c28d4d833" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/AllGeneRandomSwapMutator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/City.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/GeneticAlgorithm.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/HillClimber.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/Individual.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/KnapsackItem.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/Logger.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/Mutator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/RandomSearch.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/RandomSwapMutator.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/TTPProblem.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/TournamentSelector.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/VectorHasher.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/hard_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/hard_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/medium_0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/medium_0.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/AllGeneRandomSwapMutator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/City.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/City.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/GeneticAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/HillClimber.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/HillClimber.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/Individual.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/Individual.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/KnapsackItem.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/KnapsackItem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/Logger.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/util/Logger.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/Mutator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/Mutator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/Problem.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/Problem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/RandomSearch.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/RandomSearch.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/RandomSwapMutator.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/RandomSwapMutator.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/Selector.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/TTPProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/TournamentSelector.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/VectorHasher.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/util/VectorHasher.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AllGeneRandomSwapMutator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/AllGeneRandomSwapMutator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/City.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/City.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GeneticAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HillClimber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimizers/HillClimber.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Individual.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/Individual.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/KnapsackItem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/KnapsackItem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Logger.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Logger.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Mutator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/Mutator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomSearch.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimizers/RandomSearch.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomSwapMutator.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/RandomSwapMutator.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TTPProblem.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/problem/TTPProblem.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TournamentSelector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/TournamentSelector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VectorHasher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/VectorHasher.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operators/TournamentSelector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/TournamentSelector.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -83,11 +43,86 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            <state relative-caret-position="362">
+              <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#238#290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-945">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/problem/Individual.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1224">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="250">
+              <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+              <folding>
+                <element signature="e#132#149#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/Individual.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding>
+                <element signature="e#120#137#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/operators/RouletteSelector.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+              <folding>
+                <element signature="e#132#152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+              <folding>
+                <element signature="e#117#151#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -108,6 +143,8 @@
       <find>weightsInCities</find>
       <find>Vec</find>
       <find>swap</find>
+      <find>selectParent</find>
+      <find>selector</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,6 +195,12 @@
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/GeneticAlgorithm.h" />
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/Problem.h" />
         <option value="$PROJECT_DIR$/src/GeneticAlgorithm.cpp" />
+        <option value="$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h" />
+        <option value="$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h" />
+        <option value="$PROJECT_DIR$/src/operators/TournamentSelector.cpp" />
+        <option value="$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h" />
+        <option value="$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp" />
+        <option value="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
@@ -218,7 +261,20 @@
             <path>
               <item name="GeneticAlgorithm" type="b2602c69:ProjectViewProjectNode" />
               <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GeneticAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GeneticAlgorithm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GeneticAlgorithm" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="operators" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -235,8 +291,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\src\util" />
       <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\src\operators" />
+      <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\src\util" />
       <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\src\problem" />
       <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\src\optimizers" />
       <recent name="E:\Projekty\Studia\semestr_6\si\lab\ga\GeneticAlgorithm\include\GeneticAlgorithm\problem" />
@@ -284,12 +340,21 @@
       <workItem from="1552673993519" duration="3205000" />
       <workItem from="1552685286162" duration="4894000" />
       <workItem from="1552754282121" duration="799000" />
-      <workItem from="1552903646565" duration="7497000" />
+      <workItem from="1552903646565" duration="16625000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67781000" />
+    <option name="totallyTimeSpent" value="76909000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -300,15 +365,15 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.7846482" visible="true" weight="0.23943663" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.46801707" weight="0.31310943" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.74626863" visible="true" weight="0.3716143" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.45735607" weight="0.3900325" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.75959486" weight="0.47887325" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.7121535" weight="0.3846154" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.2153518" side_tool="true" visible="true" weight="0.23943663" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.25373134" side_tool="true" visible="true" weight="0.3716143" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49840087" weight="0.32936078" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -322,6 +387,15 @@
     <option name="version" value="1" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp</url>
+          <line>20</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="CMakeRunConfiguration">
         <watch expression="firstCrossedGenes" />
@@ -332,13 +406,16 @@
         <watch expression="this-&gt;cities[5]" />
         <watch expression="this-&gt;numberOfCities" />
         <watch expression="currentItem-&gt;weight" />
+        <watch expression="population[9]" />
+        <watch expression="population[9]" />
+        <watch expression="parentPopulation[0]" />
+        <watch expression="parentPopulation[0]" />
+        <watch expression="parentPopulation[19]" />
+        <watch expression="parentPopulation[4]" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/TTPIndividual.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/Loader.cpp" />
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/Loader.h" />
     <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/stl_set.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
@@ -423,13 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/stl_vector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="216" column="5" lean-forward="true" selection-start-line="216" selection-start-column="5" selection-end-line="216" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/hashtable_policy.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -439,13 +509,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/Selector.cpp">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/stl_algo.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="3791" column="4" selection-start-line="3791" selection-start-column="4" selection-end-line="3791" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/OneSwapMutator.cpp">
       <provider selected="true" editor-type-id="text-editor" />
@@ -471,13 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem/Individual.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="88" column="69" selection-start-line="88" selection-start-column="69" selection-end-line="88" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -527,16 +583,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/Individual.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="e#120#137#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -598,13 +644,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/operators/RandomSwapMutator.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -612,44 +651,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/operators/TournamentSelector.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9">
-          <caret line="17" column="37" lean-forward="true" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding>
-            <element signature="e#117#140#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/problem/TTPProblem.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
           <caret line="219" lean-forward="true" selection-start-line="219" selection-end-line="219" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
-          <folding>
-            <element signature="e#132#149#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -665,25 +670,124 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/Problem.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="170">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding>
             <element signature="e#118#141#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/operators/RandomSwapMutator.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/random">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/operators/TournamentSelector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="8" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="8" />
+          <folding>
+            <element signature="e#137#158#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/Selector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="12" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+          <folding>
+            <element signature="e#117#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="434" selection-start-line="434" selection-end-line="434" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/Individual.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="e#120#137#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problem/Individual.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+          <folding>
+            <element signature="e#132#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding>
+            <element signature="e#132#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="119" column="56" selection-start-line="119" selection-start-column="56" selection-end-line="119" selection-end-column="56" />
+        <state relative-caret-position="-945">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Packages/CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc/LocalState/rootfs/usr/include/c++/7/bits/stl_algo.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="4846" column="38" lean-forward="true" selection-start-line="4846" selection-start-column="38" selection-end-line="4846" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/operators/RouletteSelector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="362">
+          <caret line="29" column="28" lean-forward="true" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#238#290#0" expanded="true" />

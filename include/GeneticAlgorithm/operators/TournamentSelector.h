@@ -14,11 +14,11 @@ class TournamentSelector : public Selector {
 public:
     TournamentSelector(Problem *problem, int tournamentSize, int populationSize, std::mt19937* randomGenerator);
 
-    Individual *selectParent(const std::vector<Individual *> &population) override;
+    Individual *selectParent(std::vector<Individual *> &population) override;
 
-    std::vector<Individual*> selectAllParents(const std::vector<Individual *> &population) override;
+    std::vector<Individual*> selectAllParents(std::vector<Individual *> &population) override;
 
-    std::vector<Individual*> pickNAtRandom(const std::vector<Individual *> &population);
+    std::vector<Individual*> pickNAtRandom(std::vector<Individual *> &population);
     Individual* performTournament(std::vector<Individual*>& tournees);
 
 

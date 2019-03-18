@@ -18,6 +18,12 @@ Mutator.h
 Mutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h
+algorithm
+-
+Selector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Selector.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Selector.h
 ../problem/Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Individual.h
@@ -153,6 +159,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h
 ../include/GeneticAlgorithm/operators/RandomSwapMutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h
+../include/GeneticAlgorithm/operators/RouletteSelector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h
 ctime
 -
 
@@ -167,6 +175,10 @@ ctime
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp
 ../../include/GeneticAlgorithm/operators/RandomSwapMutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp
+../../include/GeneticAlgorithm/operators/RouletteSelector.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp
 ../../include/GeneticAlgorithm/operators/TournamentSelector.h

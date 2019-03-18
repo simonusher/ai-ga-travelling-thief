@@ -13,8 +13,8 @@ class Selector {
 public:
     Selector(Problem *problem, std::mt19937* randomGenerator) : problem(problem), randomGenerator(randomGenerator) {}
     virtual ~Selector() = default;
-    virtual Individual* selectParent(const std::vector<Individual*>& population) = 0;
-    virtual std::vector<Individual*> selectAllParents(const std::vector<Individual*>& population) = 0;
+    virtual Individual* selectParent(std::vector<Individual*>& population) = 0;
+    virtual std::vector<Individual*> selectAllParents(std::vector<Individual*>& population) = 0;
 
 protected:
     Problem* problem;

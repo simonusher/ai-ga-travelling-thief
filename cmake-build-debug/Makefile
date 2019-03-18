@@ -231,6 +231,33 @@ src/operators/RandomSwapMutator.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s
 .PHONY : src/operators/RandomSwapMutator.cpp.s
 
+src/operators/RouletteSelector.o: src/operators/RouletteSelector.cpp.o
+
+.PHONY : src/operators/RouletteSelector.o
+
+# target to build an object file
+src/operators/RouletteSelector.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o
+.PHONY : src/operators/RouletteSelector.cpp.o
+
+src/operators/RouletteSelector.i: src/operators/RouletteSelector.cpp.i
+
+.PHONY : src/operators/RouletteSelector.i
+
+# target to preprocess a source file
+src/operators/RouletteSelector.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.i
+.PHONY : src/operators/RouletteSelector.cpp.i
+
+src/operators/RouletteSelector.s: src/operators/RouletteSelector.cpp.s
+
+.PHONY : src/operators/RouletteSelector.s
+
+# target to generate assembly for a file
+src/operators/RouletteSelector.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.s
+.PHONY : src/operators/RouletteSelector.cpp.s
+
 src/operators/TournamentSelector.o: src/operators/TournamentSelector.cpp.o
 
 .PHONY : src/operators/TournamentSelector.o
@@ -522,6 +549,9 @@ help:
 	@echo "... src/operators/RandomSwapMutator.o"
 	@echo "... src/operators/RandomSwapMutator.i"
 	@echo "... src/operators/RandomSwapMutator.s"
+	@echo "... src/operators/RouletteSelector.o"
+	@echo "... src/operators/RouletteSelector.i"
+	@echo "... src/operators/RouletteSelector.s"
 	@echo "... src/operators/TournamentSelector.o"
 	@echo "... src/operators/TournamentSelector.i"
 	@echo "... src/operators/TournamentSelector.s"

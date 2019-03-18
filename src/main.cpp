@@ -7,6 +7,7 @@
 #include "../include/GeneticAlgorithm/operators/TournamentSelector.h"
 #include "../include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h"
 #include "../include/GeneticAlgorithm/operators/RandomSwapMutator.h"
+#include "../include/GeneticAlgorithm/operators/RouletteSelector.h"
 
 #include <ctime>
 using namespace std;
@@ -19,17 +20,19 @@ int main() {
     std::string filename(problemName + ".ttp");
     int iterations = 100;
     int popSize = 100;
-    int tournamentSize = 15;
     double crossProb = 0.7;
 
 
     problem.initialize(filename, ProfitWeightRatio);
     Logger logger(true, problemName + ".txt");
-    TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
 
-    double mutProb = 0.01;
-//    double mutProb = 0.3;
+    int tournamentSize = 15;
+    TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
+//    RouletteSelector selector(&problem, &randomGenerator);
+
+    double mutProb = 0.015;
     AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);
+//    double mutProb = 0.3;
 //    RandomSwapMutator mutator(mutProb, &randomGenerator);
 
     clock_t begin = clock();

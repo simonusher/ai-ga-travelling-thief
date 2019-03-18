@@ -4,6 +4,7 @@
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/Mutator.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/RandomSwapMutator.h
+CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/RouletteSelector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/Selector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/TournamentSelector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
@@ -30,6 +31,12 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: ../includ
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: ../include/GeneticAlgorithm/operators/RandomSwapMutator.h
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: ../include/GeneticAlgorithm/problem/Individual.h
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: ../src/operators/RandomSwapMutator.cpp
+
+CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../include/GeneticAlgorithm/operators/RouletteSelector.h
+CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../include/GeneticAlgorithm/operators/Selector.h
+CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../include/GeneticAlgorithm/problem/Individual.h
+CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../include/GeneticAlgorithm/problem/Problem.h
+CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../src/operators/RouletteSelector.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/operators/Selector.h
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o: ../include/GeneticAlgorithm/operators/TournamentSelector.h
