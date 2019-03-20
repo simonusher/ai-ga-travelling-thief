@@ -10,6 +10,7 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/oper
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/GreedyTTP.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/HillClimber.h
+CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/RandomSearch.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/problem/City.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/problem/Individual.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/problem/KnapsackItem.h

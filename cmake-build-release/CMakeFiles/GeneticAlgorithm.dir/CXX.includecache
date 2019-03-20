@@ -157,6 +157,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/TTPProblem.h
 ../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
+../include/GeneticAlgorithm/optimizers/RandomSearch.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/RandomSearch.h
 ../include/GeneticAlgorithm/optimizers/HillClimber.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h
 ../include/GeneticAlgorithm/operators/TournamentSelector.h

@@ -26,6 +26,7 @@ private:
     int tournamentSize;
     int populationSize;
     std::vector<int> populationIndices;
+    std::uniform_int_distribution<int> populationDistribution;
 };
 
 

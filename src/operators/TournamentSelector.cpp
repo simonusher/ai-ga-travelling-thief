@@ -8,7 +8,8 @@ TournamentSelector::TournamentSelector(Problem *problem, int tournamentSize, int
     Selector(problem, randomGenerator),
     tournamentSize(tournamentSize),
     populationSize(populationSize),
-    populationIndices(populationSize)
+    populationIndices(populationSize),
+    populationDistribution(0, populationSize - 1)
 {
     std::iota(populationIndices.begin(), populationIndices.end(), 0);
 }
@@ -29,10 +30,12 @@ std::vector<Individual*> TournamentSelector::selectAllParents(std::vector<Indivi
 }
 
 std::vector<Individual*> TournamentSelector::pickNAtRandom(std::vector<Individual *> &population) {
-    std::shuffle(populationIndices.begin(), populationIndices.end(), *randomGenerator);
+//    std::shuffle(populationIndices.begin(), populationIndices.end(), *randomGenerator);
     std::vector<Individual*> randomSolutions(tournamentSize);
     for(int i = 0; i < tournamentSize; i++){
-        randomSolutions[i] = population[populationIndices[i]];
+//        randomSolutions[i] = population[populationIndices[i]];
+        int index = populationDistribution(*randomGenerator);
+        randomSolutions[i] = population[index];
     }
     return randomSolutions;
 }
