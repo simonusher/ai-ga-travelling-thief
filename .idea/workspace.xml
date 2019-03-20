@@ -12,15 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6015f62-469d-4ce3-8707-0b6c28d4d833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/easy_1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/Problem.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/Problem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/optimizers/HillClimber.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/optimizers/HillClimber.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="a6015f62-469d-4ce3-8707-0b6c28d4d833" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,10 +28,19 @@
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="487">
-              <caret line="126" column="50" selection-start-line="126" selection-start-column="50" selection-end-line="126" selection-end-column="50" />
+              <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/optimizers/RandomSearch.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -372,12 +373,12 @@
       <workItem from="1553082536353" duration="3935000" />
       <workItem from="1553108370390" duration="74000" />
       <workItem from="1553108462869" duration="15000" />
-      <workItem from="1553108650038" duration="14293000" />
+      <workItem from="1553108650038" duration="15210000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97853000" />
+    <option name="totallyTimeSpent" value="98770000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -392,20 +393,20 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30277187" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30277187" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.619403" visible="true" weight="0.29144096" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61727077" visible="true" weight="0.29144096" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.44936034" weight="0.3900325" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5772921" weight="0.3846154" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49733475" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.38059703" side_tool="true" visible="true" weight="0.29144096" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5751599" weight="0.3846154" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4968017" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3827292" side_tool="true" visible="true" weight="0.29144096" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49573562" weight="0.24918744" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -780,13 +781,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/optimizers/RandomSearch.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/RandomSearch.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="283">
@@ -797,10 +791,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/optimizers/RandomSearch.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="487">
-          <caret line="126" column="50" selection-start-line="126" selection-start-column="50" selection-end-line="126" selection-end-column="50" />
+          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
