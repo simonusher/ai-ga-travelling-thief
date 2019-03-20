@@ -19,6 +19,7 @@ public:
     virtual bool operator()(Individual *i1, Individual *i2) = 0;
     virtual bool compareFitnesses(double firstFitness, double secondFitness) = 0;
     virtual bool fitnessStrictlyBetter(double firstFitness, double secondFitness) = 0;
+    virtual int getProblemSize() = 0;
 };
 
 

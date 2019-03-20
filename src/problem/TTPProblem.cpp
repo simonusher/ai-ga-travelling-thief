@@ -217,3 +217,7 @@ bool TTPProblem::fitnessStrictlyBetter(double firstFitness, double secondFitness
 bool TTPProblem::operator()(Individual *i1, Individual *i2) {
     return compareSolutions(i1, i2);
 }
+
+int TTPProblem::getProblemSize() {
+    return numberOfCities;
+}

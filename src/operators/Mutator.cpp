@@ -7,7 +7,7 @@
 Mutator::Mutator(double mutProb, std::mt19937 *randomGenerator):
 mutProb(mutProb),
 randomGenerator(randomGenerator),
-mutationDistribution(std::bernoulli_distribution(mutProb)){}
+mutationDistribution(mutProb){}
 
 bool Mutator::shouldMutate() {
     return mutationDistribution(*randomGenerator);

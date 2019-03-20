@@ -38,6 +38,8 @@ public:
     bool compareFitnesses(double firstFitness, double secondFitness) override;
     bool fitnessStrictlyBetter(double firstFitness, double secondFitness) override;
 
+    int getProblemSize() override;
+
     double selectedItemsWeight;
     double selectedItemsProfit;
     int getFitnessFunctionEvaluations();

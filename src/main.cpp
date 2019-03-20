@@ -27,8 +27,8 @@ int main() {
     Logger logger(true, problemName + ".txt");
 
     int tournamentSize = 100;
-    TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
-//    RouletteSelector selector(&problem, &randomGenerator);
+//    TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
+    RouletteSelector selector(&problem, &randomGenerator);
 
 //    double mutProb = 0.01;
 //    AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);

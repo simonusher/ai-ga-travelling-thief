@@ -312,6 +312,33 @@ src/optimizers/GeneticAlgorithm.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
 .PHONY : src/optimizers/GeneticAlgorithm.cpp.s
 
+src/optimizers/Greedy.o: src/optimizers/Greedy.cpp.o
+
+.PHONY : src/optimizers/Greedy.o
+
+# target to build an object file
+src/optimizers/Greedy.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o
+.PHONY : src/optimizers/Greedy.cpp.o
+
+src/optimizers/Greedy.i: src/optimizers/Greedy.cpp.i
+
+.PHONY : src/optimizers/Greedy.i
+
+# target to preprocess a source file
+src/optimizers/Greedy.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.i
+.PHONY : src/optimizers/Greedy.cpp.i
+
+src/optimizers/Greedy.s: src/optimizers/Greedy.cpp.s
+
+.PHONY : src/optimizers/Greedy.s
+
+# target to generate assembly for a file
+src/optimizers/Greedy.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.s
+.PHONY : src/optimizers/Greedy.cpp.s
+
 src/optimizers/HillClimber.o: src/optimizers/HillClimber.cpp.o
 
 .PHONY : src/optimizers/HillClimber.o
@@ -558,6 +585,9 @@ help:
 	@echo "... src/optimizers/GeneticAlgorithm.o"
 	@echo "... src/optimizers/GeneticAlgorithm.i"
 	@echo "... src/optimizers/GeneticAlgorithm.s"
+	@echo "... src/optimizers/Greedy.o"
+	@echo "... src/optimizers/Greedy.i"
+	@echo "... src/optimizers/Greedy.s"
 	@echo "... src/optimizers/HillClimber.o"
 	@echo "... src/optimizers/HillClimber.i"
 	@echo "... src/optimizers/HillClimber.s"

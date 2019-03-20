@@ -8,7 +8,7 @@ TournamentSelector::TournamentSelector(Problem *problem, int tournamentSize, int
     Selector(problem, randomGenerator),
     tournamentSize(tournamentSize),
     populationSize(populationSize),
-    populationIndices(std::vector<int>(populationSize))
+    populationIndices(populationSize)
 {
     std::iota(populationIndices.begin(), populationIndices.end(), 0);
 }
