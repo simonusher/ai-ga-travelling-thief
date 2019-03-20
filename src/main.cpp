@@ -13,45 +13,116 @@
 #include <ctime>
 using namespace std;
 
+void runHillClimberTests(std::vector<std::string> fileNames, int numberOfTests, int numberOfIndividuals){
+    for(int j = 0; j < fileNames.size(); j++){
+        std::string problemName(fileNames[j]);
+        std::string fileName(fileNames[j] + ".ttp");
+        for(int i = 0; i < numberOfTests; i++){
+            TTPProblem problem;
+            Logger logger(true, "results/hc/" + problemName + "/" + std::to_string(i) + ".csv");
+
+            problem.initialize(fileName, ProfitWeightRatio);
+
+            clock_t begin = clock();
+            HillClimber hillClimber(&problem, &logger);
+            hillClimber.hillClimb(numberOfIndividuals);
+            clock_t end = clock();
+            double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+            std::cout << "elapsed secs: " << elapsed_secs << std::endl;
+            std::cout << problem.getFitnessFunctionEvaluations();
+            logger.close();
+        }
+    }
+}
+
+void runRandomSearchTests(std::vector<std::string> fileNames, int numberOfTests, int numberOfIndividuals){
+    for(int j = 0; j < fileNames.size(); j++){
+        std::string problemName(fileNames[j]);
+        std::string fileName(fileNames[j] + ".ttp");
+        for(int i = 0; i < numberOfTests; i++){
+            TTPProblem problem;
+            Logger logger(true, "results/rs/" + problemName + "/" + std::to_string(i) + ".csv");
+
+            problem.initialize(fileName, ProfitWeightRatio);
+
+            clock_t begin = clock();
+            RandomSearch randomSearch(&problem, &logger);
+            randomSearch.search(numberOfIndividuals);
+            clock_t end = clock();
+            double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+            std::cout << "elapsed secs: " << elapsed_secs << std::endl;
+            std::cout << problem.getFitnessFunctionEvaluations();
+            logger.close();
+        }
+    }
+}
+
+void runGreedyTests(std::vector<std::string> fileNames){
+    for(int j = 0; j < fileNames.size(); j++){
+        std::string problemName(fileNames[j]);
+        std::string fileName(fileNames[j] + ".ttp");
+            TTPProblem problem;
+            Logger logger(true, "results/greedy/" + problemName + ".csv");
+            problem.initialize(fileName, ProfitWeightRatio);
+
+            clock_t begin = clock();
+            GreedyTTP greedyTTP(&problem, &logger);
+            greedyTTP.solve();
+            clock_t end = clock();
+
+            double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+            std::cout << "elapsed secs: " << elapsed_secs << std::endl;
+            std::cout << problem.getFitnessFunctionEvaluations();
+            logger.close();
+    }
+}
+
+void runGaTests(){
+    std::vector<std::string> problemNames {"easy_0", "easy_1", "medium_0", "medium_1", "hard_0"};
+    for(int j = 0; j < problemNames.size(); j++){
+        std::string problemName(problemNames[j]);
+        std::string filename(problemName + ".ttp");
+        int iterations = 300;
+        int popSize = 1000;
+        double crossProb = 0.8;
+        int tournamentSize = 50;
+        double mutProb = 0.005;
+//        double mutProb = 0.3;
+
+        for(int i = 0; i < 10; i++){
+            TTPProblem problem;
+            std::random_device randomDevice;
+            std::mt19937 randomGenerator(randomDevice());
+
+            Logger logger(true, "results/" + problemName + "/i" + std::to_string(iterations) + "p"
+                                + std::to_string(popSize) + "c" + std::to_string(crossProb) + "m" + std::to_string(mutProb) + "t" + std::to_string(tournamentSize)
+                                + "_" + std::to_string(i) + ".csv");
+
+            problem.initialize(filename, ProfitWeightRatio);
+
+            TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
+//            RouletteSelector selector(&problem, &randomGenerator);
+
+            AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);
+//            RandomSwapMutator mutator(mutProb, &randomGenerator);
+
+            clock_t begin = clock();
+
+            GeneticAlgorithm ga(popSize, crossProb, &problem, &logger, &randomGenerator, &selector, &mutator);
+            ga.run(iterations);
+
+            clock_t end = clock();
+            double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
+            std::cout << "elapsed secs: " << elapsed_secs << std::endl;
+            std::cout << problem.getFitnessFunctionEvaluations();
+            logger.close();
+        }
+    }
+}
+
 int main() {
-
-    TTPProblem problem;
-    std::random_device randomDevice;
-    std::mt19937 randomGenerator(randomDevice());
-    std::string problemName("easy_1");
-    std::string filename(problemName + ".ttp");
-    int iterations = 100;
-    int popSize = 1000;
-    double crossProb = 0.9;
-
-
-    problem.initialize(filename, ProfitWeightRatio);
-    Logger logger(true, "results/" + problemName + ".txt");
-
-    int tournamentSize = 50;
-    TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
-//    RouletteSelector selector(&problem, &randomGenerator);
-
-    double mutProb = 0.007;
-    AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);
-//    double mutProb = 0.3;
-//    RandomSwapMutator mutator(mutProb, &randomGenerator);
-
-    clock_t begin = clock();
-
-    GeneticAlgorithm ga(popSize, crossProb, &problem, &logger, &randomGenerator, &selector, &mutator);
-    ga.run(iterations);
-//    GreedyTTP greedyTTP(&problem, &logger);
-//    greedyTTP.solve();
-
-
-//    RandomSearch randomSearch(&problem, &logger);
-//    randomSearch.search(1000000);
-//    HillClimber hillClimber(&problem, &logger);
-//    hillClimber.hillClimb(1000);
-    clock_t end = clock();
-    double elapsed_secs = double(end - begin) / CLOCKS_PER_SEC;
-    std::cout << "elapsed secs: " << elapsed_secs << std::endl;
-    std::cout << problem.getFitnessFunctionEvaluations();
-    logger.close();
+    std::vector<std::string> problemNames {"easy_0", "easy_1", "medium_0", "medium_1", "hard_0"};
+//    runHillClimberTests(problemNames, 10, 1000);
+//    runGreedyTests(problemNames);
+    runRandomSearchTests(problemNames, 10, 10000);
 }

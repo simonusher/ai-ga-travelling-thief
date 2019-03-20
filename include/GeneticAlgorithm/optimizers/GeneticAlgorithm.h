@@ -58,6 +58,8 @@ private:
     std::mt19937* randomGenerator;
     std::uniform_int_distribution<int> populationDistribution;
     std::bernoulli_distribution crossoverDistribution;
+
+    void logData();
 };
 
 

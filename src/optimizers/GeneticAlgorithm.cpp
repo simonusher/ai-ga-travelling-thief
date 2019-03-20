@@ -34,12 +34,12 @@ void GeneticAlgorithm::run(int iters) {
     for (int i = 0; i < iters; i++){
         runIteration();
     }
-    printResults();
+//    printResults();
 }
 
 void GeneticAlgorithm::runIteration() {
     selectBestAndCalculateMetrics();
-    *logger << iterationsPassed << ";" << (int)bestOverall->getFitness() << ";" << (int)currentWorstFitness << ";" << (int)currentAverageFitness << ";" << (int)currentBestFitness << "\n";
+    logData();
     select();
     crossover();
     mutate();
@@ -144,7 +144,7 @@ void GeneticAlgorithm::selectBestAndCalculateMetrics() {
 }
 
 void GeneticAlgorithm::printInfo() {
-    *logger << "Iterations;Overall best;Worst;Average;Best\n";
+    *logger << "Iterations;Overall best;Worst;Average;Best;FFE\n";
 }
 
 void GeneticAlgorithm::printResults() {
@@ -158,4 +158,11 @@ void GeneticAlgorithm::printResults() {
     }
     *logger << "]\n";
     *logger << "KSP: ";
+}
+
+void GeneticAlgorithm::logData() {
+    *logger << iterationsPassed
+    << ";" << (int)bestOverall->getFitness() << ";"
+    << (int)currentWorstFitness << ";" << (int)currentAverageFitness << ";"
+    << (int)currentBestFitness << ";" << problem->getFitnessFunctionEvaluations() << "\n";
 }

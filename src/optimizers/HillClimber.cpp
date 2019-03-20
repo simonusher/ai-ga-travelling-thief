@@ -19,7 +19,7 @@ void HillClimber::hillClimb(int numberOfSolutions) {
             delete bestOverall;
             bestOverall = current;
         }
-        *logger << i << ";" <<  bestOverall->getFitness() << ";" << current->getFitness() << "\n";
+        *logger << i << ";" <<  bestOverall->getFitness() << ";" << current->getFitness() << ";" << problem->getFitnessFunctionEvaluations() << "\n";
     }
 }
 

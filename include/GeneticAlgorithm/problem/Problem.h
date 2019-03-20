@@ -20,6 +20,7 @@ public:
     virtual bool compareFitnesses(double firstFitness, double secondFitness) = 0;
     virtual bool fitnessStrictlyBetter(double firstFitness, double secondFitness) = 0;
     virtual int getProblemSize() = 0;
+    virtual int getFitnessFunctionEvaluations() = 0;
 };
 
 

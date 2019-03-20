@@ -42,7 +42,7 @@ public:
 
     double selectedItemsWeight;
     double selectedItemsProfit;
-    int getFitnessFunctionEvaluations();
+    int getFitnessFunctionEvaluations() override;
     double getDistance(int firstCityIndex, int secondCityIndex);
 private:
     void load(std::string &filename) override;
