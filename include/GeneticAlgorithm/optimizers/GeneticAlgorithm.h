@@ -23,6 +23,10 @@ public:
     void run(int iters);
 
 private:
+    Individual* randomFromPopulation();
+    std::vector<Individual*> pickTwoAtRandom();
+    bool shouldCross();
+
     void initPopulation();
 
     void select();
@@ -30,14 +34,13 @@ private:
     void mutate();
     void evaluate();
 
-    bool shouldCross();
-    Individual* randomFromPopulation();
-
-    std::vector<Individual*> pickTwoAtRandom();
     void clearPopulation();
     void runIteration();
     void selectBestAndCalculateMetrics();
 
+    void printInfo();
+
+    void printResults();
 
     std::vector<Individual*> population;
     int iterationsPassed;
@@ -55,10 +58,6 @@ private:
     std::mt19937* randomGenerator;
     std::uniform_int_distribution<int> populationDistribution;
     std::bernoulli_distribution crossoverDistribution;
-
-    void printInfo();
-
-    void printResults();
 };
 
 

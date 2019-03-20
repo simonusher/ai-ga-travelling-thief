@@ -1,0 +1,4 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release
