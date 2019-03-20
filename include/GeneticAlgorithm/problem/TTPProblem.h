@@ -43,6 +43,7 @@ public:
     double selectedItemsWeight;
     double selectedItemsProfit;
     int getFitnessFunctionEvaluations();
+    double getDistance(int firstCityIndex, int secondCityIndex);
 private:
     void load(std::string &filename) override;
     void selectItems(ItemSelectionPolicy policy);
@@ -70,7 +71,6 @@ private:
 
     std::vector<City*> cities;
 
-    double getDistance(int firstCityIndex, int secondCityIndex);
     double calculateDistance(City *firstCity, City *secondCity);
 
     void selectAllFittingItems();

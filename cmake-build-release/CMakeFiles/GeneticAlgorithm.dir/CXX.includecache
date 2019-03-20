@@ -56,15 +56,11 @@ algorithm
 ../operators/Mutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h
 
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/Greedy.cpp
-Greedy.h
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/Greedy.h
-
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/Greedy.h
-../problem/Problem.h
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Problem.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h
 ../util/Logger.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/util/Logger.h
+../problem/TTPProblem.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/TTPProblem.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h
 ../problem/Problem.h
@@ -171,6 +167,8 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h
 ../include/GeneticAlgorithm/operators/RouletteSelector.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h
+../include/GeneticAlgorithm/optimizers/GreedyTTP.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h
 ctime
 -
 
@@ -197,6 +195,10 @@ ctime
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp
 ../../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp
+../../include/GeneticAlgorithm/optimizers/GreedyTTP.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp
 ../../include/GeneticAlgorithm/optimizers/HillClimber.h

@@ -417,28 +417,28 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o.provides: C
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o
 
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o: ../src/optimizers/Greedy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/Greedy.cpp
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../src/optimizers/GreedyTTP.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/Greedy.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.i
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.i
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/Greedy.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.s
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.s
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.requires:
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.requires:
 
-.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.requires
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.requires
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.requires
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.provides.build
-.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.provides
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.provides: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.requires
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.provides.build
+.PHONY : CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.provides
 
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o
+CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.provides.build: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o
 
 
 # Object files for target GeneticAlgorithm
@@ -458,7 +458,7 @@ GeneticAlgorithm_OBJECTS = \
 "CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o" \
 "CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o" \
-"CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o"
+"CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o"
 
 # External object files for target GeneticAlgorithm
 GeneticAlgorithm_EXTERNAL_OBJECTS =
@@ -478,7 +478,7 @@ GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutato
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o
-GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o
+GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/build.make
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GeneticAlgorithm"
@@ -504,7 +504,7 @@ CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/op
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o.requires
 CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o.requires
-CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o.requires
+CMakeFiles/GeneticAlgorithm.dir/requires: CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o.requires
 
 .PHONY : CMakeFiles/GeneticAlgorithm.dir/requires
 

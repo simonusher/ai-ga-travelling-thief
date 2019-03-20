@@ -312,32 +312,32 @@ src/optimizers/GeneticAlgorithm.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
 .PHONY : src/optimizers/GeneticAlgorithm.cpp.s
 
-src/optimizers/Greedy.o: src/optimizers/Greedy.cpp.o
+src/optimizers/GreedyTTP.o: src/optimizers/GreedyTTP.cpp.o
 
-.PHONY : src/optimizers/Greedy.o
+.PHONY : src/optimizers/GreedyTTP.o
 
 # target to build an object file
-src/optimizers/Greedy.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.o
-.PHONY : src/optimizers/Greedy.cpp.o
+src/optimizers/GreedyTTP.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o
+.PHONY : src/optimizers/GreedyTTP.cpp.o
 
-src/optimizers/Greedy.i: src/optimizers/Greedy.cpp.i
+src/optimizers/GreedyTTP.i: src/optimizers/GreedyTTP.cpp.i
 
-.PHONY : src/optimizers/Greedy.i
+.PHONY : src/optimizers/GreedyTTP.i
 
 # target to preprocess a source file
-src/optimizers/Greedy.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.i
-.PHONY : src/optimizers/Greedy.cpp.i
+src/optimizers/GreedyTTP.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.i
+.PHONY : src/optimizers/GreedyTTP.cpp.i
 
-src/optimizers/Greedy.s: src/optimizers/Greedy.cpp.s
+src/optimizers/GreedyTTP.s: src/optimizers/GreedyTTP.cpp.s
 
-.PHONY : src/optimizers/Greedy.s
+.PHONY : src/optimizers/GreedyTTP.s
 
 # target to generate assembly for a file
-src/optimizers/Greedy.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/Greedy.cpp.s
-.PHONY : src/optimizers/Greedy.cpp.s
+src/optimizers/GreedyTTP.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.s
+.PHONY : src/optimizers/GreedyTTP.cpp.s
 
 src/optimizers/HillClimber.o: src/optimizers/HillClimber.cpp.o
 
@@ -585,9 +585,9 @@ help:
 	@echo "... src/optimizers/GeneticAlgorithm.o"
 	@echo "... src/optimizers/GeneticAlgorithm.i"
 	@echo "... src/optimizers/GeneticAlgorithm.s"
-	@echo "... src/optimizers/Greedy.o"
-	@echo "... src/optimizers/Greedy.i"
-	@echo "... src/optimizers/Greedy.s"
+	@echo "... src/optimizers/GreedyTTP.o"
+	@echo "... src/optimizers/GreedyTTP.i"
+	@echo "... src/optimizers/GreedyTTP.s"
 	@echo "... src/optimizers/HillClimber.o"
 	@echo "... src/optimizers/HillClimber.i"
 	@echo "... src/optimizers/HillClimber.s"
