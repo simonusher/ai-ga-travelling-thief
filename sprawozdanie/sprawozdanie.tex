@@ -73,24 +73,39 @@
 	\section{Cechy algorytmu i modelu}
 	W tej sekcji opisanych zostanie kilka, istotnych z punktu badań, cech zaimplementowanego modelu problemu i algorytmu genetycznego.
 	
-	\subsection{Parametry algorytmu genetycznego}
+	\subsection{Algorytm genetyczny}
+	\subsubsection{Parametry algorytmu genetycznego}
 	W zaimplementowanym algorytmie genetycznym wyróżnia się następujące parametry sterujące jego działaniem:
 	\begin{itemize}
 		\item $pop\_size$ - wielkość populacji,
 		\item $gen$ - liczba generacji przed zatrzymaniem działania,
-		\item $Px$ - prawdopodobieństwo, że dwa osobniki zostaną skrzyżowane,
-		\item $Pm$ - prawdopodobieństwo mutacji, którego dokładna definicja zostanie podana w sekcji \ref{op:mutation},
+		\item $p_x$ - prawdopodobieństwo, że dwa osobniki zostaną skrzyżowane,
+		\item $p_m$ - prawdopodobieństwo mutacji, którego dokładna definicja zostanie podana w sekcji \ref{op:mutation},
 		\item $tour$ - wielkość turnieju, dla badań wykorzystujących selekcję turniejową
 	\end{itemize}
 	
-	\subsection{Operator krzyżowania}
+	\subsubsection{Operator krzyżowania}
 	Z racji na specyfikę problemu, do przeprowadzenia badań zaimplementowany został wyspecjalizowany operator krzyżowania - OX (\textit{Order Crossover}). Pierwsza część jego działania polega na wyborze losowej podsekwencji genów z jednego z rodziców i skopiowaniu ich do genotypu dziecka w niezmienionej kolejności. Następnie reszta pustych genów jest uzupełniana od lewej do prawej strony wartościami genów z drugiego z rodziców, które nie występują jeszcze w genotypie dziecka. W ten sposób zachowana zostaje poprawność permutacji.
 	
-	\subsection{Operator mutacji}\label{op:mutation}
+	\subsubsection{Operator mutacji}\label{op:mutation}
 	Do rozwiązania problemu wybrany został operator mutacji, którego działanie polega na zamianie 2 losowo wybranych genów w rozwiązaniu. Dodatkowo zostały przeanalizowane 2 możliwe podejścia do tego typu mutacji.
-	\\Pierwsze z nich dla każdego osobnika, z pewnym prawdopodobieństwiem wykonuje jedną losową zamianę 2 genów. Niestety to rozwiązanie okazało się nie dawać wystarczającej możliwości manipulacji różnorodnością populacji.
-	\\Drugie podejście dla każdego genu każdego z osobników, z pewnym prawdopodobieństwiem wykonuje
+	\\Pierwsze z nich dla każdego osobnika, z pewnym prawdopodobieństwiem wykonuje jedną losową zamianę 2 genów. Niestety to rozwiązanie okazało się nie dawać wystarczającej możliwości sterowania różnorodnością populacji. Wynika to bezpośrednio z faktu, że nawet przy $p_m = 1$ stosunek zmutowanych genów do wszystkich genów w populacji jest bardzo mały - $\tfrac{2 * pop\_size}{G * pop\_size} = \tfrac{2}{G}$ gdzie $G$ jest liczbą genów osobnika.
+	Dla przykładu może to być $\tfrac{2}{439}$ dla jednej z rozpatrywanych instancji problemu.
+	\\Z uwagi na to, w badaniach zastosowane zostało drugie podejście, które dla każdego genu każdego z osobników, z pewnym prawdopodobieństwiem wykonuje zamianę z innym, losowo wybranym genem. W związku z tym $p_m$ w pracy będzie oznaczało prawdopodobieństwo, że gen zostanie zamieniony z innym.
+	
+	\subsection{Problem TTP}
+	We wszystkich badaniach podejście do rozwiązania problemu TTP, opiera się o wstępne rozwiązaniu podproblemu plecakowego algorytmem zachłannym i następną próbę znalezienia jak najlepszego rozwiązania problemu komiwojażera.
+	Przy rozwiązywaniu problemu plecakowego algorytmem zachłannym można rozważyć następujące heurystyki:
+	\begin{itemize}
+		\item wybór przedmiotu o największej wartości,
+		\item wybór przedmiotu o najmniejszej wadze,
+		\item wybór przedmiotu o największym stosunku wartość/waga.
+	\end{itemize}
+	W tej pracy została wybrana trzecia opcja. Dodatkowo założono, że wszystkie przedmioty znane są z góry, więc strategia wyboru przedmiotów było opracowywana tylko raz i była wspólna dla wszystkich rozwiązań problemu TSP.
+	
 	\section{Badanie działania}
+	W tej sekcji zostaną przedstawione wyniki badań działania algorytmu genetycznego dla 5 przypadków testowych. Dla każdej instancji problemu, przeprowadzonych zostało 10 uruchomień. Dla każdej instancji zaprezentowana zostanie średnia i odchylenie standardowe najlepszego znalezionego w całym przebiegu rozwiązania, oraz wykresy przedstawiające zmianę funkcji przystosowania w czasie dla wybranego przebiegu.
+	\subsection{Problem hard\_0.ttp}
 	\section{Badanie wpływu parametrów metody na \mbox{wyniki} działania}
 	\subsection{Wpływ prawdopodobieństwa krzyżowania i mutacji}
 	\subsection{Wpływ rozmiaru populacji i liczby pokoleń}
