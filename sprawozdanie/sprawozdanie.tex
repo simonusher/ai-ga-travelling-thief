@@ -1,0 +1,101 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{float}
+\hypersetup{%
+	pdfborder = {0 0 0}
+}
+
+\author{Szymon Woźniak, 235040}
+\date{21.03.2019}
+\title{Rozwiązywanie Problemu Mobilnego Złodzieja za pomocą algorytmu genetycznego}
+
+
+\begin{document}
+	\pagenumbering{gobble}
+	\maketitle
+	\newpage
+	\pagenumbering{arabic}
+	
+	\section{Wstęp teoretyczny}
+	Rozwiązywany "Problem Mobilnego Złodzieja" jest złożeniem dwóch trudnych problemów optymalizacyjnych - plecakowego i komiwojażera.
+	\subsection{Problem plecakowy}
+	W problemie plecakowym mamy do dyspozycji plecak o zadanej pojemności $C$ i zbiór $N$ przedmiotów ${x_{1}, x_{2}, ..., x_{N}}$. Każdy z nich posiada określoną wagę $w_{i}$ i wartość $p_{i}$. Celem jest wybranie takiego podzbioru dostępnych przedmiotów, żeby zmaksymalizować zysk, jednocześnie nie przekraczając pojemności plecaka. Maksymalizowana funkcja ma zatem postać:
+	\begin{equation}\label{eq:min_knp}
+		g(y) = \sum\limits_{i=1}^{N} p_{i}y_{i}
+	\end{equation}
+	, przy ograniczeniu:
+	\begin{equation}\label{eq:constraint_knp}
+		\sum\limits_{i=1}^{N} w_{i} < C
+	\end{equation}
+	Symbole użyte w równaniach \ref{eq:min_knp} i \ref{eq:constraint_knp} oznaczają odpowiednio:
+	\begin{itemize}
+		\item $y$ - strategia wyboru przedmiotów,
+		\item $p_{i}$ - wartość i-tego przedmiotu,
+		\item $y_{i}$ - to czy dany przedmiot został zabrany czy nie (1 albo 0).
+	\end{itemize}
+	W przypadku "Problemu Mobilnego Złodzieja" każdy przedmiot ma dodatkowo przypisane miasto, z którego może on zostać zabrany.
+	\subsection{Problem komiwojażera}
+	Problem komiwojażera w przypadku tego zadania składa się z ${N}$ miast i odległości między każdą parą. Celem jest wybranie takiej trasy, która przechodzi przez każde z miast dokładnie raz, przy minimalnym czasie podróży:
+	\begin{equation}\label{eq:min_tsp}
+		f(x) = \sum\limits_{i=1}^{N-1}(t_{x_{i},x_{i+1}}) + t_{x_{N},x_{1}}
+	\end{equation}
+	, gdzie: 
+	\begin{itemize}
+		\item $x$ - wybrana trasa,
+		\item $t_{x_{i},x_{i+1}}$ - czas przejścia pomiędzy miastem $i$ a miastem $i+1$.
+	\end{itemize}
+	Czas przejścia pomiędzy dwoma miastami może być obliczony ze wzoru:
+	\begin{equation}\label{eq:time_tsp}
+		t_{x_{i},x_{i+1}} = \dfrac{d_{x_{i}, x_{i+1}}}{v_{i, i+1}}
+	\end{equation}
+	, gdzie:
+	\begin{itemize}
+		\item $d_{x_{i},x_{i+1}}$ - odległość pomiędzy miastem $i$ a miastem $i+1$,
+		\item $v_{x_{i},x_{i+1}}$ - prędkość na trasie pomiedzy miastem $i$ a miastem $i+1$.
+	\end{itemize}
+	\subsection{Problem Mobilnego Złodzieja}
+	Dwa powyższe problemy zostały ze sobą silnie powiązane poprzez sposób ich definicji. Wspomniana w równaniu \ref{eq:time_tsp} prędkość jest zależna od przedmiotów, które zostały zabrane z miast odwiedzonych na trasie przed miastem \\o indeksie $i$. Oznacza to, że znalezienie optimów każdego z podproblemów najprawdopodobniej nie daje rozwiązania globalnie optymalnego. Finalnym celem "Problemu Mobilnego Złodzieja" jest zatem maksymalizacja:
+	\begin{equation}\label{eq:fitness_function}
+		G(x, y) = g(y) - f(x, y)
+	\end{equation}
+	czyli różnicy sumy wartości wybranych przedmiotów i czasu przejścia trasy przy danym wyborze przedmiotów.
+	
+	\subsection{Algorytm genetyczny}
+	Algorytm genetyczny jest metaheurystyką stosowaną w optymalizacji, wzorowaną na biologicznej ewolucji. GA operuje na populacjach rozwiązań, z których do każdej kolejnej generacji wybierani są rodzice. Wyższe prawdopodobieństwo przekazania genów, mają osobniki o wyższym przystosowaniu. Dodatkowo wprowadza się tu pojęcia krzyżowania i mutacji. Pierwsze z nich określa sposób łączenia materiału genetycznego rodziców przy przekazywaniu ich potomkom. Drugie z kolei definiuje znaną z ewolucji przypadkową, występującą w wyniku błędu, zmianę informacji genetycznej.
+	Może ona jednak potencjalnie wprowadzać do populacji pożądane cechy, zwiększające szanse danego osobnika na przeżycie. \par Aby skorzystać z tej metaheurystyki, należy więc zdefiniować wszystkie wymienione wcześniej pojęcia w kontekście rozwiązywanego problemu. Potrzeba zdefiniować: potencjalne rozwiązanie, operacje selekcji, krzyżowania, mutacji i funkcję oceny osobnika.
+	
+	\section{Plan pracy}
+	W pierwszej części pracy krótko opisane zostaną istotne cechy zaimplementowanego algorytmu genetycznego i modelu problemu. Następnie dla 5 wybranych przypadków testowych zostaną przeprowadzone badania działania metody. W następnej kolejności przebadany będzie wpływ poszczególnych jej parametrów i wybranego operatora selekcji, na jakość otrzymywanych wyników. W końcowej części skuteczność algorytmu genetycznego zostanie porównana ze skutecznością wybranych metod nieewolucyjnych.
+	
+	\section{Cechy algorytmu i modelu}
+	W tej sekcji opisanych zostanie kilka, istotnych z punktu badań, cech zaimplementowanego modelu problemu i algorytmu genetycznego.
+	
+	\subsection{Parametry algorytmu genetycznego}
+	W zaimplementowanym algorytmie genetycznym wyróżnia się następujące parametry sterujące jego działaniem:
+	\begin{itemize}
+		\item $pop\_size$ - wielkość populacji,
+		\item $gen$ - liczba generacji przed zatrzymaniem działania,
+		\item $Px$ - prawdopodobieństwo, że dwa osobniki zostaną skrzyżowane,
+		\item $Pm$ - prawdopodobieństwo mutacji, którego dokładna definicja zostanie podana w sekcji \ref{op:mutation},
+		\item $tour$ - wielkość turnieju, dla badań wykorzystujących selekcję turniejową
+	\end{itemize}
+	
+	\subsection{Operator krzyżowania}
+	Z racji na specyfikę problemu, do przeprowadzenia badań zaimplementowany został wyspecjalizowany operator krzyżowania - OX (\textit{Order Crossover}). Pierwsza część jego działania polega na wyborze losowej podsekwencji genów z jednego z rodziców i skopiowaniu ich do genotypu dziecka w niezmienionej kolejności. Następnie reszta pustych genów jest uzupełniana od lewej do prawej strony wartościami genów z drugiego z rodziców, które nie występują jeszcze w genotypie dziecka. W ten sposób zachowana zostaje poprawność permutacji.
+	
+	\subsection{Operator mutacji}\label{op:mutation}
+	Do rozwiązania problemu wybrany został operator mutacji, którego działanie polega na zamianie 2 losowo wybranych genów w rozwiązaniu. Dodatkowo zostały przeanalizowane 2 możliwe podejścia do tego typu mutacji.
+	\\Pierwsze z nich dla każdego osobnika, z pewnym prawdopodobieństwiem wykonuje jedną losową zamianę 2 genów. Niestety to rozwiązanie okazało się nie dawać wystarczającej możliwości manipulacji różnorodnością populacji.
+	\\Drugie podejście dla każdego genu każdego z osobników, z pewnym prawdopodobieństwiem wykonuje
+	\section{Badanie działania}
+	\section{Badanie wpływu parametrów metody na \mbox{wyniki} działania}
+	\subsection{Wpływ prawdopodobieństwa krzyżowania i mutacji}
+	\subsection{Wpływ rozmiaru populacji i liczby pokoleń}
+	\section{Badanie wpływu selekcji na skuteczność \mbox{algorytmu} genetycznego}
+	\section{Porównanie skuteczności algorytmu genetycznego z wynikami metod nieewolucyjnych}
+	\section{Podsumowanie}
+	
+\end{document}

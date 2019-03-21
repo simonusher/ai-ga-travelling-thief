@@ -12,7 +12,23 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6015f62-469d-4ce3-8707-0b6c28d4d833" name="Default Changelist" comment="" />
+    <list default="true" id="a6015f62-469d-4ce3-8707-0b6c28d4d833" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/GeneticAlgorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/GeneticAlgorithm" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/GeneticAlgorithm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/0.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/0.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release/results/rs/easy_0/6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +43,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+            <state relative-caret-position="291">
+              <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -48,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/problem/TTPProblem.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="374">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -57,7 +73,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
+            <state relative-caret-position="510">
               <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
               <folding>
                 <element signature="e#125#145#0" expanded="true" />
@@ -69,7 +85,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/HillClimber.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="17">
               <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
               <folding>
                 <element signature="e#123#154#0" expanded="true" />
@@ -90,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/RandomSearch.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+            <state relative-caret-position="323">
+              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
               <folding>
                 <element signature="e#125#156#0" expanded="true" />
               </folding>
@@ -102,7 +118,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
+            <state relative-caret-position="323">
               <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding>
                 <element signature="e#132#152#0" expanded="true" />
@@ -114,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/operators/RouletteSelector.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+            <state relative-caret-position="470">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -200,20 +216,20 @@
         <option value="$PROJECT_DIR$/src/optimizers/Greedy.cpp" />
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/GreedyTTP.h" />
         <option value="$PROJECT_DIR$/src/optimizers/GreedyTTP.cpp" />
-        <option value="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" />
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h" />
         <option value="$PROJECT_DIR$/src/operators/TournamentSelector.cpp" />
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h" />
         <option value="$PROJECT_DIR$/include/GeneticAlgorithm/problem/Problem.h" />
         <option value="$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp" />
         <option value="$PROJECT_DIR$/src/optimizers/HillClimber.cpp" />
+        <option value="$PROJECT_DIR$/src/operators/RouletteSelector.cpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-557" />
+    <option name="x" value="1792" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
@@ -224,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -303,7 +320,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,12 +389,14 @@
       <workItem from="1553082536353" duration="3935000" />
       <workItem from="1553108370390" duration="74000" />
       <workItem from="1553108462869" duration="15000" />
-      <workItem from="1553108650038" duration="15210000" />
+      <workItem from="1553108650038" duration="15340000" />
+      <workItem from="1553184479668" duration="460000" />
+      <workItem from="1553184989783" duration="8203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98770000" />
+    <option name="totallyTimeSpent" value="107563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -390,23 +408,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30277187" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30916846" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.61727077" visible="true" weight="0.29144096" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.44936034" weight="0.3900325" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5986141" visible="true" weight="0.26760563" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.44829425" weight="0.23943663" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5751599" weight="0.3846154" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4968017" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.3827292" side_tool="true" visible="true" weight="0.29144096" />
+      <window_info anchor="bottom" id="Messages" order="8" sideWeight="0.5554371" weight="0.3846154" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49573562" weight="0.0780065" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.40138593" side_tool="true" weight="0.26760563" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" sideWeight="0.49573562" weight="0.24918744" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -689,23 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
-          <folding>
-            <element signature="e#132#152#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/operators/RouletteSelector.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/TournamentSelector.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="62">
@@ -740,16 +740,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp">
+    <entry file="file://$PROJECT_DIR$/src/optimizers/RandomSearch.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2482">
-          <caret line="146" column="62" selection-start-line="146" selection-start-column="62" selection-end-line="146" selection-end-column="62" />
+        <state relative-caret-position="578">
+          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
+          <folding>
+            <element signature="e#125#145#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/HillClimber.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="17">
           <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
           <folding>
             <element signature="e#123#154#0" expanded="true" />
@@ -764,44 +774,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/problem/TTPProblem.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding>
-            <element signature="e#125#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/problem/TTPProblem.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/optimizers/RandomSearch.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="323">
+          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
           <folding>
             <element signature="e#125#156#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/optimizers/RandomSearch.cpp">
+    <entry file="file://$PROJECT_DIR$/src/optimizers/GeneticAlgorithm.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="14" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="2482">
+          <caret line="146" column="62" selection-start-line="146" selection-start-column="62" selection-end-line="146" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/problem/TTPProblem.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/GeneticAlgorithm/operators/RouletteSelector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="e#132#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/operators/RouletteSelector.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="126" column="48" selection-start-line="126" selection-start-column="48" selection-end-line="126" selection-end-column="48" />
+        <state relative-caret-position="291">
+          <caret line="89" column="29" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>

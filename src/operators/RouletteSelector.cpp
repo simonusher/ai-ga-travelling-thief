@@ -59,7 +59,7 @@ void RouletteSelector::constructRoullete(std::vector<Individual *> &population) 
     double sumUntilNow = 0;
     for(int i = 0; i < population.size(); i++){
         double roulettePart = roulette[i] / fitnessSum;
-        roulette[i] = roulettePart + sumUntilNow;
+        roulette[i] = (roulettePart + sumUntilNow) * 2;
         sumUntilNow = roulette[i];
     }
 
