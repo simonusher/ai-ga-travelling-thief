@@ -4,10 +4,10 @@
 
 #include "../../include/GeneticAlgorithm/problem/Individual.h"
 
-Individual::Individual(std::vector<int> &solution) : solution(solution), fitness(0), evaluated(false){}
+Individual::Individual(std::vector<int> &solution, std::vector<bool>& knapsackSolution) : tspSolution(solution), knapsackSolution(knapsackSolution), fitness(0), evaluated(false){}
 
 std::vector<Individual *> Individual::crossover(std::mt19937 &randomGenerator, Individual &other) {
-    std::uniform_int_distribution<int> geneDistribution(0, solution.size() - 1);
+    std::uniform_int_distribution<int> geneDistribution(0, tspSolution.size() - 1);
     int firstGeneIndex = geneDistribution(randomGenerator);
     int secondGeneIndex = geneDistribution(randomGenerator);
     while(secondGeneIndex == firstGeneIndex){
@@ -16,56 +16,67 @@ std::vector<Individual *> Individual::crossover(std::mt19937 &randomGenerator, I
     if(firstGeneIndex > secondGeneIndex){
         std::swap(firstGeneIndex, secondGeneIndex);
     }
-    if(firstGeneIndex == 0 && secondGeneIndex == solution.size()){
-        geneDistribution = std::uniform_int_distribution<int>(1, solution.size() - 2);
+    if(firstGeneIndex == 0 && secondGeneIndex == tspSolution.size()){
+        geneDistribution = std::uniform_int_distribution<int>(1, tspSolution.size() - 2);
         secondGeneIndex = geneDistribution(randomGenerator);
     }
 
     std::vector<Individual*> offspring;
-    std::vector<int> firstSolution(solution.size());
-    std::vector<int> secondSolution(solution.size());
+    std::vector<int> firstTspSolution(tspSolution.size());
+    std::vector<int> secondTspSolution(tspSolution.size());
 
-    std::set<int> firstCrossedGenes(solution.begin() + firstGeneIndex, solution.begin() + secondGeneIndex + 1);
-    std::set<int> secondCrossedGenes(other.solution.begin() + firstGeneIndex, other.solution.begin() + secondGeneIndex + 1);
+    std::set<int> firstCrossedGenes(tspSolution.begin() + firstGeneIndex, tspSolution.begin() + secondGeneIndex + 1);
+    std::set<int> secondCrossedGenes(other.tspSolution.begin() + firstGeneIndex, other.tspSolution.begin() + secondGeneIndex + 1);
 
     for(int i = firstGeneIndex; i < secondGeneIndex; i++){
-        firstSolution[i] = solution[i];
-        secondSolution[i] = other.solution[i];
+        firstTspSolution[i] = tspSolution[i];
+        secondTspSolution[i] = other.tspSolution[i];
     }
 
     int firstTakeIndex = 0;
     int secondTakeIndex = 0;
 
-    for(int i = 0; i < solution.size(); i++){
+    for(int i = 0; i < tspSolution.size(); i++){
         if(i >= firstGeneIndex && i <= secondGeneIndex){
-            firstSolution[i] = other.solution[i];
-            secondSolution[i] = solution[i];
+            firstTspSolution[i] = other.tspSolution[i];
+            secondTspSolution[i] = tspSolution[i];
         }
         else {
-            while(firstCrossedGenes.find(other.solution[secondTakeIndex]) != firstCrossedGenes.end()){
+            while(firstCrossedGenes.find(other.tspSolution[secondTakeIndex]) != firstCrossedGenes.end()){
                 secondTakeIndex++;
             }
-            while(secondCrossedGenes.find(solution[firstTakeIndex]) != secondCrossedGenes.end()){
+            while(secondCrossedGenes.find(tspSolution[firstTakeIndex]) != secondCrossedGenes.end()){
                 firstTakeIndex++;
             }
-            firstSolution[i] = solution[firstTakeIndex];
-            secondSolution[i] = other.solution[secondTakeIndex];
+            firstTspSolution[i] = tspSolution[firstTakeIndex];
+            secondTspSolution[i] = other.tspSolution[secondTakeIndex];
             firstTakeIndex++;
             secondTakeIndex++;
         }
     }
 
-    return std::vector<Individual *>{ new Individual(firstSolution), new Individual(secondSolution) };
+    std::uniform_int_distribution<int> crossPointDistribution(1, knapsackSolution.size() - 2);
+    int crossPoint = crossPointDistribution(randomGenerator);
+
+    std::vector<bool> firstKnapsackSolution(this->knapsackSolution);
+    std::vector<bool> secondKnapsackSolution(other.knapsackSolution);
+
+    for(int i = crossPoint; i < knapsackSolution.size(); i++){
+        firstKnapsackSolution[i] = other.knapsackSolution[i];
+        secondKnapsackSolution[i] = this->knapsackSolution[i];
+    }
+
+    return std::vector<Individual *>{ new Individual(firstTspSolution, firstKnapsackSolution), new Individual(secondTspSolution, secondKnapsackSolution) };
 }
 
 void Individual::mutate(std::mt19937 &randomGenerator) {
-    std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
+    std::uniform_int_distribution<int> geneDistribution(0, tspSolution.size() -1);
     int firstGeneIndex = geneDistribution(randomGenerator);
     int secondGeneIndex = geneDistribution(randomGenerator);
     while(secondGeneIndex == firstGeneIndex){
         secondGeneIndex = geneDistribution(randomGenerator);
     }
-    std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    std::swap(tspSolution[firstGeneIndex], tspSolution[secondGeneIndex]);
     setEvaluated(false);
 }
 
@@ -87,28 +98,36 @@ void Individual::setEvaluated(bool evaluated) {
 }
 
 void Individual::swapWithRandom(int firstGeneIndex, std::mt19937 &randomGenerator) {
-    std::uniform_int_distribution<int> geneDistribution(0, solution.size() -1);
+    std::uniform_int_distribution<int> geneDistribution(0, tspSolution.size() -1);
     int secondGeneIndex = geneDistribution(randomGenerator);
     while(secondGeneIndex == firstGeneIndex){
         secondGeneIndex = geneDistribution(randomGenerator);
     }
-    std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    std::swap(tspSolution[firstGeneIndex], tspSolution[secondGeneIndex]);
     setEvaluated(false);
 }
 
-const std::vector<int> &Individual::getSolution() const {
-    return solution;
+const std::vector<int> &Individual::getTspSolution() const {
+    return tspSolution;
+}
+
+const std::vector<bool> &Individual::getKnapsackSolution() const {
+    return knapsackSolution;
 }
 
 void Individual::swapGenes(int firstGeneIndex, int secondGeneIndex) {
-    std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
+    std::swap(tspSolution[firstGeneIndex], tspSolution[secondGeneIndex]);
     setEvaluated(false);
 }
 
-void Individual::invert(int firstGeneIndex, int secondGeneIndex) {
-//    std::reverse(solution.begin() + firstGeneIndex, solution.begin() + secondGeneIndex);
+void Individual::invertTsp(int firstGeneIndex, int secondGeneIndex) {
+//    std::reverse(tspSolution.begin() + firstGeneIndex, tspSolution.begin() + secondGeneIndex);
     for(int i = firstGeneIndex, j = secondGeneIndex; i < j; i++, j--){
-        std::swap(solution[i], solution[j]);
+        std::swap(tspSolution[i], tspSolution[j]);
     }
     setEvaluated(false);
+}
+
+void Individual::flipKspGene(int index) {
+    knapsackSolution[index] = !knapsackSolution[index];
 }

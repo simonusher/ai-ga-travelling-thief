@@ -10,7 +10,7 @@
 
 class RandomSwapMutator : public Mutator {
 public:
-    RandomSwapMutator(double mutProb, std::mt19937 *randomGenerator);
+    RandomSwapMutator(double geneMutProb, double individualMutProb, std::mt19937 *randomGenerator);
 
     void mutate(const std::vector<Individual *> &population) override;
 };

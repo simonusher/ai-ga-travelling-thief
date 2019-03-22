@@ -13,12 +13,13 @@
 
 class Individual {
 public:
-    explicit Individual(std::vector<int>& solution);
+    explicit Individual(std::vector<int>& tspSolution, std::vector<bool>& knapsackSolution);
     virtual std::vector<Individual*> crossover(std::mt19937 &randomGenerator, Individual& other);
     virtual void mutate(std::mt19937& randomGenerator);
     virtual void swapWithRandom(int firstGeneIndex, std::mt19937& randomGenerator);
     virtual void swapGenes(int firstGeneIndex, int secondGeneIndex);
-    virtual void invert(int firstGeneIndex, int secondGeneIndex);
+    virtual void flipKspGene(int index);
+    virtual void invertTsp(int firstGeneIndex, int secondGeneIndex);
 
     double getFitness() const;
 
@@ -28,10 +29,13 @@ public:
 
     void setEvaluated(bool evaluated);
 
-    const std::vector<int> &getSolution() const;
+    const std::vector<int> &getTspSolution() const;
+
+    const std::vector<bool> &getKnapsackSolution() const;
 
 private:
-    std::vector<int> solution;
+    std::vector<int> tspSolution;
+    std::vector<bool> knapsackSolution;
     double fitness;
     bool evaluated;
 };

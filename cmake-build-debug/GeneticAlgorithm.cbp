@@ -108,9 +108,6 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h">
-			<Option target="GeneticAlgorithm"/>
-		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
@@ -160,9 +157,6 @@
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp">
-			<Option target="GeneticAlgorithm"/>
-		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp">

@@ -60,6 +60,8 @@ private:
     std::bernoulli_distribution crossoverDistribution;
 
     void logData();
+
+    void fixup();
 };
 
 

@@ -9,14 +9,17 @@
 
 class Mutator {
 public:
-    Mutator(double mutProb, std::mt19937 *randomGenerator);
+    Mutator(double geneMutProb, double individualMutProb, std::mt19937 *randomGenerator);
     virtual ~Mutator() = default;
     virtual void mutate(const std::vector<Individual*>& population) = 0;
 
 protected:
-    virtual bool shouldMutate();
+    virtual bool shouldMutateIndividual();
+    virtual bool shouldMutateGene();
     std::mt19937* randomGenerator;
-    std::bernoulli_distribution mutationDistribution;
-    double mutProb;
+    std::bernoulli_distribution individualMutationDistribution;
+    std::bernoulli_distribution geneMutationDistribution;
+    double geneMutProb;
+    double individualMutProb;
 };
 #endif //GENETICALGORITHM_MUTATOR_H

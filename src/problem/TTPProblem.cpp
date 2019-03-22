@@ -1,13 +1,17 @@
 //
-// Created by Szymon on 10/03/2019.
-//
 
 #include "../../include/GeneticAlgorithm/problem/TTPProblem.h"
 
-void TTPProblem::initialize(std::string &filename, ItemSelectionPolicy policy) {
+//
+// Created by Szymon on 10/03/2019.
+TTPProblem::TTPProblem(std::mt19937 *randomGenerator) : Problem(), randomGenerator(randomGenerator) {
+
+}
+
+void TTPProblem::initialize(std::string &filename) {
     load(filename);
     calculateDistances();
-    selectItems(policy);
+    setItemsInCities();
     fitnessFunctionEvaluationsNumber = 0;
 }
 
@@ -15,22 +19,28 @@ double TTPProblem::evaluate(Individual* individual) {
     if(!individual->isEvaluated()){
         fitnessFunctionEvaluationsNumber++;
         double itemsWeight = 0;
+        double itemsProfit = 0;
         double totalTime = 0;
         double currentVelocity = 0;
-        const std::vector<int> &solution = individual->getSolution();
+        const std::vector<int> &tspSolution = individual->getTspSolution();
+        const std::vector<bool> &knapsackSolution = individual->getKnapsackSolution();
 
-        for(int i = 0; i < solution.size() - 1; i++){
-            itemsWeight += weightsInCities[solution[i]];
+        for(int i = 0; i < tspSolution.size() - 1; i++){
+            std::pair<double, double> weightAndProfitInCity = getWeightAndProfitInCity(tspSolution[i], knapsackSolution);
+            itemsWeight += weightAndProfitInCity.first;
+            itemsProfit += weightAndProfitInCity.second;
             currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
-            double distance = getDistance(solution[i], solution[i + 1]);
+            double distance = getDistance(tspSolution[i], tspSolution[i + 1]);
             double time = distance / currentVelocity;
             totalTime += time;
         }
-        itemsWeight += weightsInCities[solution[solution.size() - 1]];
+        std::pair<double, double> weightAndProfitInCity = getWeightAndProfitInCity(tspSolution[tspSolution.size() - 1], individual->getKnapsackSolution());
+        itemsWeight += weightAndProfitInCity.first;
+        itemsProfit += weightAndProfitInCity.second;
         currentVelocity = vMax - (itemsWeight * ((vMax - vMin) / (double)capacityOfKnapsack));
-        double time = getDistance(solution[solution.size() - 1], solution[0]) / currentVelocity;
+        double time = getDistance(tspSolution[tspSolution.size() - 1], tspSolution[0]) / currentVelocity;
         totalTime += time;
-        individual->setFitness(selectedItemsProfit - totalTime);
+        individual->setFitness(itemsProfit - totalTime);
     }
     return individual->getFitness();
 }
@@ -95,10 +105,18 @@ void TTPProblem::load(std::string &filename) {
 }
 
 Individual *TTPProblem::randomizedSolution() {
-    std::vector<int> solution(numberOfCities);
-    std::iota(solution.begin(), solution.end(), cities[0]->getIndex());
-    std::random_shuffle(solution.begin(), solution.end());
-    return new Individual(solution);
+    std::vector<int> tspSolution(numberOfCities);
+    std::iota(tspSolution.begin(), tspSolution.end(), cities[0]->getIndex());
+    std::shuffle(tspSolution.begin(), tspSolution.end(), *randomGenerator);
+
+    std::vector<bool> knapsackSolution(numberOfItems);
+    std::bernoulli_distribution kspDistribution;
+    for(int i = 0; i < numberOfItems; i++){
+        knapsackSolution[i] = kspDistribution(*randomGenerator);
+    }
+    Individual *individual = new Individual(tspSolution, knapsackSolution);
+    fixIfIncorrect(individual);
+    return individual;
 }
 
 double TTPProblem::getWorstPossibleFitness() {
@@ -148,58 +166,8 @@ double TTPProblem::calculateDistance(City *firstCity, City *secondCity) {
     return firstCity->distance(secondCity);
 }
 
-void TTPProblem::selectItems(ItemSelectionPolicy policy) {
-    switch (policy){
-        case ProfitWeightRatio:
-            std::sort(allItems.begin(), allItems.end(), TTPProblem::selectBetterWeightProfitItem);
-            break;
-        case Lightest:
-            std::sort(allItems.begin(), allItems.end(), TTPProblem::selectLighterItem);
-            break;
-        case MostProfitable:
-            std::sort(allItems.begin(), allItems.end(), TTPProblem::selectProfitableItem);
-            break;
-    }
-    selectAllFittingItems();
-}
-
-bool TTPProblem::selectBetterWeightProfitItem(KnapsackItem *firstItem, KnapsackItem *secondItem){
-    return firstItem->getProfitWeightRatio() >= secondItem->getProfitWeightRatio();
-}
-
-bool TTPProblem::selectLighterItem(KnapsackItem *firstItem, KnapsackItem *secondItem) {
-    return firstItem->getWeight() <= secondItem->getWeight();
-}
-
-bool TTPProblem::selectProfitableItem(KnapsackItem *firstItem, KnapsackItem *secondItem) {
-    return firstItem->getProfit() >= secondItem->getProfit();
-}
-
 double TTPProblem::getDistance(int firstCityIndex, int secondCityIndex) {
     return cityDistances[firstCityIndex][secondCityIndex];
-}
-
-void TTPProblem::selectAllFittingItems() {
-    selectedItems.clear();
-    selectedItemsWeight = 0;
-    selectedItemsProfit = 0;
-    for(int i = 0; i < cities.size(); i++){
-        weightsInCities[cities[i]->getIndex()] = 0;
-        profitInCities[cities[i]->getIndex()] = 0;
-    }
-
-    for(int i = 0; i < allItems.size() && selectedItemsWeight < capacityOfKnapsack; i++) {
-        KnapsackItem *currentItem = allItems[i];
-        selectedItems.emplace(currentItem->getAssignedNodeIndex(), std::vector<KnapsackItem*>());
-
-        if(selectedItemsWeight + currentItem->getWeight() < capacityOfKnapsack){
-            selectedItems[currentItem->getAssignedNodeIndex()].push_back(currentItem);
-            selectedItemsWeight += currentItem->getWeight();
-            selectedItemsProfit += currentItem->getProfit();
-            weightsInCities[currentItem->getAssignedNodeIndex()] += currentItem->getWeight();
-            profitInCities[currentItem->getAssignedNodeIndex()] += currentItem->getProfit();
-        }
-    }
 }
 
 int TTPProblem::getFitnessFunctionEvaluations() {
@@ -214,10 +182,58 @@ bool TTPProblem::fitnessStrictlyBetter(double firstFitness, double secondFitness
     return firstFitness > secondFitness;
 }
 
-bool TTPProblem::operator()(Individual *i1, Individual *i2) {
-    return compareSolutions(i1, i2);
-}
-
 int TTPProblem::getProblemSize() {
     return numberOfCities;
+}
+
+void TTPProblem::fixIfIncorrect(Individual *individual) {
+    double totalWeight = 0;
+    const std::vector<bool> &knapsackSolution = individual->getKnapsackSolution();
+
+    std::vector<int> selectedItemsIndices;
+    for(int i = 0; i < knapsackSolution.size(); i++){
+        if(knapsackSolution[i]){
+            totalWeight += allItems[i]->getWeight();
+            selectedItemsIndices.push_back(i);
+        }
+    }
+
+    if(totalWeight > capacityOfKnapsack){
+        fixup(totalWeight, individual, selectedItemsIndices);
+    }
+}
+
+void TTPProblem::fixup(double weight, Individual *individual, std::vector<int> selectedItemsIndices) {
+    int selectedItemsLeft = selectedItemsIndices.size();
+    while(weight > capacityOfKnapsack){
+        std::uniform_int_distribution<int> randomItemDistribution(0, selectedItemsIndices.size()-1);
+        int itemIndex = randomItemDistribution(*randomGenerator);
+        individual->flipKspGene(selectedItemsIndices[itemIndex]);
+        weight -= allItems[selectedItemsIndices[itemIndex]]->getWeight();
+        selectedItemsLeft--;
+    }
+}
+
+void TTPProblem::setItemsInCities() {
+    itemsInCities.clear();
+    for(int i = 0; i < cities.size(); i++){
+        itemsInCities[cities[i]->getIndex()] = std::vector<KnapsackItem*>();
+    }
+
+    for(int i = 0; i < allItems.size(); i++){
+        itemsInCities[allItems[i]->getAssignedNodeIndex()].push_back(allItems[i]);
+    }
+}
+
+std::pair<double, double> TTPProblem::getWeightAndProfitInCity(int cityIndex, const std::vector<bool> &knapsackSolution) {
+    std::vector<KnapsackItem*>& items = itemsInCities[cityIndex];
+    double profit = 0;
+    double weight = 0;
+    for(int i = 0; i < items.size(); i++){
+        if(knapsackSolution[items[i]->getIndex()-1]){
+            profit += items[i]->getProfit();
+            weight += items[i]->getWeight();
+        }
+    }
+    return { profit, weight };
 }

@@ -9,7 +9,6 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/oper
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/Selector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/operators/TournamentSelector.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h
-CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/GreedyTTP.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/HillClimber.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/optimizers/RandomSearch.h
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../include/GeneticAlgorithm/problem/City.h
@@ -59,15 +58,6 @@ CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: ../includ
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/problem/Problem.h
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: ../include/GeneticAlgorithm/util/Logger.h
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: ../src/optimizers/GeneticAlgorithm.cpp
-
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/optimizers/GreedyTTP.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/problem/City.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/problem/Individual.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/problem/KnapsackItem.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/problem/Problem.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/problem/TTPProblem.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../include/GeneticAlgorithm/util/Logger.h
-CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o: ../src/optimizers/GreedyTTP.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o: ../include/GeneticAlgorithm/optimizers/HillClimber.h
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o: ../include/GeneticAlgorithm/problem/Individual.h

@@ -43,6 +43,7 @@ void GeneticAlgorithm::runIteration() {
     select();
     crossover();
     mutate();
+    fixup();
     evaluate();
     iterationsPassed++;
 }
@@ -52,6 +53,7 @@ void GeneticAlgorithm::initPopulation() {
     for(int i = 0; i < popSize; i++){
         population.push_back(problem->randomizedSolution());
     }
+    fixup();
 }
 
 
@@ -148,11 +150,11 @@ void GeneticAlgorithm::printInfo() {
 }
 
 void GeneticAlgorithm::printResults() {
-    *logger << "Best solution:\n";
+    *logger << "Best tspSolution:\n";
     *logger << "\tTSP: [";
-    for(int i = 0; i < bestOverall->getSolution().size(); i++){
-        *logger << bestOverall->getSolution()[i];
-        if(i != bestOverall->getSolution().size() - 1){
+    for(int i = 0; i < bestOverall->getTspSolution().size(); i++){
+        *logger << bestOverall->getTspSolution()[i];
+        if(i != bestOverall->getTspSolution().size() - 1){
             *logger << ", ";
         }
     }
@@ -165,4 +167,10 @@ void GeneticAlgorithm::logData() {
     << ";" << (int)bestOverall->getFitness() << ";"
     << (int)currentWorstFitness << ";" << (int)currentAverageFitness << ";"
     << (int)currentBestFitness << ";" << problem->getFitnessFunctionEvaluations() << "\n";
+}
+
+void GeneticAlgorithm::fixup() {
+    for(int i = 0; i < population.size(); i++){
+        problem->fixIfIncorrect(population[i]);
+    }
 }

@@ -13,7 +13,7 @@ void HillClimber::hillClimb(int numberOfSolutions) {
             delete current;
             current = problem->randomizedSolution();
         }
-        seenSolutions.insert(current->getSolution());
+        seenSolutions.insert(current->getTspSolution());
         improve(current);
         if(bestOverall == nullptr || problem->compareSolutions(current, bestOverall)){
             delete bestOverall;
@@ -24,7 +24,7 @@ void HillClimber::hillClimb(int numberOfSolutions) {
 }
 
 bool HillClimber::seenSolution(Individual *individual) {
-    return seenSolutions.find(individual->getSolution()) != seenSolutions.end();
+    return seenSolutions.find(individual->getTspSolution()) != seenSolutions.end();
 }
 
 void HillClimber::improve(Individual *individual) {
@@ -32,8 +32,8 @@ void HillClimber::improve(Individual *individual) {
     double currentBestFitness = problem->evaluate(individual);
     while(improved){
         improved = false;
-        for (int i = 0; i < individual->getSolution().size() - 1; i++) {
-            for (int j = i + 1; j < individual->getSolution().size(); j++) {
+        for (int i = 0; i < individual->getTspSolution().size() - 1; i++) {
+            for (int j = i + 1; j < individual->getTspSolution().size(); j++) {
                 individual->swapGenes(i, j);
                 problem->evaluate(individual);
                 if(problem->fitnessStrictlyBetter(individual->getFitness(), currentBestFitness)){

@@ -10,16 +10,16 @@ void RandomSearch::search(int numberOfSolutions) {
     delete bestOverall;
     bestOverall = current;
     seen.clear();
-    seen.insert(current->getSolution());
+    seen.insert(current->getTspSolution());
 
     for(int i = 0; i < numberOfSolutions; i++){
         current = problem->randomizedSolution();
-        while(seenSolution(current->getSolution())){
+        while(seenSolution(current->getTspSolution())){
             delete current;
             current = problem->randomizedSolution();
         }
         problem->evaluate(current);
-        seen.insert(current->getSolution());
+        seen.insert(current->getTspSolution());
         if(problem->compareSolutions(current, bestOverall)){
             delete bestOverall;
             bestOverall = current;

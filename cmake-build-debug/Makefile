@@ -339,33 +339,6 @@ src/optimizers/GeneticAlgorithm.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
 .PHONY : src/optimizers/GeneticAlgorithm.cpp.s
 
-src/optimizers/GreedyTTP.o: src/optimizers/GreedyTTP.cpp.o
-
-.PHONY : src/optimizers/GreedyTTP.o
-
-# target to build an object file
-src/optimizers/GreedyTTP.cpp.o:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o
-.PHONY : src/optimizers/GreedyTTP.cpp.o
-
-src/optimizers/GreedyTTP.i: src/optimizers/GreedyTTP.cpp.i
-
-.PHONY : src/optimizers/GreedyTTP.i
-
-# target to preprocess a source file
-src/optimizers/GreedyTTP.cpp.i:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.i
-.PHONY : src/optimizers/GreedyTTP.cpp.i
-
-src/optimizers/GreedyTTP.s: src/optimizers/GreedyTTP.cpp.s
-
-.PHONY : src/optimizers/GreedyTTP.s
-
-# target to generate assembly for a file
-src/optimizers/GreedyTTP.cpp.s:
-	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.s
-.PHONY : src/optimizers/GreedyTTP.cpp.s
-
 src/optimizers/HillClimber.o: src/optimizers/HillClimber.cpp.o
 
 .PHONY : src/optimizers/HillClimber.o
@@ -615,9 +588,6 @@ help:
 	@echo "... src/optimizers/GeneticAlgorithm.o"
 	@echo "... src/optimizers/GeneticAlgorithm.i"
 	@echo "... src/optimizers/GeneticAlgorithm.s"
-	@echo "... src/optimizers/GreedyTTP.o"
-	@echo "... src/optimizers/GreedyTTP.i"
-	@echo "... src/optimizers/GreedyTTP.s"
 	@echo "... src/optimizers/HillClimber.o"
 	@echo "... src/optimizers/HillClimber.i"
 	@echo "... src/optimizers/HillClimber.s"

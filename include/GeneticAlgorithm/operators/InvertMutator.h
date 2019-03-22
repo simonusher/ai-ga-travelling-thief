@@ -10,7 +10,7 @@
 
 class InvertMutator : public Mutator {
 public:
-    InvertMutator(double mutProb, std::mt19937 *randomGenerator);
+    InvertMutator(double geneMutProb, double individualMutProb, std::mt19937 *randomGenerator);
 private:
     void mutate(const std::vector<Individual *> &population) override;
 };
