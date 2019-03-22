@@ -10,6 +10,10 @@
 Mutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h
 
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h
+Mutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h
+
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h
 ../problem/Individual.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Individual.h
@@ -99,6 +103,8 @@ set
 -
 iostream
 -
+algorithm
+-
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/KnapsackItem.h
 
@@ -171,12 +177,18 @@ iostream
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h
 ../include/GeneticAlgorithm/optimizers/GreedyTTP.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h
+../include/GeneticAlgorithm/operators/InvertMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h
 ctime
 -
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp
 ../../include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h
+
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp
+../../include/GeneticAlgorithm/operators/InvertMutator.h
+/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h
 
 /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp
 ../../include/GeneticAlgorithm/operators/Mutator.h

@@ -15,6 +15,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o"
   "CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GreedyTTP.cpp.o"
+  "CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o"
   "GeneticAlgorithm.pdb"
   "GeneticAlgorithm"
 )

@@ -104,3 +104,11 @@ void Individual::swapGenes(int firstGeneIndex, int secondGeneIndex) {
     std::swap(solution[firstGeneIndex], solution[secondGeneIndex]);
     setEvaluated(false);
 }
+
+void Individual::invert(int firstGeneIndex, int secondGeneIndex) {
+//    std::reverse(solution.begin() + firstGeneIndex, solution.begin() + secondGeneIndex);
+    for(int i = firstGeneIndex, j = secondGeneIndex; i < j; i++, j--){
+        std::swap(solution[i], solution[j]);
+    }
+    setEvaluated(false);
+}

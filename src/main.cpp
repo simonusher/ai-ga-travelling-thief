@@ -9,6 +9,7 @@
 #include "../include/GeneticAlgorithm/operators/RandomSwapMutator.h"
 #include "../include/GeneticAlgorithm/operators/RouletteSelector.h"
 #include "../include/GeneticAlgorithm/optimizers/GreedyTTP.h"
+#include "../include/GeneticAlgorithm/operators/InvertMutator.h"
 
 #include <ctime>
 using namespace std;
@@ -79,33 +80,35 @@ void runGreedyTests(std::vector<std::string> fileNames){
 
 void runGaTests(){
 //    std::vector<std::string> problemNames {"easy_0", "easy_1", "medium_0", "medium_1", "hard_0"};
-    std::vector<std::string> problemNames {"medium_0"};
+    std::vector<std::string> problemNames {"easy_0"};
+//    std::vector<std::string> problemNames {"hard_0"};
     for(int j = 0; j < problemNames.size(); j++){
         std::string problemName(problemNames[j]);
         std::string filename(problemName + ".ttp");
-        int iterations = 100;
+        int iterations = 300;
         int popSize = 100;
-        double crossProb = 0.9;
-        int tournamentSize = 100;
-        double mutProb = 0.05;
-//        double mutProb = 0.3;
+        double crossProb = 0.8;
+        int tournamentSize = 10;
+//        double mutProb = 0.05;
+        double mutProb = 0.015;
 
-        for(int i = 0; i < 1; i++){
+        for(int i = 0; i < 10; i++){
             TTPProblem problem;
             std::random_device randomDevice;
             std::mt19937 randomGenerator(randomDevice());
 
-            Logger logger(true, "results/" + problemName + "_i" + std::to_string(iterations) + "p"
+            Logger logger(true, "results/tests/selection/roulette/i" + std::to_string(iterations) + "p"
                                 + std::to_string(popSize) + "c" + std::to_string(crossProb) + "m" + std::to_string(mutProb) + "t" + std::to_string(tournamentSize)
                                 + "_" + std::to_string(i) + ".csv");
 
             problem.initialize(filename, ProfitWeightRatio);
 
-            TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
-//            RouletteSelector selector(&problem, &randomGenerator);
+//            TournamentSelector selector(&problem, tournamentSize, popSize, &randomGenerator);
+            RouletteSelector selector(&problem, &randomGenerator);
 
             AllGeneRandomSwapMutator mutator(mutProb, &randomGenerator);
 //            RandomSwapMutator mutator(mutProb, &randomGenerator);
+//            InvertMutator mutator(mutProb, &randomGenerator);
 
             clock_t begin = clock();
 

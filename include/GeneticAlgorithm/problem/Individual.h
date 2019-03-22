@@ -9,6 +9,7 @@
 #include <random>
 #include <set>
 #include <iostream>
+#include <algorithm>
 
 class Individual {
 public:
@@ -17,6 +18,7 @@ public:
     virtual void mutate(std::mt19937& randomGenerator);
     virtual void swapWithRandom(int firstGeneIndex, std::mt19937& randomGenerator);
     virtual void swapGenes(int firstGeneIndex, int secondGeneIndex);
+    virtual void invert(int firstGeneIndex, int secondGeneIndex);
 
     double getFitness() const;
 

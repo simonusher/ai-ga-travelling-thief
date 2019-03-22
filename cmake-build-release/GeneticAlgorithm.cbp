@@ -87,6 +87,9 @@
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
@@ -139,6 +142,9 @@
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
 		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp">

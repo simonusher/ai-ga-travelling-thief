@@ -32,4 +32,4 @@ add_executable(
         include/GeneticAlgorithm/operators/RandomSwapMutator.h
         src/operators/Mutator.cpp
         src/operators/AllGeneRandomSwapMutator.cpp
-        include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h src/operators/RouletteSelector.cpp include/GeneticAlgorithm/operators/RouletteSelector.h src/optimizers/GreedyTTP.cpp include/GeneticAlgorithm/optimizers/GreedyTTP.h)
+        include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h src/operators/RouletteSelector.cpp include/GeneticAlgorithm/operators/RouletteSelector.h src/optimizers/GreedyTTP.cpp include/GeneticAlgorithm/optimizers/GreedyTTP.h src/operators/InvertMutator.cpp include/GeneticAlgorithm/operators/InvertMutator.h)

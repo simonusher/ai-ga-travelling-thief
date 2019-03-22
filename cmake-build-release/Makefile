@@ -177,6 +177,33 @@ src/operators/AllGeneRandomSwapMutator.cpp.s:
 	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s
 .PHONY : src/operators/AllGeneRandomSwapMutator.cpp.s
 
+src/operators/InvertMutator.o: src/operators/InvertMutator.cpp.o
+
+.PHONY : src/operators/InvertMutator.o
+
+# target to build an object file
+src/operators/InvertMutator.cpp.o:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o
+.PHONY : src/operators/InvertMutator.cpp.o
+
+src/operators/InvertMutator.i: src/operators/InvertMutator.cpp.i
+
+.PHONY : src/operators/InvertMutator.i
+
+# target to preprocess a source file
+src/operators/InvertMutator.cpp.i:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.i
+.PHONY : src/operators/InvertMutator.cpp.i
+
+src/operators/InvertMutator.s: src/operators/InvertMutator.cpp.s
+
+.PHONY : src/operators/InvertMutator.s
+
+# target to generate assembly for a file
+src/operators/InvertMutator.cpp.s:
+	$(MAKE) -f CMakeFiles/GeneticAlgorithm.dir/build.make CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.s
+.PHONY : src/operators/InvertMutator.cpp.s
+
 src/operators/Mutator.o: src/operators/Mutator.cpp.o
 
 .PHONY : src/operators/Mutator.o
@@ -570,6 +597,9 @@ help:
 	@echo "... src/operators/AllGeneRandomSwapMutator.o"
 	@echo "... src/operators/AllGeneRandomSwapMutator.i"
 	@echo "... src/operators/AllGeneRandomSwapMutator.s"
+	@echo "... src/operators/InvertMutator.o"
+	@echo "... src/operators/InvertMutator.i"
+	@echo "... src/operators/InvertMutator.s"
 	@echo "... src/operators/Mutator.o"
 	@echo "... src/operators/Mutator.i"
 	@echo "... src/operators/Mutator.s"

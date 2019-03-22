@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.25)  21 MAR 2019 23:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.25)  22 MAR 2019 05:34
 entering extended mode
 **./sprawozdanie.tex
 (sprawozdanie.tex
@@ -288,7 +288,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box29
 \@float@everytoks=\toks21
 \@floatcapt=\box30
-) (sprawozdanie.aux)
+) (sprawozdanie.aux
+
+LaTeX Warning: Label `tab:gen' multiply defined.
+
+)
 \openout1 = `sprawozdanie.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -401,33 +405,366 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 35.
 
 [1] [2] [3]
-Overfull \hbox (11.34453pt too wide) in paragraph at lines 109--109
+<easy0.png, id=152, 770.88pt x 452.4403pt>
+File: easy0.png Graphic file (type png)
+<use easy0.png>
+Package pdftex.def Info: easy0.png  used on input line 122.
+(pdftex.def)             Requested size: 345.0pt x 202.48476pt.
+ [4]
+<easy1.png, id=157, 867.24pt x 511.9125pt>
+File: easy1.png Graphic file (type png)
+<use easy1.png>
+Package pdftex.def Info: easy1.png  used on input line 135.
+(pdftex.def)             Requested size: 345.0pt x 203.64438pt.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.140 		$
+         \mu = 613.4$ <./easy0.png>]
+<medium0.png, id=163, 867.24pt x 511.9125pt>
+File: medium0.png Graphic file (type png)
+<use medium0.png>
+Package pdftex.def Info: medium0.png  used on input line 148.
+(pdftex.def)             Requested size: 345.0pt x 203.64438pt.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.2})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.153 		$
+         \mu = 57284.8$ <./easy1.png>]
+<medium1.png, id=170, 867.24pt x 511.9125pt>
+File: medium1.png Graphic file (type png)
+<use medium1.png>
+Package pdftex.def Info: medium1.png  used on input line 161.
+(pdftex.def)             Requested size: 345.0pt x 203.64438pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.166 		$
+         \mu = 113726.1$ <./medium0.png>]
+<hard0.png, id=176, 867.24pt x 511.9125pt>
+File: hard0.png Graphic file (type png)
+<use hard0.png>
+Package pdftex.def Info: hard0.png  used on input line 174.
+(pdftex.def)             Requested size: 345.0pt x 203.64438pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.4})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.179 		$
+         \mu = -713010.9$ <./medium1.png>]
+Overfull \hbox (11.34453pt too wide) in paragraph at lines 188--188
 []\OT4/cmr/bx/n/14.4 Badanie wpªy-wu pa-ra-me-trów me-to-dy na []
  []
 
+[9pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) 
+has been already used, duplicate ignored
 
-Overfull \hbox (31.96458pt too wide) in paragraph at lines 112--112
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.190 	\subsection
+                  {WpÅ‚yw prawdopodobieÅ„stwa mutacji} <./hard0.png>]
+<pm0.png, id=187, 867.24pt x 496.85625pt>
+File: pm0.png Graphic file (type png)
+<use pm0.png>
+Package pdftex.def Info: pm0.png  used on input line 201.
+(pdftex.def)             Requested size: 345.0pt x 197.65483pt.
+<pm0005.png, id=188, 867.99281pt x 482.55281pt>
+File: pm0005.png Graphic file (type png)
+<use pm0005.png>
+Package pdftex.def Info: pm0005.png  used on input line 209.
+(pdftex.def)             Requested size: 345.0pt x 191.80278pt.
+ [10pdfTeX warning (ext4): destination with the same identifier (name{figure.6}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.213 
+       <./pm0.png>]
+<pm005.png, id=194, 867.99281pt x 511.9125pt>
+File: pm005.png Graphic file (type png)
+<use pm005.png>
+Package pdftex.def Info: pm005.png  used on input line 216.
+(pdftex.def)             Requested size: 345.0pt x 203.47253pt.
+<pm01.png, id=195, 867.24pt x 496.85625pt>
+File: pm01.png Graphic file (type png)
+<use pm01.png>
+Package pdftex.def Info: pm01.png  used on input line 224.
+(pdftex.def)             Requested size: 345.0pt x 197.65483pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.7}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.228 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.228 
+       <./pm0005.png> <./pm005.png>]
+<pm05.png, id=202, 867.99281pt x 511.9125pt>
+File: pm05.png Graphic file (type png)
+<use pm05.png>
+Package pdftex.def Info: pm05.png  used on input line 231.
+(pdftex.def)             Requested size: 345.0pt x 203.47253pt.
+<pm1.png, id=203, 867.99281pt x 496.85625pt>
+File: pm1.png Graphic file (type png)
+<use pm1.png>
+Package pdftex.def Info: pm1.png  used on input line 238.
+(pdftex.def)             Requested size: 345.0pt x 197.48804pt.
+ [12pdfTeX warning (ext4): destination with the same identifier (name{figure.9}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.242 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.242 	
+        <./pm01.png> <./pm05.png>] [13pdfTeX warning (ext4): destination with t
+he same identifier (name{figure.11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.268 		\item $
+               gen = 100$,pdfTeX warning (ext4): destination with the same iden
+tifier (name{table.1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.268 		\item $
+               gen = 100$, <./pm1.png>]
+<cross0.png, id=221, 867.99281pt x 511.9125pt>
+File: cross0.png Graphic file (type png)
+<use cross0.png>
+Package pdftex.def Info: cross0.png  used on input line 276.
+(pdftex.def)             Requested size: 345.0pt x 203.47253pt.
+<cross01.png, id=222, 867.99281pt x 511.9125pt>
+File: cross01.png Graphic file (type png)
+<use cross01.png>
+Package pdftex.def Info: cross01.png  used on input line 284.
+(pdftex.def)             Requested size: 345.0pt x 203.47253pt.
+ [14pdfTeX warning (ext4): destination with the same identifier (name{figure.12
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.288 	
+        <./cross0.png>]
+<cross02.png, id=228, 868.74562pt x 514.92375pt>
+File: cross02.png Graphic file (type png)
+<use cross02.png>
+Package pdftex.def Info: cross02.png  used on input line 291.
+(pdftex.def)             Requested size: 345.0pt x 204.48871pt.
+<cross05.png, id=229, 868.74562pt x 499.8675pt>
+File: cross05.png Graphic file (type png)
+<use cross05.png>
+Package pdftex.def Info: cross05.png  used on input line 298.
+(pdftex.def)             Requested size: 345.0pt x 198.5095pt.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.13
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.302 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.302 	
+        <./cross01.png> <./cross02.png>]
+<cross08.png, id=236, 868.74562pt x 511.9125pt>
+File: cross08.png Graphic file (type png)
+<use cross08.png>
+Package pdftex.def Info: cross08.png  used on input line 305.
+(pdftex.def)             Requested size: 345.0pt x 203.29288pt.
+<cross1.png, id=237, 868.74562pt x 511.9125pt>
+File: cross1.png Graphic file (type png)
+<use cross1.png>
+Package pdftex.def Info: cross1.png  used on input line 312.
+(pdftex.def)             Requested size: 345.0pt x 203.29288pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.15
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.316 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+16}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.316 
+       <./cross05.png> <./cross08.png>] [17pdfTeX warning (ext4): destination w
+ith the same identifier (name{figure.17}) has been already used, duplicate igno
+red
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.341 	\begin{itemize}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{table.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.341 	\begin{itemize}
+                       <./cross1.png>]
+<popsize100.png, id=251, 871.75688pt x 513.41812pt>
+File: popsize100.png Graphic file (type png)
+<use popsize100.png>
+Package pdftex.def Info: popsize100.png  used on input line 349.
+(pdftex.def)             Requested size: 345.0pt x 203.18571pt.
+<popsize500.png, id=252, 871.75688pt x 513.41812pt>
+File: popsize500.png Graphic file (type png)
+<use popsize500.png>
+Package pdftex.def Info: popsize500.png  used on input line 357.
+(pdftex.def)             Requested size: 345.0pt x 203.18571pt.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.18
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.361 	
+        <./popsize100.png>]
+<popsize1000.png, id=259, 871.75688pt x 513.41812pt>
+File: popsize1000.png Graphic file (type png)
+<use popsize1000.png>
+Package pdftex.def Info: popsize1000.png  used on input line 364.
+(pdftex.def)             Requested size: 345.0pt x 203.18571pt.
+ [19pdfTeX warning (ext4): destination with the same identifier (name{figure.19
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.20}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.384 	
+        <./popsize500.png> <./popsize1000.png>]
+<gen100.png, id=267, 868.74562pt x 513.41812pt>
+File: gen100.png Graphic file (type png)
+<use gen100.png>
+Package pdftex.def Info: gen100.png  used on input line 400.
+(pdftex.def)             Requested size: 345.0pt x 203.8908pt.
+ [20pdfTeX warning (ext4): destination with the same identifier (name{table.3})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.404 	
+       ]
+<gen500.png, id=274, 868.74562pt x 513.41812pt>
+File: gen500.png Graphic file (type png)
+<use gen500.png>
+Package pdftex.def Info: gen500.png  used on input line 408.
+(pdftex.def)             Requested size: 345.0pt x 203.8908pt.
+<gen1000.png, id=275, 868.74562pt x 513.41812pt>
+File: gen1000.png Graphic file (type png)
+<use gen1000.png>
+Package pdftex.def Info: gen1000.png  used on input line 415.
+(pdftex.def)             Requested size: 345.0pt x 203.8908pt.
+ [21pdfTeX warning (ext4): destination with the same identifier (name{figure.21
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419 	
+       pdfTeX warning (ext4): destination with the same identifier (name{figure
+.22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419 	
+        <./gen100.png> <./gen500.png>]
+Overfull \hbox (31.96458pt too wide) in paragraph at lines 439--439
 []\OT4/cmr/bx/n/14.4 Badanie wpªy-wu se-lek-cji na sku-tecz-no±¢ []
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
-[4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.23}
+) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.446 		\item $
+               tour = 10$.pdfTeX warning (ext4): destination with the same iden
+tifier (name{table.4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.446 		\item $
+               tour = 10$. <./gen1000.png>]
+<tour.png, id=289, 868.74562pt x 513.41812pt>
+File: tour.png Graphic file (type png)
+<use tour.png>
+Package pdftex.def Info: tour.png  used on input line 451.
+(pdftex.def)             Requested size: 345.0pt x 203.8908pt.
+<roulette.png, id=290, 868.74562pt x 513.41812pt>
+File: roulette.png Graphic file (type png)
+<use roulette.png>
+Package pdftex.def Info: roulette.png  used on input line 458.
+(pdftex.def)             Requested size: 345.0pt x 203.8908pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.24
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.477 	\paragraph
+                 {Wnioski}	pdfTeX warning (ext4): destination with the same ide
+ntifier (name{figure.25}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.477 	\paragraph
+                 {Wnioski}	 <./tour.png> <./roulette.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 510.
+ [24pdfTeX warning (ext4): destination with the same identifier (name{table.5})
+ has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.510 \end{document}
+                    pdfTeX warning (ext4): destination with the same identifier
+ (name{table.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.510 \end{document}
+                    ] [25]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 510.
  (sprawozdanie.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 510.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 510.
 Package rerunfilecheck Info: File `sprawozdanie.out' has not changed.
-(rerunfilecheck)             Checksum: D64121139A31054FEB6FECF17F87956F;1517.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+(rerunfilecheck)             Checksum: A2648BD8E77CC4200CFBE1AC8E6E4724;2000.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 510.
  ) 
 Here is how much of TeX's memory you used:
- 5937 strings out of 492946
- 87815 string characters out of 3125822
- 180236 words of memory out of 3000000
- 9743 multiletter control sequences out of 15000+200000
+ 6170 strings out of 492946
+ 90626 string characters out of 3125822
+ 184627 words of memory out of 3000000
+ 9885 multiletter control sequences out of 15000+200000
  13819 words of font info for 39 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,7n,29p,623b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,29p,718b,384s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Szymon/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plit.en
 c}{C:/Users/Szymon/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.en
 c}{C:/Users/Szymon/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/pl/plms.en
@@ -450,9 +787,9 @@ Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plr7.pfb><C:/Users/Szymon/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy10.pfb><C:/Users/Sz
 ymon/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plsy7.pfb><C:/User
 s/Szymon/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb>
-Output written on sprawozdanie.pdf (5 pages, 119386 bytes).
+Output written on sprawozdanie.pdf (26 pages, 974155 bytes).
 PDF statistics:
- 189 PDF objects out of 1000 (max. 8388607)
- 31 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 387 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 342 words of extra memory for PDF output out of 10000 (max. 10000000)
 
