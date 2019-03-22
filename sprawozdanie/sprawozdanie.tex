@@ -10,7 +10,7 @@
 
 \author{Szymon Woźniak, 235040}
 \date{22.03.2019}
-\title{Rozwiązywanie Problemu Mobilnego Złodzieja za pomocą algorytmu genetycznego}
+\title{Rozwiązywanie Problemu Mobilnego Złodzieja\\za pomocą algorytmu genetycznego}
 
 
 \begin{document}
@@ -26,7 +26,7 @@
 	\begin{equation}\label{eq:min_knp}
 		g(y) = \sum\limits_{i=1}^{N} p_{i}y_{i}
 	\end{equation}
-	, przy ograniczeniu:
+	przy ograniczeniu:
 	\begin{equation}\label{eq:constraint_knp}
 		\sum\limits_{i=1}^{N} w_{i} < C
 	\end{equation}
@@ -42,7 +42,7 @@
 	\begin{equation}\label{eq:min_tsp}
 		f(x) = \sum\limits_{i=1}^{N-1}(t_{x_{i},x_{i+1}}) + t_{x_{N},x_{1}}
 	\end{equation}
-	, gdzie: 
+	gdzie: 
 	\begin{itemize}
 		\item $x$ - wybrana trasa,
 		\item $t_{x_{i},x_{i+1}}$ - czas przejścia pomiędzy miastem $i$ a miastem $i+1$.
@@ -51,7 +51,7 @@
 	\begin{equation}\label{eq:time_tsp}
 		t_{x_{i},x_{i+1}} = \dfrac{d_{x_{i}, x_{i+1}}}{v_{i, i+1}}
 	\end{equation}
-	, gdzie:
+	gdzie:
 	\begin{itemize}
 		\item $d_{x_{i},x_{i+1}}$ - odległość pomiędzy miastem $i$ a miastem $i+1$,
 		\item $v_{x_{i},x_{i+1}}$ - prędkość na trasie pomiedzy miastem $i$ a miastem $i+1$.
@@ -261,7 +261,7 @@
 	
 	\paragraph{Wnioski}
 	Jak widać na rysunku \ref{fig:pm0} przy prawdopodobieństwie mutacji = 0, po pewnej liczbie iteracji, cała populacja zbiega do jednego punktu. Brakuje źródła różnorodności. Z kolei już na rysunku \ref{fig:pm005} i w tabeli \ref{tab:mut} widać, że prawdopodobieństwo mutacji większe od 0.05 zaczyna stopniowo pogarszać jakość wyników. Przy zbyt dużych wartościach tego prawdopodobieństwa przeszukiwanie staje się zbyt losowe. Przy tak zdefiniowanym operatorze mutacji, dla problemu medium\_0, wartość około pomiędzy $0.005$, a $0.015$ zdaje się być odpowiednia.
-	
+	\newpage
 	\subsection{Wpływ prawdopodobieństwa krzyżowania}
 	Kolejny parametr, który zostanie omówiony to prawdopodobieństwo krzyżowania $p_x$. Badanie również zostało przeprowadzone na problemie medium\_0, a ustalone wartości parametrów wyglądały następująco:
 	\begin{itemize}
@@ -336,6 +336,7 @@
 	\paragraph{Wnioski}
 	Wnioskowanie na temat wpływu prawdopodobieństwa krzyżowania na jakość znajdowanych rozwiązań, nie jest w przypadku tego problemu tak oczywista jak w przypadku operatora mutacji. Na podstawie uzyskanych wyników nie da się łatwo stwierdzić jaka powinna być ta wartość, aby otrzymywane wyniki były jak najlepsze.
 	
+	\newpage
 	\subsection{Wpływ rozmiaru populacji}
 	W następnej kolejności zostaną omówione wyniki badań nad wpływem rozmiaru populacji na jakość znajdowanych rozwiązań. To badanie zostało przeprowadzone na instancji hard\_0. Ze względu na silną korelację parametrów $pop\_size$ i $tour$, w tym badaniu były zmieniane wartości ich obu. Wynika to z faktu że stosunek tych dwóch wartości steruje presją selekcyjną. Wartości reszty parametrów zostały ustalone następująco:
 	\begin{itemize}
@@ -386,6 +387,7 @@
 	Z tabeli \ref{tab:pop} dość dobrze widać, jak istotnym parametrem jest wielkość populacji. Dla problemu hard\_0, przy zwiększaniu wartości tego parametru znacząco poprawia się zarówno średnia jak i odchylenie standardowe. Wielkość populacji ma bezpośredni wpływ na liczbę przeglądanych przez algorytm rozwiązań.
 	
 	
+	\newpage
 	\subsection{Wpływ liczby pokoleń}
 	Ostatnim omawianym parametrem będzie liczba pokoleń. To badanie, tak jak poprzednie, zostało przeprowadzone na problemie hard\_0. Wartości parametrów zostały ustalone następująco:
 	\begin{itemize}
@@ -491,9 +493,9 @@
 				\hline
 				Algorytm & easy\_0 & easy\_1 & medium\_0 & medium\_1 & hard\_0 \\ 
 				\hline
-				GA & -5168.9 & \textbf{613.4} & 57284.8 & 113726.1 & -713010 \\ 
+				GA & -4015 & \textbf{2265} & 58877 & 115762 & -713010 \\ 
 				RS & -28520.7 & -22798.6 & 26485.6 & 83114.4 & -3581490 \\ 
-				HC & \textbf{-4397,3} & 1517.1 & \textbf{58150.2} & \textbf{115924} & n/a \\ 
+				HC & \textbf{-3659.34} & 1864.12 & \textbf{58884.7} & \textbf{116226} & - \\ 
 				Zachłanny & -18206 & -19556.3 & 47730.8 & 105551 & \textbf{61718.2} \\ 
 				\hline
 			\end{tabular}
@@ -501,10 +503,26 @@
 			\label{tab:nev}
 		\end{center}
 	\end{table}
+
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{ |c|c|c|c|c| } 
+				\hline
+				Algorytm & easy\_0 & easy\_1 & medium\_0 & medium\_1\\
+				\hline
+				GA & 87741 & 105581 & 262211 & 129206\\
+				HC & $6.24 \cdot 10^6$ & $7.88 \cdot 10^6$  & $2.23 \cdot 10^6$ & $5.19 \cdot 10^6$ \\
+				Zachłanny & 51 & 52 & 52 & 52\\
+				\hline
+			\end{tabular}
+			\caption{Liczba ewaluacji funkcji celu do znalezienia podanego w tabeli \ref{tab:nev} rozwiązania.}
+			\label{tab:ffe}
+		\end{center}
+	\end{table}
 	
 	\paragraph{Wnioski}
-	Algorytm przeszukiwania losowego w żadnym stopniu nie sprawdza się do tak ogromnych przestrzeni rozwiazań. Algorytm wspinaczkowy z kolei, znalazł najlepsze rozwiązania dla 3 z 5 problemów. Posiada on jednak jedną zasadniczą wadę - wymaga ogromnej liczby ewaluacji funkcji celu. Warte uwagi jest również to, że algorytm zachłanny znalazł najlepsze rozwiązanie problemu hard\_0. Jego dużą zaletą jest to, że do problemu TSP wymaga tylko $N$ ewaluacji funkcji celu, gdzie N jest liczbą możliwych miast początkowych.\\
+	Algorytm przeszukiwania losowego w żadnym stopniu nie sprawdza się do rozwiązywania takich problemów jak ten. Algorytm wspinaczkowy z kolei, znalazł najlepsze rozwiązania dla 3 z 5 problemów. Posiada on jednak jedną zasadniczą wadę - wymaga ogromnej liczby ewaluacji funkcji celu. Warte uwagi jest również to, że algorytm zachłanny znalazł najlepsze rozwiązanie problemu hard\_0. Jego dużą zaletą jest to, że do problemu TSP wymaga tylko $N$ ewaluacji funkcji celu, gdzie N jest liczbą możliwych miast początkowych.\\
 	Bardzo istotny jest również fakt, że algorytm genetyczny znalazł rozwiązania niewiele gorsze niż algorytm wspinaczkowy, a osiągnął to dużo mniejszym kosztem. Prawdopodobnie gdyby dobrać lepsze operatory genetyczne i przeprowadzić dokładniejsze strojenie parametrów, algorytm genetyczny poradziłby sobie najlepiej we wszystkich problemach.
 	\section{Podsumowanie}
-	Algorytm genetyczny jest bardzo dobrą metodą optymalizacji do problemów, w których występują ogromne przestrzenie rozwiązań. Pozwala on znajdować dobre jakościowo rozwiązania dużo mniejszym kosztem niż inne metody optymalizacji. Jego największą wadą jest duża liczba silnie powiązanych ze sobą parametrów, które do każdego problemu należy dobrać osobno, tak aby algorytm działał dobrze.
+	Algorytm genetyczny jest bardzo dobrą metodą optymalizacji do problemów, w których występują duże przestrzenie rozwiązań. Pozwala on znajdować dobre jakościowo rozwiązania dużo mniejszym kosztem niż inne metody optymalizacji. Jego największą wadą jest prawdopodobnie duża liczba silnie powiązanych parametrów, które do każdego problemu należy dobrać osobno, tak aby algorytm działał dobrze.
 \end{document}
