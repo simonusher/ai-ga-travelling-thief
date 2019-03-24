@@ -206,11 +206,12 @@ void TTPProblem::fixIfIncorrect(Individual *individual) {
 void TTPProblem::fixup(double weight, Individual *individual, std::vector<int> selectedItemsIndices) {
     int selectedItemsLeft = selectedItemsIndices.size();
     while(weight > capacityOfKnapsack){
-        std::uniform_int_distribution<int> randomItemDistribution(0, selectedItemsIndices.size()-1);
+        std::uniform_int_distribution<int> randomItemDistribution(0, selectedItemsLeft-1);
         int itemIndex = randomItemDistribution(*randomGenerator);
         individual->flipKspGene(selectedItemsIndices[itemIndex]);
         weight -= allItems[selectedItemsIndices[itemIndex]]->getWeight();
         selectedItemsLeft--;
+        std::swap(selectedItemsIndices[itemIndex], selectedItemsIndices[selectedItemsLeft]);
     }
 }
 
