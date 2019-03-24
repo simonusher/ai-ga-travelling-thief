@@ -42,19 +42,19 @@ void runGaTests(){
 //    std::vector<std::string> problemNames {"easy_0", "easy_1", "medium_0", "medium_1", "hard_0"};
 //    std::vector<std::string> problemNames {"easy_0"};
 //    std::vector<std::string> problemNames {"hard_0"};
-    std::vector<std::string> problemNames {"trivial_0"};
+    std::vector<std::string> problemNames {"medium_0"};
     for(int j = 0; j < problemNames.size(); j++){
         std::string problemName(problemNames[j]);
         std::string filename(problemName + ".ttp");
-        int iterations = 300;
-        int popSize = 100;
-        double crossProb = 0.8;
-        int tournamentSize = 10;
+        int iterations = 1000;
+        int popSize = 1000;
+        double crossProb = 0.65;
+        int tournamentSize = 50;
 //        double individualMutProb = 0.05;
-        double geneMutProb = 0.015;
-        double individualMutProb = 0.6;
+        double geneMutProb = 0.05;
+        double individualMutProb = 0.65;
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < 1; i++){
             std::random_device randomDevice;
             std::mt19937 randomGenerator(randomDevice());
             TTPProblem problem(&randomGenerator);

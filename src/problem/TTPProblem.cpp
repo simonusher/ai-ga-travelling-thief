@@ -236,5 +236,5 @@ std::pair<double, double> TTPProblem::getWeightAndProfitInCity(int cityIndex, co
             weight += items[i]->getWeight();
         }
     }
-    return { profit, weight };
+    return { weight, profit };
 }
