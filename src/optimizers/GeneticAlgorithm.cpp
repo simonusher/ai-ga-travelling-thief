@@ -5,7 +5,8 @@
 #include "../../include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h"
 
 GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, Problem* problem, Logger *logger,
-        std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator) :
+        std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator,
+        int purgeThreshold, int purgeNumber) :
     popSize(popSize),
     crossProb(crossProb),
     problem(problem),
@@ -16,7 +17,11 @@ GeneticAlgorithm::GeneticAlgorithm(int popSize, double crossProb, Problem* probl
     logger(logger),
     randomGenerator(randomGenerator),
     selector(selector),
-    mutator(mutator)
+    mutator(mutator),
+    purgeThreshold(purgeThreshold),
+    purgedNumber(purgeNumber),
+    itersSinceImprovement(0),
+    bestImproved(false)
 {
     initPopulation();
 }
@@ -39,6 +44,7 @@ void GeneticAlgorithm::run(int iters) {
 
 void GeneticAlgorithm::runIteration() {
     selectBestAndCalculateMetrics();
+    purgeIfNecessary();
     logData();
     select();
     crossover();
@@ -138,10 +144,17 @@ void GeneticAlgorithm::selectBestAndCalculateMetrics() {
     currentWorstFitness = worst->getFitness();
     if(bestOverall == nullptr){
         bestOverall = new Individual(*best);
+        bestImproved = true;
+        itersSinceImprovement = 0;
     }
     else if(problem->compareSolutions(best, bestOverall)){
         delete bestOverall;
         bestOverall = new Individual(*best);
+        bestImproved = true;
+        itersSinceImprovement = 0;
+    } else {
+        bestImproved = false;
+        itersSinceImprovement ++;
     }
 }
 
@@ -172,5 +185,24 @@ void GeneticAlgorithm::logData() {
 void GeneticAlgorithm::fixup() {
     for(int i = 0; i < population.size(); i++){
         problem->fixIfIncorrect(population[i]);
+    }
+}
+
+void GeneticAlgorithm::purge() {
+//    std::sort(population.begin(), population.end(), [](Individual *i1, Individual *i2) { return i1->getFitness() > i2->getFitness(); });
+    for(int j = population.size(), i = purgedNumber; i > 0; i--, j--){
+        delete population[i];
+        population[i] = problem->randomizedSolution();
+        problem->evaluate(population[i]);
+    }
+    itersSinceImprovement = 0;
+    bestImproved = false;
+    fixup();
+}
+
+void GeneticAlgorithm::purgeIfNecessary() {
+    if(itersSinceImprovement > purgeThreshold){
+        std::cout << "PURGING\n";
+        purge();
     }
 }

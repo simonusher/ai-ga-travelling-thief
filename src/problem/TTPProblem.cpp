@@ -175,7 +175,7 @@ int TTPProblem::getFitnessFunctionEvaluations() {
 }
 
 bool TTPProblem::compareFitnesses(double firstFitness, double secondFitness) {
-    return firstFitness >= secondFitness;
+    return firstFitness > secondFitness;
 }
 
 bool TTPProblem::fitnessStrictlyBetter(double firstFitness, double secondFitness) {

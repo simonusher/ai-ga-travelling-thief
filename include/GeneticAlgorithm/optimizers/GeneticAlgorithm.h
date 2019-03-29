@@ -18,7 +18,8 @@
 class GeneticAlgorithm {
 public:
     GeneticAlgorithm(int popSize, double crossProb, Problem *problem, Logger *logger,
-            std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator);
+            std::mt19937 *randomGenerator, Selector* selector, Mutator* mutator,
+            int purgeThreshold, int purgeNumber);
     ~GeneticAlgorithm();
     void run(int iters);
 
@@ -42,6 +43,12 @@ private:
 
     void printResults();
 
+    int purgeThreshold;
+    int purgedNumber;
+    void purge();
+    bool bestImproved;
+    int itersSinceImprovement;
+
     std::vector<Individual*> population;
     int iterationsPassed;
     int popSize;
@@ -62,6 +69,8 @@ private:
     void logData();
 
     void fixup();
+
+    void purgeIfNecessary();
 };
 
 

@@ -42,17 +42,21 @@ void runGaTests(){
 //    std::vector<std::string> problemNames {"easy_0", "easy_1", "medium_0", "medium_1", "hard_0"};
 //    std::vector<std::string> problemNames {"easy_0"};
 //    std::vector<std::string> problemNames {"hard_0"};
-    std::vector<std::string> problemNames {"medium_0"};
+    std::vector<std::string> problemNames {"hard_0"};
     for(int j = 0; j < problemNames.size(); j++){
         std::string problemName(problemNames[j]);
         std::string filename(problemName + ".ttp");
-        int iterations = 1000;
-        int popSize = 1000;
+        int iterations = 10000;
+        int popSize = 5000;
         double crossProb = 0.65;
-        int tournamentSize = 50;
+        int tournamentSize = 300;
 //        double individualMutProb = 0.05;
-        double geneMutProb = 0.05;
+        double geneMutProb = 0.007;
         double individualMutProb = 0.65;
+
+        int purgedNumber = popSize / 3;
+        int purgeIterationThreshold = 150;
+
 
         for(int i = 0; i < 1; i++){
             std::random_device randomDevice;
@@ -74,7 +78,7 @@ void runGaTests(){
 
             clock_t begin = clock();
 
-            GeneticAlgorithm ga(popSize, crossProb, &problem, &logger, &randomGenerator, &selector, &mutator);
+            GeneticAlgorithm ga(popSize, crossProb, &problem, &logger, &randomGenerator, &selector, &mutator, purgeIterationThreshold, purgedNumber);
             ga.run(iterations);
 
             clock_t end = clock();
