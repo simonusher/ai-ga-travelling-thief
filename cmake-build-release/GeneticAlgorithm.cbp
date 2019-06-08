@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release"/>
+				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release"/>
+				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GeneticAlgorithm">
-				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release"/>
+				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 GeneticAlgorithm"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 GeneticAlgorithm"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GeneticAlgorithm/fast">
-				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release"/>
+				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,123 +67,123 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 GeneticAlgorithm/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 GeneticAlgorithm/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release"/>
+				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Selector.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Selector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/TournamentSelector.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/TournamentSelector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/RandomSearch.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/RandomSearch.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/City.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/City.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Individual.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Individual.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/KnapsackItem.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/KnapsackItem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Problem.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Problem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/TTPProblem.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/TTPProblem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/util/Logger.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/util/Logger.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/util/VectorHasher.h">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/include/GeneticAlgorithm/util/VectorHasher.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/InvertMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/Mutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/City.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/City.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/Individual.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/Individual.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/TTPProblem.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/TTPProblem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/Logger.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/Logger.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/VectorHasher.cpp">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/VectorHasher.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/CMakeLists.txt">
+		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

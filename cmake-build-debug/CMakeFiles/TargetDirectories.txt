@@ -1,3 +1,3 @@
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir
-/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
+/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/GeneticAlgorithm.dir
+/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-debug/CMakeFiles/edit_cache.dir

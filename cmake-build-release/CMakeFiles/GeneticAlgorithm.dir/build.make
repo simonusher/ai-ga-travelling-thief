@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm
+CMAKE_SOURCE_DIR = /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release
+CMAKE_BINARY_DIR = /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release
 
 # Include any dependencies generated for this target.
 include CMakeFiles/GeneticAlgorithm.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/GeneticAlgorithm.dir/flags.make
 
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/main.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp > CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/main.cpp > CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/main.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/main.cpp.o.provides.build: CMakeFiles/Geneti
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o: ../src/optimizers/GeneticAlgorithm.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/optimizers/GeneticAlgorithm.cpp.o.provides.b
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o: ../src/problem/TTPProblem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/TTPProblem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/TTPProblem.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/TTPProblem.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/TTPProblem.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/TTPProblem.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/TTPProblem.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/problem/TTPProblem.cpp.o.provides.build: CMa
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o: ../src/problem/Individual.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/Individual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/Individual.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/Individual.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/Individual.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/Individual.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/Individual.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/problem/Individual.cpp.o.provides.build: CMa
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o: ../src/problem/KnapsackItem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/problem/KnapsackItem.cpp.o.provides.build: C
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o: ../src/problem/City.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/City.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/City.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/City.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/City.cpp > CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/City.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/problem/City.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/problem/City.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o: ../src/util/Logger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/Logger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/Logger.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/Logger.cpp > CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/Logger.cpp > CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/Logger.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/Logger.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/util/Logger.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o: ../src/optimizers/HillClimber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/optimizers/HillClimber.cpp.o.provides.build:
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o: ../src/optimizers/RandomSearch.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp > CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/optimizers/RandomSearch.cpp.o.provides.build
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o: ../src/util/VectorHasher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/VectorHasher.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/VectorHasher.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/VectorHasher.cpp > CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/VectorHasher.cpp > CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/VectorHasher.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/util/VectorHasher.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/util/VectorHasher.cpp.o.provides.build: CMak
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o: ../src/operators/TournamentSelector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/TournamentSelector.cpp.o.provides.
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o: ../src/operators/RandomSwapMutator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/RandomSwapMutator.cpp.o.provides.b
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o: ../src/operators/Mutator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/Mutator.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/Mutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/Mutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o.requires:
 
@@ -371,16 +371,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/Mutator.cpp.o.provides.build: CMak
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o: ../src/operators/AllGeneRandomSwapMutator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o.requires:
 
@@ -395,16 +395,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/AllGeneRandomSwapMutator.cpp.o.pro
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o: ../src/operators/RouletteSelector.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o.requires:
 
@@ -419,16 +419,16 @@ CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector.cpp.o.provides.bu
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o: CMakeFiles/GeneticAlgorithm.dir/flags.make
 CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o: ../src/operators/InvertMutator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o -c /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/InvertMutator.cpp
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/InvertMutator.cpp > CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.i
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/src/operators/InvertMutator.cpp -o CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.s
 
 CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o.requires:
 
@@ -481,7 +481,7 @@ GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/RouletteSelector
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/src/operators/InvertMutator.cpp.o
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/build.make
 GeneticAlgorithm: CMakeFiles/GeneticAlgorithm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GeneticAlgorithm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable GeneticAlgorithm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/GeneticAlgorithm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -513,6 +513,6 @@ CMakeFiles/GeneticAlgorithm.dir/clean:
 .PHONY : CMakeFiles/GeneticAlgorithm.dir/clean
 
 CMakeFiles/GeneticAlgorithm.dir/depend:
-	cd /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release /mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release /mnt/e/Projekty/Studia/semestr_6/si/lab/1_ga/GeneticAlgorithm/cmake-build-release/CMakeFiles/GeneticAlgorithm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/GeneticAlgorithm.dir/depend
 
