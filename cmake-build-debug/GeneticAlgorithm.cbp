@@ -8,188 +8,187 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GeneticAlgorithm">
-				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/GeneticAlgorithm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 GeneticAlgorithm"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 GeneticAlgorithm"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="GeneticAlgorithm/fast">
-				<Option output="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/GeneticAlgorithm" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/GeneticAlgorithm.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/include/c++/7"/>
-					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
-					<Add directory="/usr/include/c++/7/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
 					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 GeneticAlgorithm/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 GeneticAlgorithm/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/Szymon/projekty/ga-ttp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/AllGeneRandomSwapMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/InvertMutator.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/InvertMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Mutator.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/Mutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RandomSwapMutator.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/RandomSwapMutator.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/RouletteSelector.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/RouletteSelector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/Selector.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/Selector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/operators/TournamentSelector.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/operators/TournamentSelector.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/optimizers/GeneticAlgorithm.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/GreedyTTP.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/optimizers/GreedyTTP.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/HillClimber.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/optimizers/HillClimber.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/optimizers/RandomSearch.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/optimizers/RandomSearch.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/City.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/City.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Individual.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/FlowshopSchedulingProblem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/KnapsackItem.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/Individual.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/Problem.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/KnapsackItem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/problem/TTPProblem.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/Problem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/util/Logger.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/problem/TTPProblem.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/include/GeneticAlgorithm/util/VectorHasher.h">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/util/Logger.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/main.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/include/GeneticAlgorithm/util/VectorHasher.h">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/AllGeneRandomSwapMutator.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/main.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/InvertMutator.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/AllGeneRandomSwapMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/Mutator.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/InvertMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RandomSwapMutator.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/Mutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/RouletteSelector.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/RandomSwapMutator.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/operators/TournamentSelector.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/RouletteSelector.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GeneticAlgorithm.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/operators/TournamentSelector.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/GreedyTTP.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/optimizers/GeneticAlgorithm.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/HillClimber.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/optimizers/GreedyTTP.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/optimizers/RandomSearch.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/optimizers/HillClimber.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/City.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/optimizers/RandomSearch.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/Individual.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/problem/City.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/KnapsackItem.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/problem/Individual.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/problem/TTPProblem.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/problem/KnapsackItem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/Logger.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/problem/TTPProblem.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/src/util/VectorHasher.cpp">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/util/Logger.cpp">
 			<Option target="GeneticAlgorithm"/>
 		</Unit>
-		<Unit filename="/mnt/e/Projekty/Studia/semestr_6/si/lab/ga/GeneticAlgorithm/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/src/util/VectorHasher.cpp">
+			<Option target="GeneticAlgorithm"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/Szymon/projekty/ga-ttp/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
