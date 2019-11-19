@@ -127,7 +127,7 @@ void runGaTests(){
 
 int main() {
     FlowshopSchedulingProblem problem;
-    problem.initializeProblem(31);
+    problem.initializeProblem(1);
     int iterations = 30000;
     int popSize = 1000;
     double crossProb = 0.8;
